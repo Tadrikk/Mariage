@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage Clara & Adrián - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="accueil">
+
+  <!-- Titre -->
+  <header class="header-title">
+    <h1 id="titre-principal">Clara & Adrián</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html" id="nav-accueil">Accueil</a></li>
+      <li><a href="infos.html" id="nav-infos">Infos</a></li>
+      <li><a href="rsvp.html" id="nav-rsvp">RSVP</a></li>
+      <li><a href="galerie.html" id="nav-galerie">Galerie</a></li>
+      <li><button id="lang-toggle">ES / FR</button></li> <!-- déplacé dans la liste -->
+    </ul>
+  </nav>
+
+  <!-- Photo du couple -->
+  <section class="photo-couple">
+    <h1 id="titre-secondaire">14 aout</h1>
+    <img src="Images\Photo_Mer.jpg" alt="Clara et Adrián au bord de la mer">
+  </section>
+
+  <!-- Notre histoire (Clara & Adrián) -->
+<section class="couple-split">
+  <!-- Partie Clara -->
+  <div class="person left">
+    <img src="Images/Photo_Mer.jpg" alt="Clara" class="portrait">
+    <h2 id="clara-name">Clara</h2>
+    <p id="clara-text">
+      La plus belle des histoires commence souvent avec un sourire et un peu de malice 💕
+    </p>
+  </div>
+
+  <!-- Barre verticale de séparation -->
+  <div class="divider"></div>
+
+  <!-- Partie Adrián -->
+  <div class="person right">
+    <img src="Images/Photo_Accueil.jpeg" alt="Adrián" class="portrait">
+    <h2 id="adrian-name">Adrián</h2>
+    <p id="adrian-text">
+          A moi maintenant de raconter notre histoire (lisez d'abord celle de Clara sinon ça commencera mal). 
+          Nous nous sommmes rencontrés le (... je réfléchi ...) le 14 octobre, pour une soirée de d'adieu à une amie commune qui partait vivre à l'étranger.
+          J'avais déjà établi ma stratégie pour la connaitre alors qu'elle, innocente, n'avait rien prévu.
+          Notre histoire a commencé ce soir-là, et avons ensuite pendant les neufs prochaines années, vécus plein de belles choses, en commençeant par cuisiner chez elle, à passer des soirées et commander de la nourriture très saine, prendre du poids
+          rencontrer sa famille et découvrir leur organisation légendaire, prendre encore du poids, refuser de danser la salsa avec elle pour enfin en faire parce quelqu'un d'autre m'a motivé, sa rencontre avec ma famille en Galice et me rende compte qu'il l'aime plus que moi, 
+          laisser ma ville natale pour vivre avec elle au Luxembourg ...  et enfin parmi les plus belles aventure, nos voyages qu'on a fait (Indonésie, Guadeloupe, Jordanie, Japon et j'en passe) grace auxquels j'ai pu découvrir des nouvelles parties de moi-même.
+          Bref, le 19 mai 2025 j'ai lui ai demandé sa main et sans surprise (car je suis toujours sur de moi) elle a dit oui. On a commencé par se connaitre en discutant de la Galice, pour finalement s'unir devant nos proches au même endroit
+          C'est une belle manière de célébrer notre union, et j'aimerai du fond du coeur que vous soyez tous là pour partager ce moment avec nous (vous ne serez pas déçus promis !).
+    </p>
+  </div>
+</section>
+
+<!-- Compte à rebours et RSVP -->
+<section class="event-blocks">
+  <!-- Compte à rebours -->
+  <div class="countdown">
+    <h2 id="countdown-title">💃🕺 Votre meilleure soirée dansante arrive dans ...</h2>
+    <div class="countdown-timer">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small id="label-days">JOURS</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small id="label-hours">HEURES</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small id="label-minutes">MINUTES</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small id="label-seconds">SECONDES</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- RSVP -->
+  <div class="rsvp-shortcut">
+    <h2 id="rsvp-title">Confirmez votre présence</h2>
+    <h2 id="rsvp-datelim">Nous avons hâte de célébrer ce jour spécial avec vous !</h2>
+    <a href="rsvp.html" id="rsvp-button"class="btn">RSVP</a>
+  </div>
+</section>
+
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>

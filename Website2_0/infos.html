@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage Clara & Adrián - Infos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="accueil">
+  <header class="header-title">
+    <h1 id="titre-principal">Clara & Adrián</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" id="nav-accueil">Accueil</a></li>
+      <li><a href="infos.html" id="nav-infos">Infos</a></li>
+      <li><a href="rsvp.html" id="nav-rsvp">RSVP</a></li>
+      <li><a href="galerie.html" id="nav-galerie">Galerie</a></li>
+      <li><button id="lang-toggle">ES / FR</button></li>
+    </ul>
+  </nav>
+
+  <!-- 📍 Où et quand -->
+  <section class="info-fixe">
+    <h2 id="infos-title">📍 Où et quand ?</h2>
+    <p id="infos-when"><strong>Cérémonie :</strong> 14 août 2026 – <em>Pazo de Xerlis, A Estrada (Galice, Espagne)</em></p>
+    <p id="infos-hour"><strong>Heure :</strong> 14h00</p>
+    <p id="infos-whatsapp"><strong>Heure :</strong> 14h00</p>
+  </section>
+
+  <main class="infos-container">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header" id="sleep-title">🏨 Où dormir ?</button>
+        <div class="accordion-content">
+          <p id="sleep-text">Nous vous proposerons prochainement une liste d’hébergements à proximité du lieu du mariage. 🏡</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="travel-title">🗺️ Comment y aller ?</button>
+        <div class="accordion-content">
+          <h3>✈️</h3><p id="travel-galicia">Les aéroports les plus proches sont A Coruña, Santiago de Compostela et Vigo.</p>
+          <h3>💒</h3><p id="travel-location">Le mariage se tiendra au Pazo de Sergude, à 25 minutes du centre de A Coruña.</p>
+          <h3>🚌</h3><p id="travel-move">Les bus et taxis sont disponibles facilement, mais le plus pratique reste la location de voiture. 🚗</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="wedding-title">💍 Informations sur le mariage</button>
+        <div class="accordion-content">
+          <p id="wedding-text">Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="party-title">🎉 Planning fun</button>
+        <div class="accordion-content">
+          <ul>
+            <li id="party-1">🕐 14h00 – Cérémonie</li>
+            <li id="party-2">🍸 16h00 – Cocktail & apéritif</li>
+            <li id="party-3">🍽️ 18h00 – Dîner</li>
+            <li id="party-4">💃 21h00 – Soirée et fiesta !</li>
+            <li id="party-5">🌅 02h00 – Fin de la fête</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="info_access-title">✨ Informations & Accessoires </button>
+        <div class="accordion-content">
+          <p id="info_access-text">Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Accordéon
+    document.querySelectorAll(".accordion-header").forEach(button => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        button.classList.toggle("active");
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      });
+    });
+  </script>
+</body>
+</html>

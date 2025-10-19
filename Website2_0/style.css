@@ -1,0 +1,554 @@
+  /* Reset simple */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f0e6; /* beige doux */
+    color: #333; /* texte en gris foncé */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ---- Bloc Titre ---- */
+  .header-title {
+    text-align: center;
+    padding: 40px 20px;       /* espace haut/bas */
+    background: #f5f0e6;
+    font-family: 'Parisienne', cursive;
+    color: #5a3e36; /* brun doux pour contraster avec le beige */
+  }
+
+  .header-title h1 {
+    font-size: 43px;
+    margin-bottom: 1px;
+  }
+
+  /* ---- Menu ---- */
+  nav {
+    border-top: 1px solid #5a3e36;  /* ligne horizontale au-dessus */
+    background-color: #f5f0e6;      /* fond beige si tu veux */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Liste horizontale */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0;          /* on va gérer les séparateurs nous-mêmes */
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Items avec séparateurs verticaux */
+  nav ul li {
+    padding: 0 15px;
+    position: relative;
+  }
+
+  /* Ajout des barres verticales */
+  nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;          /* décale un peu vers le bas */
+    height: 80%;       /* hauteur de la barre */
+    width: 1px;        /* épaisseur de la barre */
+    background: #5a3e36; /* couleur de la barre */
+  }
+
+  /* Liens */
+  nav a, nav button {
+    text-decoration: none;
+    color: #5a3e36;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav a:hover, nav button:hover {
+    color: #333;
+  }
+
+  nav button#lang-toggle {
+    background-color: #e6dfd3; /* couleur beige assortie au menu */
+    color: #5a3e36;           /* texte brun */
+    border: none;             /* pas de bordure */
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 4px;       /* légèrement arrondi */
+    transition: background 0.3s, color 0.3s;
+  }
+
+  nav button#lang-toggle:hover {
+    background-color: #645844; /* léger changement au survol */
+    color: #333;                /* texte plus foncé au survol */
+  }
+
+  /* ---- Bloc Photo ---- */
+  .photo-couple {
+    position: relative;  /* nécessaire pour centrer le h1 */
+    width: 100%;         /* prend toute la largeur de l’écran */
+    text-align: center;
+    padding: 0;          /* supprime le petit padding inutile */
+    display: block;      /* inline-block n’est plus nécessaire */
+    overflow: hidden;    /* évite tout débordement si border-radius ou box-shadow */
+    height: 70vh;      /* hauteur = 50% de la fenêtre */
+  }
+
+  .photo-couple h1{
+    position: absolute;       /* Se place par rapport à .container */
+    top: 50%;                 /* 50% du haut */
+    left: 50%;                /* 50% de la gauche */
+    transform: translate(-50%, -50%); /* Recentre parfaitement */
+    color: #f8f8f2;             /* brun doux qui va bien avec ton beige */
+    font-family:'Great Vibes', cursive; /* police calligraphique (Google Fonts) */
+    font-size: 3em;             /* plus grand */
+    font-weight: normal;        /* pas besoin de gras pour du calligraphique */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* ombre pour lisibilité sur la photo */
+    letter-spacing: 2px;       /* espace léger entre les lettres */
+  }
+
+  .photo-couple img {
+    width: 100%;          /* image pleine largeur */
+    height: auto;         /* conserve les proportions */
+    object-fit: cover;    
+    display: block;       /* supprime l’espace blanc sous l’image */
+    border-radius: 0;     /* touche bien les bords de l’écran */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* optionnel */
+  }
+
+  /* ---- Section Clara & Adrián ---- */
+  .couple-split {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 6%;
+    gap: 60px;
+    background-color: #f5f0e6;
+  }
+
+  .person {
+    flex: 1.2;
+    text-align: center;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    margin-top: 25px;
+  }
+
+  .person h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5em;
+    margin-top: 20px;
+  }
+
+  .person p {
+    font-size: 1.0em;
+    margin-top: 20px;
+    line-height: 1.8;
+    width: 100%;              /* prend presque toute la largeur du bloc */
+    margin-left: auto;       /* centre le texte horizontalement */
+    margin-right: auto;
+    padding: 0;              /* supprime le padding inutile */
+    text-align: justify;     /* optionnel : texte justifié pour un rendu plus élégant */
+  }
+
+
+  /* Portrait rond et effet doux */
+  .portrait {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #5a3e36;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .portrait:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Barre verticale */
+  .divider {
+    width: 2px;
+    background-color: #5a3e36;
+    align-self: stretch;
+    opacity: 0.5;
+    border-radius: 1px;
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 900px) {
+    .couple-split {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .divider {
+      width: 60%;
+      height: 2px;
+    }
+
+    .person p {
+      font-size: 1.0em;
+    }
+  }
+
+  /* ---- Conteneur flex pour aligner compte et RSVP ---- */
+  /* Container principal */
+  .event-blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 10%;
+    flex-wrap: nowrap; /* utile pour le responsive */
+  }
+
+  .countdown-rsvp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* même hauteur */
+    padding: 80px 10%;
+    gap: 40px;
+    flex-wrap: wrap; /* pour le responsive */
+  }
+  /* ---- Compte à rebours ---- */
+  .countdown {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5f0e6; /* fond beige doux comme ton site */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #5a3e36; /* brun doux */
+    margin: 40px auto;
+    max-width: 900px;
+    flex: 0 0 60%; /* prend 60% de l’espace */
+  }
+
+  .countdown h2 {
+    
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #5a3e36;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* Bloc timer */
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .time-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    min-width: 90px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .time-box:hover {
+    transform: scale(1.05); /* petit effet au survol */
+  }
+
+  .time-box span {
+    display: block;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #c2185b; /* couleur élégante style vin rouge */
+  }
+
+  .time-box small {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .countdown {
+      padding: 40px 15px;
+    }
+    .event-blocks {
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .countdown h2 {
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+
+    .time-box {
+      padding: 15px 20px;
+      min-width: 70px;
+    }
+
+    .time-box span {
+      font-size: 2em;
+    }
+
+    .time-box small {
+      font-size: 0.75em;
+    }
+  }
+
+  /* RSVP */
+  .rsvp-shortcut {
+    flex: 0 0 40%;
+    text-align: center;
+    background: #f5f0e6;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .rsvp-shortcut h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #5a3e36;
+  }
+
+  .rsvp-shortcut .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 22px;
+    background: #c2185b; /* même bordeaux que le timer */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .rsvp-shortcut .btn:hover {
+    background: #a3154d;
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .event-blocks {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .rsvp-shortcut {
+      width: 100%;
+    }
+  }
+
+  /* ---- FORMULAIRE RSVP ---- */
+  .rsvp-container {
+    max-width: 500px;
+    margin: 40px auto; /* centre horizontalement et espace vertical */
+    text-align: center; /* centre le texte */
+    padding: 20px;
+    background: #f5f0e6; 
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+  }
+
+  /* Titre du formulaire */
+  #rsvp-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #5a3e36;
+  }
+
+  /* Espacement des blocs de questions */
+  .attend-options,
+  .name-section {
+    margin: 20px 0;
+  }
+
+  /* Radios alignés et espacés */
+  .attend-options input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  .attend-options label {
+    margin-right: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+
+  /* Input nom */
+  .name-section input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+
+  /* Bouton submit */
+  #submit-button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #submit-button:hover {
+    background-color: #a3154d;
+    transform: scale(1.05);
+  }
+
+  /* Message de confirmation et remerciement */
+  #confirm-message,
+  #thank-you-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #5a3e36;
+  }
+
+  /* Bouton confirmation finale */
+  #confirm-yes {
+    margin-top: 15px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #5a3e36;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #confirm-yes:hover {
+    background-color: #3e2a23;
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 500px) {
+    .rsvp-container {
+      width: 90%;
+      padding: 15px;
+    }
+
+    .attend-options label,
+    .name-section input[type="text"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Pour harmoniser les radios */
+  .attend-options input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  /* Message de remerciement visible */
+  #thank-you-message {
+    display: none;
+    color: #76d77b; /* vert doux */
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background: #ecf0ea;
+    border: 0.5px solid #a5d6a7;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  #thank-you-message.show {
+    display: block;
+  }
+
+  /* ---- INFOS PAGE ---- */
+  .info-fixe {
+    position: relative;
+    margin: 20px auto;
+    max-width: 700px;
+    background: rgb(255, 243, 229);
+    border: 1px solid #d8c9b5;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    color: #5a3e36;
+    text-align: center;
+  }
+
+  .infos-container {
+    max-width: 900px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+  }
+
+  /* ---- Accordéon ---- */
+  .accordion-item {
+    background: #fdfaf6;
+    border: 1px solid #e0d6c8;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .accordion-header {
+    width: 100%;
+    background: #f5f0e6;
+    color: #5a3e36;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    transition: background 0.3s;
+  }
+
+  .accordion-header:hover {
+    background: #e6dfd3;
+  }
+
+  .accordion-header.active {
+    background: #d8c9b5;
+    color: #3e2a23;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.4s ease;
+    background: #f7f3eb;
+  }
+
+  .accordion-content p, .accordion-content ul {
+    padding: 15px 0;
+    color: #4b3c32;
+    line-height: 1.6;
+  }
+
+
