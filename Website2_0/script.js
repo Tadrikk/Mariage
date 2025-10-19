@@ -1,25 +1,4 @@
-// ---------------- LISTE INVITÉS ----------------
-const guestList = [
-  "Ariane", "Manu", "Marine", "Pablo", "Karin", "Patrick", "Balt", "Ines", "Eliot",
-  "Charles", "Britta", "Oscar","Gustave","Moritz", "Alex", "Jeanne", "Jos", "Alan","Ulysse","Pierrik",
-  "Domi", "Margot", "François","enfant 1", "enfant 2", "Arthur", "Laurie", "Rob", "Titi", "Tit",
-  "Sonia", "Milan", "Chelly", "Yul", "Jacqueline", "Seb", "Fred", "Yann",
-  "Caroline", "Thalia", "Christophe", "Barbouille", "Corinne", "Yohan",
-  "Alicia", "Emilia", "Theo", "Roxanne","Copain de Rox", "Clarisse","Copain de Clarisse", "Steph", "Alexi", "Cath",
-  "Albi", "Alice", "Alessandra","Abele","Louis", "Bego", "Guillaume", "Marta","Gara", "Isa",
-  "Micka", "Lina", "Hippo", "Aylin", "Brice", "Nao", "Monica","Enfant", "Epoux", "Ruben", "Tonito",
-  "Papa", "Maman", "Lydia","Selena", "Tia Mar", "Miguel", "Cris", "Tiago", "Sara", "Antia",
-  "Dosi", "Lore","Borja", "Sofia","Yulen", "Oscar",
-  "Ana", "Cacai", "David","Ramón", "Julia","copain de julia", "Caty", "Joni", "Lili", "Guelita",
-  "Jessica","Enfant de jess", "Merce", "Tati", "Yoli","Carlos", "Yari","Florence", "James",
-  "Marcos", "Alba", "Sergi", "Alessia", "Romain",
-  "Martin", "Diane", "Paul", "Anissa", "Leo", "Camille", "Yassine", "Elisa", "Flo", "Toan", "Coline",
-  "Livai", "Maxime", "Laureen", "Arthur", "Michel","Danielle", "Amandine",
-  "Justine", "Clement","Copine de Clément", "Luca","Céline", "Raul", "Heli", "Enrique", "Marga", "Peter", "Maria Carmen",
-  "Tuto","Julia"
-];
 
-// ---------------- LANGUE ----------------
 // ---------------- LANGUE ----------------
 let currentLang = localStorage.getItem("lang") || "fr";
 
