@@ -27,10 +27,26 @@
 
   <!-- 📍 Où et quand -->
   <section class="info-fixe">
-    <h2 id="infos-title">📍 Où et quand ?</h2>
-    <p id="infos-when"><strong>Cérémonie :</strong> 14 août 2026 – <em>Pazo de Xerlis, A Estrada (Galice, Espagne)</em></p>
-    <p id="infos-hour"><strong>Heure :</strong> 14h00</p>
-    <p id="infos-whatsapp"><strong>Heure :</strong> 14h00</p>
+    <div class="info-header">
+      <div class="info-icon">📍</div>
+      <h2 id="infos-title">Où et quand ?</h2>
+    </div>
+
+    <div class="info-details">
+      <p id="infos-ceremonie"><strong>Cérémonie :</strong> 14 août 2026 – <em>Pazo de Xerlis, A Estrada (Galice, Espagne)</em></p>
+      <p id="infos-hour"><strong>Heure :</strong> 14h00</p>
+    </div>
+
+    <div class="whatsapp-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+      <div class="whatsapp-text">
+        <p id="infos-whatsapp-text">Rejoignez le groupe pour les infos et surprises 💕</p>
+        <button id="whatsappButton" class="whatsapp-btn">Rejoindre le groupe</button>
+        <span id="whatsappLink" style="display:none; margin-left:10px;">
+          <a id="whatsappAnchor" href="#" target="_blank" class="whatsapp-link">👉 Rejoindre</a>
+        </span>
+      </div>
+    </div>
   </section>
 
   <main class="infos-container">
@@ -80,16 +96,6 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
-  <script>
-    // Accordéon
-    document.querySelectorAll(".accordion-header").forEach(button => {
-      button.addEventListener("click", () => {
-        const content = button.nextElementSibling;
-        button.classList.toggle("active");
-        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
-      });
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>

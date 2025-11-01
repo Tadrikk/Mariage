@@ -27,11 +27,11 @@
     margin-bottom: 1px;
   }
 
-  /* ---- Menu ---- */
+  /* ---- EN TETE (commun à toutes les pages)---- */
   nav {
-    border-top: 1px solid #5a3e36;  /* ligne horizontale au-dessus */
+    border-top: 1.5px solid #5a3e36;  /* ligne horizontale au-dessus */
     background-color: #f5f0e6;      /* fond beige si tu veux */
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
   }
@@ -66,7 +66,7 @@
   nav a, nav button {
     text-decoration: none;
     color: #5a3e36;
-    font-size: 20px;
+    font-size: 23px;
     background: none;
     border: none;
     cursor: pointer;
@@ -92,38 +92,63 @@
     color: #333;                /* texte plus foncé au survol */
   }
 
-  /* ---- Bloc Photo ---- */
-  .photo-couple {
-    position: relative;  /* nécessaire pour centrer le h1 */
-    width: 100%;         /* prend toute la largeur de l’écran */
-    text-align: center;
-    padding: 0;          /* supprime le petit padding inutile */
-    display: block;      /* inline-block n’est plus nécessaire */
-    overflow: hidden;    /* évite tout débordement si border-radius ou box-shadow */
-    height: 70vh;      /* hauteur = 50% de la fenêtre */
-  }
+  /* ---- Accueil PAGE---- */
+.photo-couple {
+  position: relative;          /* nécessaire pour centrer le h1 */
+  width: 95%;                 /* prend toute la largeur */
+  height: 60vh;                /* hauteur = 70% de la fenêtre */
+  overflow: hidden;            /* éviter débordement */
+  display: block;
+  text-align: center;
+  margin: 0 auto; 
+  border-radius: 12px;         /* coins légèrement arrondis */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* légère ombre globale */
+}
 
-  .photo-couple h1{
-    position: absolute;       /* Se place par rapport à .container */
-    top: 50%;                 /* 50% du haut */
-    left: 50%;                /* 50% de la gauche */
-    transform: translate(-50%, -50%); /* Recentre parfaitement */
-    color: #f8f8f2;             /* brun doux qui va bien avec ton beige */
-    font-family:'Great Vibes', cursive; /* police calligraphique (Google Fonts) */
-    font-size: 3em;             /* plus grand */
-    font-weight: normal;        /* pas besoin de gras pour du calligraphique */
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* ombre pour lisibilité sur la photo */
-    letter-spacing: 2px;       /* espace léger entre les lettres */
-  }
+/* Titre centré sur la photo */
+.photo-couple h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f8f2;                  /* clair et lisible */
+  font-family: 'Great Vibes', cursive; /* police calligraphique */
+  font-size: 3.5em;                 /* plus visible */
+  font-weight: normal;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* plus de contraste */
+  letter-spacing: 2px;
+  text-align: center;
+}
 
-  .photo-couple img {
-    width: 100%;          /* image pleine largeur */
-    height: auto;         /* conserve les proportions */
-    object-fit: cover;    
-    display: block;       /* supprime l’espace blanc sous l’image */
-    border-radius: 0;     /* touche bien les bords de l’écran */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* optionnel */
-  }
+/* Photo en background */
+.photo-couple img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* remplissage complet du bloc */
+  display: block;
+  z-index: -1;                 /* derrière le titre */
+  transition: transform 0.6s ease; /* effet léger au survol */
+}
+
+.photo-couple img:hover {
+  transform: scale(1.05);      /* zoom doux au survol */
+}
+
+/* Optionnel : effet overlay sombre pour améliorer la lisibilité du texte */
+.photo-couple::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25); /* léger filtre sombre */
+  z-index: 0;
+}
+
 
   /* ---- Section Clara & Adrián ---- */
   .couple-split {
@@ -355,17 +380,28 @@
     }
   }
 
-  /* ---- FORMULAIRE RSVP ---- */
-  .rsvp-container {
-    max-width: 500px;
-    margin: 40px auto; /* centre horizontalement et espace vertical */
-    text-align: center; /* centre le texte */
-    padding: 20px;
-    background: #f5f0e6; 
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    font-family: 'Georgia', serif;
-  }
+  /* ---- FORMULAIRE RSVP PAGE---- */
+.rsvp-container {
+  max-width: 500px;            /* légèrement plus étroit */
+  margin: 40px auto;           /* centre horizontalement */
+  padding: 30px 25px;          /* confortable */
+  background: linear-gradient(135deg, #fffaf4, #f4e8da); /* même dégradé que info-fixe */
+  border: 1px solid #e2d5c1;
+  border-radius: 18px;         /* arrondi doux */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1); /* ombre légère */
+  color: #4b3b2b;              /* texte brun foncé */
+  font-family: 'Georgia', serif; /* garde la police actuelle */
+  text-align: center;
+}
+
+/* Titre du formulaire */
+#rsvp-title {
+  font-family: 'Georgia', serif; /* garde la police actuelle */
+  font-size: 1.8em;              /* conserve taille existante */
+  color: #3d2a1e;                /* brun doux pour contraste */
+  margin-bottom: 20px;
+}
+
 
   /* Titre du formulaire */
   #rsvp-title {
@@ -485,70 +521,154 @@
   }
 
   /* ---- INFOS PAGE ---- */
-  .info-fixe {
-    position: relative;
-    margin: 20px auto;
-    max-width: 700px;
-    background: rgb(255, 243, 229);
-    border: 1px solid #d8c9b5;
-    border-radius: 10px;
-    padding: 10px 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    color: #5a3e36;
-    text-align: center;
-  }
+ .info-fixe {
+  background: linear-gradient(135deg, #fffaf4, #f4e8da);
+  border: 1px solid #e2d5c1;
+  border-radius: 18px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  color: #4b3b2b;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .infos-container {
-    max-width: 900px;
-    margin: 40px auto 80px;
-    padding: 0 20px;
-  }
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-  /* ---- Accordéon ---- */
-  .accordion-item {
-    background: #fdfaf6;
-    border: 1px solid #e0d6c8;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+.info-icon {
+  font-size: 1.8em;
+  background: #f1e3cf;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
 
-  .accordion-header {
-    width: 100%;
-    background: #f5f0e6;
-    color: #5a3e36;
-    font-size: 1.2em;
-    padding: 15px 20px;
-    text-align: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-family: 'Georgia', serif;
-    transition: background 0.3s;
-  }
+.info-fixe h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  color: #3d2a1e;
+  margin: 0;
+}
 
-  .accordion-header:hover {
-    background: #e6dfd3;
-  }
+.info-details p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 8px 0;
+}
 
-  .accordion-header.active {
-    background: #d8c9b5;
-    color: #3e2a23;
-  }
+/* --- Bloc WhatsApp stylé --- */
+.whatsapp-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #e9f5ec;
+  border: 1px solid #cde3d4;
+  border-radius: 14px;
+  padding: 15px 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+}
 
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    transition: max-height 0.4s ease;
-    background: #f7f3eb;
-  }
+.whatsapp-logo {
+  width: 45px;
+  height: 45px;
+}
 
-  .accordion-content p, .accordion-content ul {
-    padding: 15px 0;
-    color: #4b3c32;
-    line-height: 1.6;
-  }
+.whatsapp-text {
+  text-align: left;
+}
+
+.whatsapp-text p {
+  color: #333;
+  font-size: 1.05em;
+  margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+}
+
+.whatsapp-link {
+  color: #075E54;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+.infos-container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+/* ---- Accordéon ---- */
+.accordion-item {
+  background: #fdfaf6;
+  border: 1px solid #e0d6c8;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+  width: 100%;
+  background: #f5f0e6;
+  color: #5a3e36;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: background 0.3s;
+}
+
+.accordion-header:hover {
+  background: #e6dfd3;
+}
+
+.accordion-header.active {
+  background: #d8c9b5;
+  color: #3e2a23;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.4s ease;
+  background: #f7f3eb;
+}
+
+.accordion-content p, .accordion-content ul {
+  padding: 15px 0;
+  color: #4b3c32;
+  line-height: 1.6;
+}
 
 
