@@ -24,18 +24,19 @@ const translations = {
       
       Quelques jours plus tard, dans un train en direction de Madrid, on vous annonce la nouvelle et on commence les préparatifs de notre mariage, en Galice, où d’autre ? Dans notre terre tant aimée que nous souhaitions vous présenter depuis tant d’années, alors si vous êtes curieux de découvrir le paradis ou si vous souhaitez assister à notre union, on vous attend le 16 août 2026 au Pazo de Xerlis.`,
     "adrian-text": 
-      `A moi maintenant de raconter notre histoire.
-      Nous nous sommmes rencontrés le (... je réfléchi ...) le 14 octobre, pour une soirée d'adieu d'une amie commune. 
-      J'avais déjà établi ma stratégie pour l'aborder, alors qu'elle, innocente, n'avait rien prévu.
-      Notre belle histoire a commencé ce soir-là et on est toujours ensemble!
-      On a vécu plein de belles choses, en commençeant par cuisiner chez elle, à passer ensuite des soirées à commander de la nourriture très saine, 
-      et à prendre du poids. Puis rencontrer sa famille et découvrir leur organisation légendaire, à prendre encore du poids, 
-      à refuser de danser la salsa avec elle pour enfin en faire parce quelqu'un d'autre m'a motivé,
-      me rendre compte que ma famille en Galice l'aime plus que moi et jusqu'à laisser ma ville natale pour vivre avec elle au Luxembourg ... 
-      et bien sur tous les voyages qu'on a fait (Indonésie, Guadeloupe, Jordanie, Japon et j'en passe) grace auxquels j'ai pu découvrir des parties de moi encore inconnues.
-      Bref, le 19 mai 2025 j'ai lui ai demandé sa main et sans surprise (car je suis toujours sur de moi) elle a dit oui. 
-      C'est drôle car notre premier sujet de discussion était sur la Galice, et finalement c'est là qu'on concrétise notre union.
-      J'aimerai du fond du coeur que vous soyez tous là pour partager ce moment avec nous (vous ne serez pas déçus promis !).`,
+      ` Nous nous sommes rencontrés le (... je réfléchis ...) 14 octobre, lors d’une soirée d’adieu d’une amie commune.
+        J’avais déjà établi ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.
+        C’est à partir de ce soir-là que notre belle histoire a commencé.
+
+        Nous avons vécu de nombreuses belles expériences : d’abord cuisiner chez elle, puis passer des soirées à commander de la nourriture très saine… et à prendre du poids. Ensuite, rencontrer sa famille et découvrir leur organisation légendaire, prendre encore du poids,
+        refuser de danser la salsa avec elle pour finalement en danser avec quelqu'un d'autres qui a su me convaincre en 10 secondes,
+        me rendre compte dès sa première rencontre avec ma famille en Galice, qu'elle l’aime plus que moi, et enfin jusqu'à même quitter ma ville natale pour vivre avec elle au Luxembourg.
+        Bien sûr, je n'oublie pas tous les voyages que nous avons faits (Indonésie, Guadeloupe, Jordanie, Japon, et j’en passe), grâce auxquels j’ai pu découvrir des parties de moi encore inconnues.
+
+        Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise (car je suis toujours sûr de moi), elle a dit oui.
+        Notre premier sujet de discussion fut sur la Galice, et c’est finalement là que nous concrétisons notre union.
+
+        J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce moment avec nous (vous ne serez pas déçus, promis !)`,
 "titre-principal": "Clara & Adrián",
     "countdown-title": "Le grand jour arrive dans",
     "label-days": "JOURS",
@@ -213,7 +214,7 @@ const translations = {
     "travel_summary_3": "Recomendado alquilar coche para moverse cómodamente por Galicia."
   }
 };
-document.getElementById("clara-text").textContent = translations.fr["clara-text"];
+
 // --------------------------------------------------
 // Utilitaires
 // --------------------------------------------------

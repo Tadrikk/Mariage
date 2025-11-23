@@ -9,8 +9,6 @@
     font-family: 'Georgia', serif;
     background-color: #fafafa; /* beige doux */
     color: #333; /* texte en gris foncé */
-    margin: 0;
-    padding: 0;
   }
 
   /* ---- Bloc Titre ---- */
@@ -47,6 +45,9 @@
   nav ul li {
     padding: 0 15px;
     position: relative;
+    display: flex;
+    align-items: center;   /* ✔ centre verticalement le texte */
+    height: 40px;          /* ✔ donne une hauteur homogène au menu (ajuste si besoin) */
   }
 
   /* Ajout des barres verticales */
@@ -54,10 +55,11 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 15%;          /* décale un peu vers le bas */
-    height: 80%;       /* hauteur de la barre */
-    width: 1px;        /* épaisseur de la barre */
-    background: #5a3e36; /* couleur de la barre */
+    top: 50%;                /* centre verticalement */
+    transform: translateY(-50%);
+    height: 60%;             /* hauteur de la barre */
+    width: 1px;
+    background: #5a3e36;
   }
 
   /* Liens */
@@ -91,47 +93,38 @@
   }
 
   /* ---- Accueil PAGE---- */
-.photo-couple {
-  position: fixed;          /* nécessaire pour centrer le h1 */
+.photo-bk {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;            /* éviter débordement */
-  z-index: -1;   
+  overflow: hidden;
+  z-index: -2;
 }
 
-/* Photo en background */
-.photo-couple img {
+/* Image + transition fluide */
+.photo-bk img {
   width: 100%;
   height: 100%;
-  object-fit: cover;           /* remplissage complet du bloc */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* ajouté */
 }
 
-.photo-couple::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.2); /* filtre sombre */
-  z-index: 0;
+.photo-bk img:hover {
+  transform: scale(1.05);
 }
 
-.photo-couple img:hover {
-  transform: scale(1.05);      /* zoom doux au survol */
-}
-
-/* Optionnel : effet overlay sombre pour améliorer la lisibilité du texte */
-.photo-couple::after {
+/* FUSIONNÉ : overlay sombre */
+.photo-bk::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.25); /* léger filtre sombre */
-  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
 }
 
 
@@ -389,20 +382,12 @@
 
 /* Titre du formulaire */
 #rsvp-title {
-  font-family: 'Georgia', serif; /* garde la police actuelle */
-  font-size: 1.8em;              /* conserve taille existante */
-  color: #3d2a1e;                /* brun doux pour contraste */
-  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #5a3e36;
 }
-
-
-  /* Titre du formulaire */
-  #rsvp-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #5a3e36;
-  }
 
   /* Espacement des blocs de questions */
   .attend-options,
