@@ -27,20 +27,24 @@
 
   <main class="rsvp-container">
     <form id="rsvp-form">
-      <h2 id="rsvp-title">Seriez-vous présent ?</h2>
+      <h2 id="rsvp-title">Serez-vous présent ?</h2>
 
       <div class="attend-options">
         <input type="radio" id="rsvp-oui" name="presence" value="oui" checked>
         <label for="rsvp-oui" id="label-oui">Oui</label>
 
         <input type="radio" id="rsvp-non" name="presence" value="non">
-        <label for="rsvp-non" id="label-non">Non, j'ai aqua poney</label>
+        <label for="rsvp-non" id="label-non">Non</label>
       </div>
 
       <div class="name-section">
-        <label for="guest-name" id="label-name">Votre nom :</label>
+        <label for="guest-name" id="label-name">Votre nom et prénom :</label>
         <input list="guest-list" id="guest-name" name="guest-name" placeholder="Tapez votre nom..." required>
         <datalist id="guest-list"></datalist>
+      </div>
+
+      <div class="children-section">
+        <p class="children-note" id="children-text">Si vous venez avec des enfants, veuillez nous contacter.</p>
       </div>
 
       <button type="submit" id="submit-button">Confirmer</button>

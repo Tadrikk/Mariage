@@ -7,7 +7,7 @@
 
   body {
     font-family: 'Georgia', serif;
-    background-color: #f5f0e6; /* beige doux */
+    background-color: #fafafa; /* beige doux */
     color: #333; /* texte en gris foncé */
     margin: 0;
     padding: 0;
@@ -16,10 +16,10 @@
   /* ---- Bloc Titre ---- */
   .header-title {
     text-align: center;
-    padding: 40px 20px;       /* espace haut/bas */
-    background: #f5f0e6;
+    padding: 10px 20px;       /* espace haut/bas */
+    background-color: #fff;
     font-family: 'Parisienne', cursive;
-    color: #5a3e36; /* brun doux pour contraster avec le beige */
+    color: #000000; /* brun doux pour contraster avec le beige */
   }
 
   .header-title h1 {
@@ -29,9 +29,7 @@
 
   /* ---- EN TETE (commun à toutes les pages)---- */
   nav {
-    border-top: 1.5px solid #5a3e36;  /* ligne horizontale au-dessus */
-    background-color: #f5f0e6;      /* fond beige si tu veux */
-    padding: 15px 0;
+    background-color:#fff;
     display: flex;
     justify-content: center;
   }
@@ -65,8 +63,8 @@
   /* Liens */
   nav a, nav button {
     text-decoration: none;
-    color: #5a3e36;
-    font-size: 23px;
+    color: #000000;
+    font-size: 18px;
     background: none;
     border: none;
     cursor: pointer;
@@ -94,43 +92,30 @@
 
   /* ---- Accueil PAGE---- */
 .photo-couple {
-  position: relative;          /* nécessaire pour centrer le h1 */
-  width: 95%;                 /* prend toute la largeur */
-  height: 60vh;                /* hauteur = 70% de la fenêtre */
+  position: fixed;          /* nécessaire pour centrer le h1 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;            /* éviter débordement */
-  display: block;
-  text-align: center;
-  margin: 0 auto; 
-  border-radius: 12px;         /* coins légèrement arrondis */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* légère ombre globale */
-}
-
-/* Titre centré sur la photo */
-.photo-couple h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #f8f8f2;                  /* clair et lisible */
-  font-family: 'Great Vibes', cursive; /* police calligraphique */
-  font-size: 3.5em;                 /* plus visible */
-  font-weight: normal;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* plus de contraste */
-  letter-spacing: 2px;
-  text-align: center;
+  z-index: -1;   
 }
 
 /* Photo en background */
 .photo-couple img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;           /* remplissage complet du bloc */
-  display: block;
-  z-index: -1;                 /* derrière le titre */
-  transition: transform 0.6s ease; /* effet léger au survol */
+}
+
+.photo-couple::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* filtre sombre */
+  z-index: 0;
 }
 
 .photo-couple img:hover {
@@ -157,13 +142,13 @@
     align-items: flex-start;
     padding: 60px 6%;
     gap: 60px;
-    background-color: #f5f0e6;
+    background-color:transparent;
   }
 
   .person {
     flex: 1.2;
     text-align: center;
-    color: #5a3e36;
+    color: #ffffff;
     font-family: 'Georgia', serif;
     margin-top: 25px;
   }
@@ -175,8 +160,8 @@
   }
 
   .person p {
-    font-size: 1.0em;
-    margin-top: 20px;
+    font-size: 1.1em;
+    margin-top: 10px;
     line-height: 1.8;
     width: 100%;              /* prend presque toute la largeur du bloc */
     margin-left: auto;       /* centre le texte horizontalement */
@@ -252,10 +237,10 @@
   .countdown {
     text-align: center;
     padding: 60px 20px;
-    background: #f5f0e6; /* fond beige doux comme ton site */
+    background:transparent;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    color: #5a3e36; /* brun doux */
+    color: #d2e2ec; /* brun doux */
     margin: 40px auto;
     max-width: 900px;
     flex: 0 0 60%; /* prend 60% de l’espace */
@@ -265,7 +250,7 @@
     
     font-size: 2em;
     margin-bottom: 40px;
-    color: #5a3e36;
+    color: #d2e2ec;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   }
 
@@ -278,7 +263,7 @@
   }
 
   .time-box {
-    background: #ffffff;
+    background: #d2e2ec;
     border-radius: 12px;
     padding: 20px 25px;
     min-width: 90px;
@@ -295,7 +280,7 @@
     display: block;
     font-size: 2.8em;
     font-weight: bold;
-    color: #c2185b; /* couleur élégante style vin rouge */
+    color:#012f6b ; /* couleur élégante style vin rouge */
   }
 
   .time-box small {
@@ -303,7 +288,7 @@
     font-size: 0.9em;
     margin-top: 5px;
     letter-spacing: 1px;
-    color: #333;
+    color: #000000;
     font-weight: 500;
   }
 
@@ -340,31 +325,39 @@
   .rsvp-shortcut {
     flex: 0 0 40%;
     text-align: center;
-    background: #f5f0e6;
+    background: transparent;
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
 
+
   .rsvp-shortcut h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 20px;
-    color: #5a3e36;
+    color: #d2e2ec;
+  }
+
+   #rsvp-title-index {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #d2e2ec;
   }
 
   .rsvp-shortcut .btn {
     display: inline-block;
     padding: 15px 40px;
     font-size: 22px;
-    background: #c2185b; /* même bordeaux que le timer */
-    color: #fff;
+    background: #d2e2ec; /* même bordeaux que le timer */
+    color: #012f6b;
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s;
   }
 
   .rsvp-shortcut .btn:hover {
-    background: #a3154d;
+    background: #24287c;
+    color:#d2e2ec;
     transform: scale(1.05);
   }
 
@@ -385,7 +378,7 @@
   max-width: 500px;            /* légèrement plus étroit */
   margin: 40px auto;           /* centre horizontalement */
   padding: 30px 25px;          /* confortable */
-  background: linear-gradient(135deg, #fffaf4, #f4e8da); /* même dégradé que info-fixe */
+  background: transparent;
   border: 1px solid #e2d5c1;
   border-radius: 18px;         /* arrondi doux */
   box-shadow: 0 6px 10px rgba(0,0,0,0.1); /* ombre légère */
@@ -436,6 +429,13 @@
     border-radius: 6px;
     border: 1px solid #ccc;
     margin-top: 5px;
+  }
+  
+  .children-note {
+  color: #000000; /* rouge clair, tu peux changer la couleur */
+  font-style: italic;
+  margin-top: 5px; /* petit espace au-dessus */
+  font-size: 0.9em; /* légèrement plus petit que le texte normal */
   }
 
   /* Bouton submit */
@@ -671,4 +671,6 @@
   line-height: 1.6;
 }
 
-
+#clara-text, #adrian-text {
+  white-space: pre-line; /* prend en compte les sauts de ligne \n */
+}
