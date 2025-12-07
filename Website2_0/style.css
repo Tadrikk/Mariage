@@ -656,6 +656,36 @@
   line-height: 1.6;
 }
 
+/* Flèche sur l’accordéon */
+.accordion-header::after {
+  content: "▼"; /* flèche par défaut */
+  font-size: 0.8em;
+  float: right;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: rotate(-180deg); /* tourne quand ouvert */
+}
+
+/* Harmonisation du contenu (p, ul, tableau) */
+.accordion-content .table-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Légère amélioration de l’ombre et arrondi */
+.accordion-item {
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
 #clara-text, #adrian-text {
   white-space: pre-line; /* prend en compte les sauts de ligne \n */
 }

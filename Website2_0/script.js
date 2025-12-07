@@ -48,9 +48,9 @@ const translations = {
     "label-oui": "Oui",
     "label-non": "Non",
     "label-name": "Votre nom et prénom :",
-    "guest-placeholder": "Tapez votre nom...",
-    "children-text": `Vos enfants sont les bienvenus ! Cependant, nous vous suggérons de ne pas les emmener si vous craignez de devoir partir prématurément. 
-    Veuillez nous informer si vous venez avec vos enfants`,
+    "guest-name": "Tapez votre nom...",
+    "children-text": `Ves enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
+                      garder et venir seuls`,
     "submit-button": "Confirmer",
     "thank-you": "Merci, votre réponse a été enregistrée",
     // Infos / WhatsApp
@@ -80,8 +80,10 @@ const translations = {
     "party_4": "💃 21h00 – Soirée et fiesta !",
     "party_5": "🌅 02h00 – Fin de la fête",
 
-    "info_access_title": "✨ Informations & Accessoires",
+    "info_access_title": "✨ Informations pratiques",
     "info_access_text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
+    "info_access-move":`Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
+    distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
 
     // ---- Sous-sections voyage ----
     "travel_airports_intro": "Trois aéroports principaux pour venir en Galice / nord-Portugal :",
@@ -140,8 +142,9 @@ const translations = {
     "label-oui": "Sí",
     "label-non": "No",
     "label-name": "Nombre y apellido:",
-    "guest-placeholder": "Escribe tu nombre...",
-    "children-text": "",
+    "guest-name": "Escribe tu nombre...",
+    "children-text": `Sus hijos son más que bienvenidos. 
+    Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la boda, les recomendamos considerar dejarlos al cuidado de alguien y venir tranquilos`,
     "submit-button": "Confirmar",
     "thank-you": "Gracias, tu respuesta ha sido guardada",
     // Infos / WhatsApp
@@ -156,7 +159,11 @@ const translations = {
     "rsvp-prompt": "Introduce la contraseña para confirmar tu RSVP:",
 
     "sleep_title": "🏨 Dónde dormir",
-    "sleep_text": "Próximamente compartiremos una lista de alojamientos cerca del lugar de la boda. 🏡",
+    "sleep_text1": "Avant/Après mariage",
+    "sleep_text2": `Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et 
+    ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.`,
+    "sleep_text2": `A titre informatif, il est possible de dormir en tente dans le jardin de mes parents à Oia avec 
+    accès à une douche extérieure et à l’eléctricité.`,
 
     "travel_title": "🗺️ Cómo llegar",
 
@@ -170,8 +177,10 @@ const translations = {
     "party_4": "💃 21:00 – Fiesta y baile",
     "party_5": "🌅 02:00 – Fin de la celebración",
 
-    "info_access_title": "✨ Información y accesorios",
+    "info_access_title": "✨ Información práctica",
     "info_access_text": "Vestimenta: elegante pero cómoda (¡habrá baile 💃!). ¡Los niños son bienvenidos! 👶",
+    "info_access-move":`Recomendamos encarecidamente disponer de un medio de transporte en la zona, ya que las distancias pueden ser largas y el transporte público 
+    no es óptimo en todas partes.`,
 
     // ---- Sub-secciones viaje ----
     "travel_airports_intro": "Tres aeropuertos principales para venir a Galicia o al norte de Portugal:",
