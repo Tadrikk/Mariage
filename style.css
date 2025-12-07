@@ -1,98 +1,98 @@
-  /* Reset simple */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Georgia', serif;
-    background-color: #fafafa; /* beige doux */
-    color: #333; /* texte en gris foncé */
-  }
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fafafa; /* beige doux */
+  color: #333; /* texte en gris foncé */
+}
 
-  /* ---- Bloc Titre ---- */
-  .header-title {
-    text-align: center;
-    padding: 10px 20px;       /* espace haut/bas */
-    background-color: #fff;
-    font-family: 'Parisienne', cursive;
-    color: #000000; /* brun doux pour contraster avec le beige */
-  }
+/* ---- Bloc Titre ---- */
+.header-title {
+  text-align: center;
+  padding: 10px 20px;       /* espace haut/bas */
+  background-color: #fff;
+  font-family: 'Parisienne', cursive;
+  color: #000000; /* brun doux pour contraster avec le beige */
+}
 
-  .header-title h1 {
-    font-size: 43px;
-    margin-bottom: 1px;
-  }
+.header-title h1 {
+  font-size: 43px;
+  margin-bottom: 1px;
+}
 
-  /* ---- EN TETE (commun à toutes les pages)---- */
-  nav {
-    background-color:#fff;
-    display: flex;
-    justify-content: center;
-  }
+/* ---- EN TETE (commun à toutes les pages)---- */
+nav {
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+}
 
-  /* Liste horizontale */
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 0;          /* on va gérer les séparateurs nous-mêmes */
-    padding: 0;
-    margin: 0;
-  }
+/* Liste horizontale */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;          /* on va gérer les séparateurs nous-mêmes */
+  padding: 0;
+  margin: 0;
+}
 
-  /* Items avec séparateurs verticaux */
-  nav ul li {
-    padding: 0 15px;
-    position: relative;
-    display: flex;
-    align-items: center;   /* ✔ centre verticalement le texte */
-    height: 40px;          /* ✔ donne une hauteur homogène au menu (ajuste si besoin) */
-  }
+/* Items avec séparateurs verticaux */
+nav ul li {
+  padding: 0 15px;
+  position: relative;
+  display: flex;
+  align-items: center;   /* ✔ centre verticalement le texte */
+  height: 40px;          /* ✔ donne une hauteur homogène au menu (ajuste si besoin) */
+}
 
-  /* Ajout des barres verticales */
-  nav ul li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;                /* centre verticalement */
-    transform: translateY(-50%);
-    height: 60%;             /* hauteur de la barre */
-    width: 1px;
-    background: #5a3e36;
-  }
+/* Ajout des barres verticales */
+nav ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;                /* centre verticalement */
+  transform: translateY(-50%);
+  height: 60%;             /* hauteur de la barre */
+  width: 1px;
+  background: #5a3e36;
+}
 
-  /* Liens */
-  nav a, nav button {
-    text-decoration: none;
-    color: #000000;
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+/* Liens */
+nav a, nav button {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  nav a:hover, nav button:hover {
-    color: #333;
-  }
+nav a:hover, nav button:hover {
+  color: #333;
+}
 
-  nav button#lang-toggle {
-    background-color: #e6dfd3; /* couleur beige assortie au menu */
-    color: #5a3e36;           /* texte brun */
-    border: none;             /* pas de bordure */
-    cursor: pointer;
-    font-size: 18px;
-    padding: 6px 12px;
-    border-radius: 4px;       /* légèrement arrondi */
-    transition: background 0.3s, color 0.3s;
-  }
+nav button#lang-toggle {
+  background-color: #e6dfd3; /* couleur beige assortie au menu */
+  color: #5a3e36;           /* texte brun */
+  border: none;             /* pas de bordure */
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 4px;       /* légèrement arrondi */
+  transition: background 0.3s, color 0.3s;
+}
 
-  nav button#lang-toggle:hover {
-    background-color: #645844; /* léger changement au survol */
-    color: #333;                /* texte plus foncé au survol */
-  }
+nav button#lang-toggle:hover {
+  background-color: #645844; /* léger changement au survol */
+  color: #333;                /* texte plus foncé au survol */
+}
 
-  /* ---- Accueil PAGE---- */
+/* ---- Accueil PAGE---- */
 .photo-bk {
   position: fixed;
   top: 0;
