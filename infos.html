@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage Clara & Adrián - Infos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="accueil">
+  <header class="header-title">
+    <h1 id="titre-principal">Clara & Adrián</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" id="nav-accueil">Accueil</a></li>
+      <li><a href="infos.html" id="nav-infos">Infos</a></li>
+      <li><a href="rsvp.html" id="nav-rsvp">RSVP</a></li>
+      <!-- <li><a href="galerie.html" id="nav-galerie">Galerie</a></li> -->
+      <li><button id="lang-toggle">ES / FR</button></li>
+    </ul>
+  </nav>
+
+    <!-- Photo background -->
+  <section class="photo-bk">
+    <img src="img/Page_info_bk.jpeg">
+  </section>
+
+  <!-- 📍 Où et quand -->
+  <section class="info-fixe">
+    <div class="info-header">
+      <div class="info-icon">📍</div>
+      <h2 id="infos-title">Où et quand ?</h2>
+    </div>
+
+    <div class="info-details">
+      <p id="infos-ceremonie"><strong>Cérémonie :</strong> 14 août 2026 – <em>Pazo de Xerlis, A Estrada (Galice, Espagne)</em></p>
+      <p id="infos-hour"><strong>Heure :</strong> 14h00</p>
+      <p>            
+        <!-- Google Maps  centré sur Pazo de Xerlís -->
+            <div style="width:100%; height: 150px;">
+              <iframe
+                src="https://www.google.com/maps?q=Pazo+de+Xerl%C3%ADs,+A+Estrada&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+      </p>
+    </div>
+
+    <div class="whatsapp-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+      <div class="whatsapp-text">
+        <p id="infos-whatsapp-text">Rejoignez le groupe pour les infos</p>
+        <button id="whatsappButton" class="whatsapp-btn">Rejoindre le groupe</button>
+        <span id="whatsappLink" style="display:none; margin-left:10px;">
+          <a id="whatsappAnchor" href="#" target="_blank" class="whatsapp-link">👉 Rejoindre</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+    <main class="infos-container">
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" id="sleep-title">🏨 Où dormir ?</div>
+          <div class="accordion-content">
+            <p id="sleep-text1"></p>
+            <p id="sleep-text2"></p>
+            <p id="sleep-text3"></p>
+            <div class="accordion-item">
+              <div class="accordion-header" id="lodging-title">🏨 Logements / Alojamiento</div>
+
+              <div class="accordion-content">
+                
+                <p id="lodging-intro"></p>
+
+                <div class="table-wrapper">
+                  <table class="lodging-table">
+                    <thead>
+                      <tr>
+                        <th id="lodging_col_name">Nom</th>
+                        <th id="lodging_col_distance">Distance</th>
+                        <th id="lodging_col_price">Prix</th>
+                        <th id="lodging_col_capacity">Capacité</th>
+                        <th id="lodging_col_phone">Téléphone</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td id="lodging_1_name">Casa rural de Dora</td>
+                        <td id="lodging_1_distance">300 m</td>
+                        <td id="lodging_1_price">180€ (maison entière)</td>
+                        <td id="lodging_1_capacity">9 personnes</td>
+                        <td id="lodging_1_phone">606 636 699</td>
+                      </tr>
+
+                      <tr>
+                        <td id="lodging_2_name">Casa rural Amarinda</td>
+                        <td id="lodging_2_distance">1.4 km</td>
+                        <td id="lodging_2_price">720€ (4 nuits minimum)</td>
+                        <td id="lodging_2_capacity">15 personnes</td>
+                        <td id="lodging_2_phone">658 800 640</td>
+                      </tr>
+
+                      <tr>
+                        <td id="lodging_3_name">A Casa do Lagoeiro</td>
+                        <td id="lodging_3_distance">3.2 km</td>
+                        <td id="lodging_3_price">80€ chambre (petit-déj inclus)</td>
+                        <td id="lodging_3_capacity">13 personnes</td>
+                        <td id="lodging_3_phone">655 031 397</td>
+                      </tr>
+
+                      <tr>
+                        <td id="lodging_4_name">Hostal A Bombilla</td>
+                        <td id="lodging_4_distance">4.3 km</td>
+                        <td id="lodging_4_price">35–48€ par nuit</td>
+                        <td id="lodging_4_capacity">20 chambres</td>
+                        <td id="lodging_4_phone">986 570 335</td>
+                      </tr>
+
+                      <tr>
+                        <td id="lodging_5_name">Hotel A Estrada Rooms</td>
+                        <td id="lodging_5_distance">3 km</td>
+                        <td id="lodging_5_price">?</td>
+                        <td id="lodging_5_capacity">16 chambres</td>
+                        <td id="lodging_5_phone">653 057 593</td>
+                      </tr>
+
+                      <tr>
+                        <td id="lodging_6_name">Casa de Brea</td>
+                        <td id="lodging_6_distance">3.8 km</td>
+                        <td id="lodging_6_price">490€</td>
+                        <td id="lodging_6_capacity">16 personnes</td>
+                        <td id="lodging_6_phone">627 002 554 / 636 996 149</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="travel-title">🗺️ Comment y aller ?</button>
+        <div class="accordion-content">
+          <!-- --- Section Voyage FR/ES --- -->
+          <div id="travel-section">
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="wedding-title">💍 Informations sur le mariage</button>
+        <div class="accordion-content">
+          <p id="wedding-text">Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="party-title">🎉 Planning fun</button>
+        <div class="accordion-content">
+          <ul>
+            <li id="party-1">🕐 14h00 – Cérémonie</li>
+            <li id="party-2">🍸 16h00 – Cocktail & apéritif</li>
+            <li id="party-3">🍽️ 18h00 – Dîner</li>
+            <li id="party-4">💃 21h00 – Soirée et fiesta !</li>
+            <li id="party-5">🌅 02h00 – Fin de la fête</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" id="info_access-title">✨ Informations pratiques </button>
+        <div class="accordion-content">
+          <p id="info_access-text"></p>
+          <p id="info_access-move"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

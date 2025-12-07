@@ -20,36 +20,12 @@
       <li><a href="index.html" id="nav-accueil">Accueil</a></li>
       <li><a href="infos.html" id="nav-infos">Infos</a></li>
       <li><a href="rsvp.html" id="nav-rsvp">RSVP</a></li>
-      <li><a href="galerie.html" id="nav-galerie">Galerie</a></li>
+      <!-- <li><a href="galerie.html" id="nav-galerie">Galerie</a></li> -->
       <li><button id="lang-toggle">ES / FR</button></li>
     </ul>
   </nav>
 
   <main class="rsvp-container">
-    <form id="rsvp-form">
-      <h2 id="rsvp-title">Serez-vous présent ?</h2>
-
-      <div class="attend-options">
-        <input type="radio" id="rsvp-oui" name="presence" value="oui" checked>
-        <label for="rsvp-oui" id="label-oui">Oui</label>
-
-        <input type="radio" id="rsvp-non" name="presence" value="non">
-        <label for="rsvp-non" id="label-non">Non</label>
-      </div>
-
-      <div class="name-section">
-        <label for="guest-name" id="label-name">Votre nom et prénom :</label>
-        <input list="guest-list" id="guest-name" name="guest-name" placeholder="Tapez votre nom..." required>
-        <datalist id="guest-list"></datalist>
-      </div>
-
-      <div class="children-section">
-        <p class="children-note" id="children-text">Si vous venez avec des enfants, veuillez nous contacter.</p>
-      </div>
-
-      <button type="submit" id="submit-button">Confirmer</button>
-      <p id="thank-you-message"></p>
-    </form>
   </main>
 
   <script src="script.js" defer></script>
