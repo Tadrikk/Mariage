@@ -97,10 +97,11 @@ nav button#lang-toggle:hover {
 }
 
 /* ----------------- HERO / BACKGROUND IMAGE ----------------- */
+/* ----------------- HERO / BACKGROUND IMAGE ----------------- */
 .photo-bk {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 70vh; /* ajuste la hauteur comme tu veux */
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -114,14 +115,13 @@ nav button#lang-toggle:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* image remplie et centrée */
   z-index: -2;
-  clip-path: ellipse(120% 60% at 50% 0%);
   transition: transform 0.45s ease;
 }
 
 .photo-bk img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* léger effet zoom au survol */
 }
 
 .photo-bk::after {
@@ -131,9 +131,10 @@ nav button#lang-toggle:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.25); /* overlay sombre pour lisibilité */
   z-index: 1;
 }
+
 
 /* ----------------- CLARA & ADRIÁN ----------------- */
 .couple-split {
