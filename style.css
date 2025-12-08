@@ -1,4 +1,4 @@
-/* ----------------- RESET / BASE ----------------- */
+/* Reset simple */
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +7,11 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #fafafa;
-  color: #333;
+  background-color: #fafafa; /* beige doux */
+  color: #333; /* texte en gris foncé */
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-/* ----------------- HEADER / NAV ----------------- */
+/* ---- Bloc Titre ---- */
 .header-title {
   text-align: center;
   padding: 10px 20px;
@@ -34,8 +25,9 @@ ul {
   margin-bottom: 1px;
 }
 
+/* ---- EN TETE (commun à toutes les pages)---- */
 nav {
-  background-color: #fff;
+  background-color:#fff;
   display: flex;
   justify-content: center;
 }
@@ -96,25 +88,26 @@ nav button#lang-toggle:hover {
   color: #333;
 }
 
-/* ----------------- HERO / BACKGROUND IMAGE ----------------- */
-/* ----------------- HERO / BACKGROUND IMAGE ----------------- */
+/* ---- Accueil PAGE ---- */
 .photo-bk {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh; /* prend toute la hauteur de l'écran */
   overflow: hidden;
+  z-index: -2;
 }
 
 .photo-bk img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* remplit toute la zone sans déformer */
-  display: block;
+  object-fit: cover; /* remplissage complet de la zone */
   transition: transform 0.3s ease;
 }
 
 .photo-bk img:hover {
-  transform: scale(1.02); /* léger zoom */
+  transform: scale(1.05);
 }
 
 .photo-bk::after {
@@ -122,20 +115,20 @@ nav button#lang-toggle:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.25); /* overlay sombre pour lisibilité */
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.25);
   z-index: 1;
 }
 
-/* ----------------- CLARA & ADRIÁN ----------------- */
+/* ---- Section Clara & Adrián ---- */
 .couple-split {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 60px 6%;
   gap: 60px;
-  background-color: transparent;
+  background-color:transparent;
 }
 
 .person {
@@ -161,7 +154,6 @@ nav button#lang-toggle:hover {
   margin-right: auto;
   padding: 0;
   text-align: justify;
-  white-space: pre-line;
 }
 
 .portrait {
@@ -187,7 +179,25 @@ nav button#lang-toggle:hover {
   border-radius: 1px;
 }
 
-/* ----------------- COUNTDOWN & RSVP ----------------- */
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .couple-split {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .divider {
+    width: 60%;
+    height: 2px;
+  }
+
+  .person p {
+    font-size: 1.0em;
+  }
+}
+
+/* ---- Compte à rebours & RSVP ---- */
 .event-blocks {
   display: flex;
   justify-content: space-between;
@@ -197,10 +207,19 @@ nav button#lang-toggle:hover {
   flex-wrap: nowrap;
 }
 
+.countdown-rsvp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
 .countdown {
   text-align: center;
   padding: 60px 20px;
-  background: transparent;
+  background:transparent;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   color: #d2e2ec;
@@ -241,7 +260,7 @@ nav button#lang-toggle:hover {
   display: block;
   font-size: 2.8em;
   font-weight: bold;
-  color: #012f6b;
+  color:#012f6b;
 }
 
 .time-box small {
@@ -253,6 +272,37 @@ nav button#lang-toggle:hover {
   font-weight: 500;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .countdown {
+    padding: 40px 15px;
+  }
+
+  .event-blocks {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .countdown h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+  }
+
+  .time-box {
+    padding: 15px 20px;
+    min-width: 70px;
+  }
+
+  .time-box span {
+    font-size: 2em;
+  }
+
+  .time-box small {
+    font-size: 0.75em;
+  }
+}
+
+/* ---- RSVP ---- */
 .rsvp-shortcut {
   flex: 0 0 40%;
   text-align: center;
@@ -264,6 +314,12 @@ nav button#lang-toggle:hover {
 
 .rsvp-shortcut h2 {
   font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #d2e2ec;
+}
+
+#rsvp-title-index {
+  font-size: 2em;
   margin-bottom: 20px;
   color: #d2e2ec;
 }
@@ -281,11 +337,23 @@ nav button#lang-toggle:hover {
 
 .rsvp-shortcut .btn:hover {
   background: #24287c;
-  color: #d2e2ec;
+  color:#d2e2ec;
   transform: scale(1.05);
 }
 
-/* ----------------- FORMULAIRE RSVP ----------------- */
+/* Responsive */
+@media (max-width: 768px) {
+  .event-blocks {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .rsvp-shortcut {
+    width: 100%;
+  }
+}
+
+/* ---- FORMULAIRE RSVP PAGE ---- */
 .rsvp-container {
   max-width: 500px;
   margin: 40px auto;
@@ -300,6 +368,7 @@ nav button#lang-toggle:hover {
 }
 
 #rsvp-title {
+  font-family: 'Georgia', serif;
   font-size: 1.8em;
   font-weight: bold;
   margin-bottom: 30px;
@@ -354,6 +423,50 @@ nav button#lang-toggle:hover {
   transform: scale(1.05);
 }
 
+#confirm-message,
+#thank-you-message {
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #5a3e36;
+}
+
+#confirm-yes {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #5a3e36;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#confirm-yes:hover {
+  background-color: #3e2a23;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .rsvp-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .attend-options label,
+  .name-section input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.attend-options input[type="radio"] {
+  margin-right: 8px;
+}
+
 #thank-you-message {
   display: none;
   color: #76d77b;
@@ -370,7 +483,7 @@ nav button#lang-toggle:hover {
   display: block;
 }
 
-/* ----------------- INFOS / ACCORDÉON ----------------- */
+/* ---- INFOS PAGE ---- */
 .info-fixe {
   background: linear-gradient(135deg, #fffaf4, #f4e8da);
   border: 1px solid #e2d5c1;
@@ -384,6 +497,35 @@ nav button#lang-toggle:hover {
   font-family: 'Poppins', sans-serif;
 }
 
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  font-size: 1.8em;
+  background: #f1e3cf;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-fixe h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  color: #3d2a1e;
+  margin: 0;
+}
+
+.info-details p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
 .accordion-item {
   background: #fdfaf6;
   border: 1px solid #e0d6c8;
@@ -391,12 +533,6 @@ nav button#lang-toggle:hover {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.accordion-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .accordion-header {
@@ -407,6 +543,7 @@ nav button#lang-toggle:hover {
   padding: 15px 20px;
   text-align: left;
   border: none;
+  outline: none;
   cursor: pointer;
   font-family: 'Georgia', serif;
   transition: background 0.3s;
@@ -446,50 +583,20 @@ nav button#lang-toggle:hover {
   transform: rotate(-180deg);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .couple-split {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .divider {
-    width: 60%;
-    height: 2px;
-  }
-
-  .person p {
-    font-size: 1em;
-  }
+.accordion-content .table-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .countdown {
-    padding: 40px 15px;
-  }
+.accordion-item {
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  .time-box {
-    padding: 15px 20px;
-    min-width: 70px;
-  }
-
-  .time-box span {
-    font-size: 2em;
-  }
-
-  .time-box small {
-    font-size: 0.75em;
-  }
-
-  .event-blocks {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .rsvp-shortcut {
-    width: 100%;
-  }
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 #clara-text, #adrian-text {
