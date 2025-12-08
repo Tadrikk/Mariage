@@ -101,6 +101,7 @@ nav button#lang-toggle:hover {
   height: 100vh;
   overflow: hidden;
   z-index: -2;
+  clip-path: ellipse(110% 80% at 50% 0%);
 }
 
 /* Image + transition fluide */
