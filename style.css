@@ -8,7 +8,10 @@
 body {
   font-family: 'Georgia', serif;
   background-color: #fafafa; /* beige doux */
-  color: #333; /* texte en gris foncé */
+  color: #333;
+  padding-top: 90px; /* laisse de la place pour le header/nav */
+  width: 100%;
+  height: 100%;
 }
 
 /* ---- Bloc Titre ---- */
