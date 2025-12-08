@@ -107,20 +107,15 @@ nav button#lang-toggle:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* derrière le contenu */
+  z-index: -1; /* derrière tout le contenu */
   overflow: hidden;
 }
 
 .photo-bk img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* rempli tout l'écran sans déformer */
   display: block;
-  transition: transform 0.3s ease;
-}
-
-.photo-bk img:hover {
-  transform: scale(1.05);
 }
 
 /* ---- Section Clara & Adrián ---- */
