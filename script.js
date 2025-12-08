@@ -4,8 +4,7 @@ let currentLang = localStorage.getItem("lang") || "fr";
 const CORRECT_HASH = "88546f608b8f5f0e1451b8da1177b96fec4729f98195755eaf29daba0e597126";
 
 // ----------------- TRANSLATIONS (FR / ES) -----------------
-// J'ai inclus ici les traductions complètes (FR + ES) que tu m'avais fournies.
-// Elles contiennent les textes longs "clara-text" et "adrian-text" ainsi que toutes les clés.
+// Texte FR et ES complets (tels que fournis) — longueurs conservées
 
 const translations = {
   fr: {
@@ -52,7 +51,7 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
     "label-name": "Votre nom et prénom :",
     "guest-name": "Tapez votre nom...",
     "children-text": `Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
-garder et venir seuls`,
+                      garder et venir seuls`,
     "submit-button": "Confirmer",
     "thank-you": "Merci, votre réponse a été enregistrée",
     // Infos / WhatsApp
@@ -65,7 +64,6 @@ garder et venir seuls`,
     "infos-whatsapp-incorrect": "Mot de passe incorrect !",
     "infos-whatsapp-text": "Rejoignez le groupe pour les infos",
     "rsvp-prompt": "Entrez le mot de passe pour confirmer votre RSVP :",
-    
     "sleep_title": "🏨 Où dormir ?",
     "sleep_text": "Nous vous proposerons prochainement une liste d’hébergements à proximité du lieu du mariage. 🏡",
     "travel_title": "🗺️ Comment y aller ?",
@@ -80,8 +78,7 @@ garder et venir seuls`,
     "info_access_title": "✨ Informations pratiques",
     "info_access_text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
     "info_access-move": `Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
-distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
-    // travel details (abridged keys used in infos.html)
+    distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
     "travel_airports_intro": "✈️ Aéroports",
     "travel_airport_scq": "SCQ — Santiago de Compostela (Aéroport Lavacolla) — ~30–40 min",
     "travel_airport_vgo": "VGO — Vigo — ~1h",
@@ -176,20 +173,20 @@ async function sha256Hex(str) {
 // ----------------- APPLY TRANSLATIONS -----------------
 function applyTranslations() {
   if (!translations[currentLang]) currentLang = 'fr';
-  const map = translations[currentLang] || translations['fr'];
+  const map = translations[currentLang];
 
   Object.keys(map).forEach(key => {
     const el = safeGet(key);
     if (!el) return;
+    // Inputs/textarea -> placeholder, otherwise innerHTML (conserve sauts de ligne)
     if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
       el.placeholder = map[key];
     } else {
-      // On remplace le contenu en HTML (permet <strong>/<em> si tu en mets)
       el.innerHTML = map[key];
     }
   });
 
-  // éléments spéciaux
+  // éléments spécifiques
   const wb = safeGet('whatsappButton');
   if (wb && translations[currentLang]['infos-whatsapp-button']) wb.textContent = translations[currentLang]['infos-whatsapp-button'];
 
@@ -205,14 +202,14 @@ function applyTranslations() {
   const lm = safeGet('label-minutes'); if(lm && translations[currentLang]['label-minutes']) lm.textContent = translations[currentLang]['label-minutes'];
   const ls = safeGet('label-seconds'); if(ls && translations[currentLang]['label-seconds']) ls.textContent = translations[currentLang]['label-seconds'];
 
-  // titre principal et nav (si présents)
+  // nav / titre
   const title = safeGet('titre-principal'); if(title && translations[currentLang]['titre-principal']) title.textContent = translations[currentLang]['titre-principal'];
   const navAccueil = safeGet('nav-accueil'); if(navAccueil && translations[currentLang]['nav-accueil']) navAccueil.textContent = translations[currentLang]['nav-accueil'];
   const navInfos = safeGet('nav-infos'); if(navInfos && translations[currentLang]['nav-infos']) navInfos.textContent = translations[currentLang]['nav-infos'];
   const navRsvp = safeGet('nav-rsvp'); if(navRsvp && translations[currentLang]['nav-rsvp']) navRsvp.textContent = translations[currentLang]['nav-rsvp'];
   const navGalerie = safeGet('nav-galerie'); if(navGalerie && translations[currentLang]['nav-galerie']) navGalerie.textContent = translations[currentLang]['nav-galerie'];
 
-  // mettre à jour le texte du bouton de langue (visuel)
+  // update lang button label (visuel)
   const langToggle = safeGet('lang-toggle');
   if (langToggle) langToggle.innerText = (currentLang === 'fr' ? 'ES / FR' : 'ES / FR');
 }
@@ -220,14 +217,11 @@ function applyTranslations() {
 // ----------------- ACCORDION -----------------
 function initAccordion() {
   document.querySelectorAll(".accordion-header").forEach(button => {
-    // keyboard accessible
     button.setAttribute('role', 'button');
     button.tabIndex = 0;
-
     const content = button.nextElementSibling;
     if (!content) return;
 
-    // état initial
     if (content.classList.contains('open')) {
       content.style.maxHeight = content.scrollHeight + "px";
       button.classList.add('active');
@@ -243,6 +237,7 @@ function initAccordion() {
         button.classList.remove('active');
         content.classList.remove('open');
       } else {
+        // recalc scrollHeight to handle images/content loaded
         content.style.maxHeight = content.scrollHeight + "px";
         button.classList.add('active');
         content.classList.add('open');
@@ -306,7 +301,7 @@ function initWhatsApp() {
     const hashHex = await sha256Hex(password);
     if (hashHex === CORRECT_HASH) {
       whatsappLinkSpan.style.display = "inline";
-      // whatsappAnchor.href = "https://chat.whatsapp.com/TON_LIEN"; // si tu as le lien réel
+      // whatsappAnchor.href = "..."; // set real link if you have it
     } else {
       alert(translations[currentLang]['infos-whatsapp-incorrect'] || "Mot de passe incorrect !");
     }
@@ -326,9 +321,18 @@ function initLangToggle() {
 
 // ----------------- INIT -----------------
 document.addEventListener("DOMContentLoaded", () => {
+  // ensure fallback language exists
+  if (!translations[currentLang]) currentLang = 'fr';
   applyTranslations();
   initAccordion();
   initCountdown();
   initWhatsApp();
   initLangToggle();
+
+  // If some content relies on images to calculate heights (accordion), recalc after load
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.accordion-content.open').forEach(c => {
+      c.style.maxHeight = c.scrollHeight + 'px';
+    });
+  });
 });

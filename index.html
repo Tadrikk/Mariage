@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mariage Clara & Adrián - Accueil</title>
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,26 +25,26 @@
       <li><a href="infos.html" id="nav-infos">Infos</a></li>
       <li><a href="rsvp.html" id="nav-rsvp">RSVP</a></li>
       <!-- <li><a href="galerie.html" id="nav-galerie">Galerie</a></li> -->
-      <li><button id="lang-toggle">ES / FR</button></li> <!-- déplacé dans la liste -->
+      <li><button id="lang-toggle" aria-label="Changer la langue">ES / FR</button></li>
     </ul>
   </nav>
 
   <!-- Photo du couple -->
-  <section class="photo-bk">
+  <section class="photo-bk" aria-hidden="true">
     <img src="img/Photo_Mer.JPG" alt="Clara et Adrián au bord de la mer">
   </section>
 
   <!-- Notre histoire (Clara & Adrián) -->
-<section class="couple-split">
+<section class="couple-split" aria-live="polite">
   <!-- Partie Clara -->
   <div class="person left">
     <img src="img/Photo_Mer.JPG" alt="Clara" class="portrait">
     <h2 id="clara-name">Clara</h2>
-    <p id="clara-text">    </p>
+    <p id="clara-text"></p>
   </div>
 
   <!-- Barre verticale de séparation -->
-  <div class="divider"></div>
+  <div class="divider" aria-hidden="true"></div>
 
   <!-- Partie Adrián -->
   <div class="person right">
@@ -58,7 +57,7 @@
 <!-- Compte à rebours et RSVP -->
 <section class="event-blocks">
   <!-- Compte à rebours -->
-  <div class="countdown">
+  <div class="countdown" role="status" aria-live="polite">
     <h2 id="countdown-title">💃🕺 Votre meilleure soirée dansante arrive dans ...</h2>
     <div class="countdown-timer">
       <div class="time-box">
@@ -80,16 +79,14 @@
     </div>
   </div>
 
-  <!-- RSVP -->
+  <!-- RSVP (lien vers formulaire externe) -->
   <div class="rsvp-shortcut">
     <h2 id="rsvp-title-index">Confirmez votre présence</h2>
-    <h2 id="rsvp-datelim-index">Nous avons hâte de célébrer ce jour spécial avec vous !</h2>
-    <a href="rsvp.html" id="rsvp-button"class="btn">RSVP</a>
+    <p id="rsvp-datelim-index">Nous avons hâte de célébrer ce jour spécial avec vous !</p>
+    <a href="https://forms.example.com/ton-formulaire" id="rsvp-button" class="btn" target="_blank" rel="noopener">RSVP</a>
   </div>
 </section>
 
-
-  <!-- Script -->
-  <script src="script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
