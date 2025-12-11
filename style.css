@@ -106,9 +106,27 @@ nav button#lang-toggle:hover {
 /* -------------------- PHOTO DE FOND -------------------- */
 .photo-bk {
   width: 100%;
-  height: 100vh; /* force à la hauteur totale de l'écran */
-  overflow: hidden;
+  height: 100vh; /* prend tout l'écran */
   position: relative;
+  background-image: url('img/Photo_Mer.JPG'); /* ton image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.photo-bk::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* overlay sombre pour texte lisible */
+  z-index: 0;
 }
 
 .photo-bk img {
@@ -122,35 +140,25 @@ nav button#lang-toggle:hover {
   transform: scale(1.05);
 }
 
-.photo-bk::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0,0,0,0.25);
-  z-index: 1;
-}
-
 /* -------------------- Section Clara & Adrián -------------------- */
 .couple-split {
   display: flex;
   justify-content: center;
   align-items: center; /* centre verticalement */
-  padding: 60px 6%;
   gap: 60px;
-  background-color: transparent;
-  min-height: 80vh; /* optionnel : force la section à occuper presque tout l'écran */
+  padding: 60px 6%;
+  min-height: 80vh;
+  color: #fff; /* texte en blanc pour contraster avec le background */
+  position: relative;
+  z-index: 1; /* au-dessus de la photo */
 }
 
 /* Ajuste pour mobile */
 @media (max-width: 900px) {
   .couple-split {
     flex-direction: column;
-    align-items: center;
     gap: 40px;
-    min-height: auto; /* enlève le min-height pour les petits écrans */
+    min-height: auto;
   }
 }
 
