@@ -13,20 +13,22 @@ body {
     height: 100%;
 }
 
-/* Page d'accueil : ne pas ajouter de padding-top au body car le header/nav est dans la section de fond */
+/* Page d'accueil : Fond d'écran fixe et contenu superposé */
 body.accueil {
     padding-top: 0;
     margin: 0;
-    /* Assure que la hauteur est minimale pour l'effet de fond */
-    min-height: 100vh; 
+    position: relative; 
+    min-height: 100vh;
 }
 
-/* Page Infos : ajoute le padding nécessaire pour le header/nav fixe */
+/* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
     padding-top: 90px;
+    position: relative; 
+    min-height: 100vh;
 }
 
-/* Conteneur pour le Titre et la Navigation sur la photo de fond */
+/* -------------------- HEADER & NAVIGATION FIXES -------------------- */
 .header-content-overlay {
     position: fixed;
     top: 0;
@@ -37,27 +39,6 @@ body.infos {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* -------------------- MAIN CONTENT -------------------- */
-
-/* CORRECTION MAJEURE: Le contenu principal de l'accueil doit commencer juste sous le header 
-   et être transparent pour que le fond fixe soit visible partout */
-.main-content {
-    /* Suppression du margin-top: 100vh */
-    margin-top: 90px; /* Démarre sous le header-content-overlay (environ 90px de haut) */
-    position: relative;
-    z-index: 5;
-    background-color: transparent; /* Toujours transparent pour voir le fond fixe */
-    min-height: calc(100vh - 90px); /* Assure une hauteur minimale pour que le fond couvre */
-}
-
-/* Sur la page infos, le contenu suit juste après le header fixé */
-body.infos .main-content {
-    margin-top: 0;
-    min-height: 0;
-}
-
-
-/* -------------------- HEADER / NAV (INCHANGÉ) -------------------- */
 .header-title {
     text-align: center;
     padding: 10px 20px;
@@ -135,31 +116,33 @@ nav button#lang-toggle:hover {
     color: #333;
 }
 
-/* -------------------- PHOTO DE FOND (Pleine hauteur) -------------------- */
+/* -------------------- PHOTO DE FOND (GÉRÉ PAR LA CLASSE BODY) -------------------- */
+
 .photo-bk {
-    position: fixed; /* Reste fixe pour l'effet Parallax sur index */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    background-image: url("img/Photo_Mer.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1; /* Sous le contenu */
+    z-index: 1; 
 }
 
-/* CORRECTION PAGE INFOS : La photo doit prendre 100% de la page scrollable, pas 100vh fixe */
+/* Page Index : Fond fixe qui couvre 100% de la fenêtre (effet Parallax) */
+body.accueil .photo-bk {
+    position: fixed; 
+    height: 100vh; 
+    background-image: url("img/Photo_Mer.JPG");
+}
+
+/* Page Infos : Fond ABSOLU qui couvre 100% de la hauteur de la page (défile avec le contenu) */
 body.infos .photo-bk {
+    position: absolute; 
+    height: 100%; 
     background-image: url("img/Page_info_bk.jpeg");
-    position: absolute; /* Devient absolute (ou relative) pour ne pas être fixe */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Prend la hauteur de la page entière (contenu inclus) */
-    z-index: 0;
 }
 
+/* Overlay sombre pour rendre le texte plus lisible */
 .photo-bk::after {
     content: "";
     position: absolute;
@@ -167,8 +150,32 @@ body.infos .photo-bk {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4); /* overlay sombre pour texte lisible */
+    background: rgba(0,0,0,0.4); 
     z-index: 0;
+}
+
+
+/* -------------------- MAIN CONTENT (SUPERPOSITION) -------------------- */
+
+body.accueil .main-content {
+    /* Le contenu commence juste sous le header fixe */
+    margin-top: 90px; 
+    position: relative;
+    z-index: 5;
+    background-color: transparent; 
+}
+
+body.infos .main-content {
+    margin-top: 0;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+}
+
+/* Assure que toutes les sections de contenu sont bien au-dessus du fond */
+.couple-split, .event-blocks, .info-fixe {
+    position: relative;
+    z-index: 5; 
 }
 
 /* -------------------- Section Clara & Adrián (rendue transparente) -------------------- */
@@ -178,10 +185,7 @@ body.infos .photo-bk {
     align-items: flex-start;
     gap: 60px;
     padding: 60px 6%;
-    /* min-height: 80vh; Retiré pour un meilleur enchaînement */
     color: #fff;
-    position: relative;
-    z-index: 1;
     background-color: transparent; 
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
@@ -237,7 +241,6 @@ body.infos .photo-bk {
 
 /* -------------------- Compte à rebours & RSVP -------------------- */
 .event-blocks {
-    /* CORRECTION : Rendu transparent pour que le fond fixe soit visible jusqu'au bas */
     background-color: transparent; 
     display: flex;
     justify-content: space-between;
@@ -245,15 +248,13 @@ body.infos .photo-bk {
     gap: 40px;
     padding: 40px 10%;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 2; /* S'assure que ces blocs sont bien au-dessus */
 }
 
-/* Les conteneurs internes doivent avoir un fond opaque pour un texte lisible */
+/* Les conteneurs internes ont un fond semi-opaque pour la lisibilité sur la photo de fond */
 .countdown {
     text-align: center;
     padding: 60px 20px;
-    background: rgba(90, 62, 54, 0.85); /* Fond opaque pour la lisibilité */
+    background: rgba(90, 62, 54, 0.85); 
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     color: #d2e2ec;
@@ -308,7 +309,7 @@ body.infos .photo-bk {
 .rsvp-shortcut {
     flex: 1 1 40%;
     text-align: center;
-    background: rgba(253, 250, 246, 0.9); /* Fond opaque pour la lisibilité */
+    background: rgba(253, 250, 246, 0.9); 
     padding: 40px 20px;
     border-radius: 12px;
     border: 1px solid #e2d5c1;
@@ -345,12 +346,12 @@ body.infos .photo-bk {
     transform: scale(1.05);
 }
 
-/* -------------------- FORMULAIRE RSVP / INFOS PAGE (INCHANGÉS) -------------------- */
+/* -------------------- FORMULAIRE RSVP -------------------- */
 .rsvp-container {
     max-width: 500px;
     margin: 40px auto;
     padding: 30px 25px;
-    background: rgba(255, 255, 255, 0.9); /* Rendu légèrement transparent sur RSVP */
+    background: rgba(255, 255, 255, 0.9); 
     border: 1px solid #e2d5c1;
     border-radius: 18px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.1);
@@ -433,7 +434,7 @@ body.infos .photo-bk {
 
 /* -------------------- INFOS PAGE -------------------- */
 .info-fixe {
-    background: rgba(255, 250, 244, 0.95); /* Rendu opaque/semi-transparent */
+    background: rgba(255, 250, 244, 0.95); 
     border: 1px solid #e2d5c1;
     border-radius: 18px;
     padding: 30px;
@@ -514,7 +515,7 @@ body.infos .photo-bk {
     white-space: pre-line;
 }
 
-/* TABLEAU (INCHANGÉ) */
+/* -------------------- TABLEAU -------------------- */
 .lodging-table {
     width: 100%;
     border-collapse: collapse;
@@ -583,6 +584,12 @@ body.infos .photo-bk {
     .rsvp-shortcut {
         flex: 1 1 100%;
         margin-top: 30px;
+    }
+    .countdown-timer {
+        gap: 10px;
+    }
+    .time-box {
+        padding: 15px 18px;
     }
 }
 
