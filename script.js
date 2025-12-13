@@ -1,8 +1,5 @@
 // script.js — fichier central corrigé et complet
 
-let currentLang = localStorage.getItem("lang") || "fr";
-const CORRECT_HASH = "88546f608b8f5f0e1451b8da1177b96fec4729f98195755eaf29daba0e597126";
-
 // ----------------- TRANSLATIONS (FR / ES) -----------------
 const translations = {
     fr: {
@@ -36,7 +33,7 @@ Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise (car je suis 
 Notre premier sujet de discussion fut sur la Galice, et c’est finalement là que nous concrétisons notre union.
 
 J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce moment avec nous (vous ne serez pas déçus, promis !)`,
-        "titre-principal": "Clara & Adrian",
+        "titre-principal": "Clara et Adrian",
         "countdown-title": "Le grand jour arrive dans",
         "label-days": "JOURS",
         "label-hours": "HEURES",
@@ -145,7 +142,7 @@ Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenza
 Ya tenía mi estrategia para hablarle y ella, inocente, no sospechaba nada.
 Esa noche comenzó nuestra historia.
 
-Hemos vivido muchas experiencias bonitas: cocinar en su casa, pasar noches pidiendo comida sana... y ganando peso. Conocer a su familia y descubrir su organización legendaria, no querer bailar salsa con ella para acabar bailando con alguien que me convenció en 10 segundos, darme cuenta en su primera reunión con mi familia en Galicia que ella les quiere más que a mí, y finalmente dejar mi ciudad natal para vivir con ella en Luxemburgo. No olvido todos los viajes que hemos hecho (Indonesia, Guadalupe, Jordania, Japón, y más), gracias a los cuales descubrí partes de mí desconocidas.
+Hemos vivido muchas experiencias bonitas: cocinar en su casa, pasar noches pidiendo comida sana... y ganando peso. Conocer a su familia y descubrir su organización legendaria, no querer bailar salsa con ella para acabar bailando con alguien que me convenció en 10 segundos, darme cuenta en su primera reunión con mi familia en Galicia que ella les quiere más que a mí, y finalmente dejar mi ciudad natal para vivir con ella en Luxemburgo. No olvido todos los viajes que hemos hecho (Indonésie, Guadeloupe, Jordania, Japón, y más), gracias a los cuales descubrí partes de mí desconocidas.
 
 El 19 de mayo de 2025 le pedí matrimonio y, sin sorpresa (porque siempre estoy seguro), dijo que sí.
 Nuestra primera conversación fue sobre Galicia, y ahí vamos a celebrarlo.
@@ -302,6 +299,40 @@ function startCountdown() {
     }, 1000);
 }
 
+// Fonction d'initialisation de l'accordéon (appelée à chaque chargement/traduction)
+function initAccordion() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        // Supprimer l'écouteur s'il existe déjà pour éviter les duplications après les changements de langue
+        header.removeEventListener('click', toggleAccordion);
+        // Ajouter le nouvel écouteur
+        header.addEventListener('click', toggleAccordion);
+    });
+}
+
+function toggleAccordion() {
+    const header = this;
+    const content = header.nextElementSibling;
+    
+    // Fermer tous les autres accordéons
+    document.querySelectorAll('.accordion-header').forEach(h => {
+        if (h !== header && h.classList.contains('active')) {
+            h.classList.remove('active');
+            h.nextElementSibling.style.maxHeight = null;
+        }
+    });
+
+    // Ouvrir ou fermer l'accordéon cliqué
+    header.classList.toggle('active');
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        // Utiliser scrollHeight pour déterminer la hauteur nécessaire
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
+
+
 // Lancement à l'ouverture de la page
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Appliquer les traductions
@@ -319,22 +350,15 @@ document.addEventListener('DOMContentLoaded', () => {
             currentLang = currentLang === 'fr' ? 'es' : 'fr';
             localStorage.setItem("lang", currentLang);
             applyTranslations(currentLang);
+            // Réinitialiser les accordéons après le changement de langue
+            if (document.body.classList.contains('infos')) {
+                 initAccordion();
+            }
         });
     }
 
-    // 4. Configuration de l'accordéon (page infos)
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-            const content = header.nextElementSibling;
-            header.classList.toggle('active');
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                // Déplie l'accordéon en fonction de sa taille
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    });
-
+    // 4. Configuration de l'accordéon (page infos) - Appel initial
+    if (document.body.classList.contains('infos')) {
+        initAccordion();
+    }
 });
