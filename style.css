@@ -254,7 +254,7 @@ body.infos .main-content {
 .countdown {
     text-align: center;
     padding: 60px 20px;
-    background: rgba(90, 62, 54, 0.85); 
+    background-color: transparent;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     color: #d2e2ec;
@@ -309,7 +309,7 @@ body.infos .main-content {
 .rsvp-shortcut {
     flex: 1 1 40%;
     text-align: center;
-    background: rgba(253, 250, 246, 0.9); 
+    background-color: transparent;
     padding: 40px 20px;
     border-radius: 12px;
     border: 1px solid #e2d5c1;
@@ -319,11 +319,11 @@ body.infos .main-content {
 .rsvp-shortcut h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #5a3e36;
+    color: #d2e2ec;
 }
 
 #rsvp-datelim-index {
-    color: #5a3e36;
+    color: #d2e2ec;
     margin-bottom: 25px;
     display: block;
     font-style: italic;
