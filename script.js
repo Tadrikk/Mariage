@@ -38,7 +38,7 @@ Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise (car je suis 
 Notre premier sujet de discussion fut sur la Galice, et c’est finalement là que nous concrétisons notre union.
 
 J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce moment avec nous (vous ne serez pas déçus, promis !)`,
-    "titre-principal": "test",
+    "titre-principal": "Clara et Adrian",
     "countdown-title": "Le grand jour arrive dans",
     "label-days": "JOURS",
     "label-hours": "HEURES",

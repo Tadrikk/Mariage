@@ -1,518 +1,584 @@
 /* -------------------- RESET -------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fafafa;
-  color: #333;
-  padding-top: 110px; /* header + nav */
-  width: 100%;
-  height: 100%;
+    font-family: 'Georgia', serif;
+    background-color: #fafafa;
+    color: #333;
+    width: 100%;
+    height: 100%;
 }
 
+/* Page d'accueil : ne pas ajouter de padding-top au body car le header/nav est dans la section de fond */
 body.accueil {
-  margin: 0;
-  padding-top: 100vh;
+    padding-top: 0;
+    margin: 0;
+}
+
+/* Page Infos : ajoute le padding nécessaire pour le header/nav fixe */
+body.infos {
+    /* Taille approximative du header (43px) + nav (40px) + padding/marges */
+    padding-top: 90px;
+}
+
+/* Conteneur pour le Titre et la Navigation sur la photo de fond */
+.header-content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Sur la page d'accueil, on veut que le contenu (story/countdown) commence sous la partie de fond */
+.main-content {
+    margin-top: 100vh; /* Commence après la section pleine hauteur (photo-bk) */
+    position: relative;
+    z-index: 5; /* Assure que le contenu se place au-dessus de la photo de fond */
+    background-color: #fafafa; /* Définit un fond pour le contenu scrollable */
+}
+
+/* Sur la page infos, le contenu suit juste après le header fixé */
+body.infos .main-content {
+    margin-top: 0;
 }
 
 /* -------------------- HEADER -------------------- */
 .header-title {
-  text-align: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  font-family: 'Parisienne', cursive;
-  color: #000;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Parisienne', cursive;
+    color: #000;
 }
 
 .header-title h1 {
-  font-size: 43px;
-  margin-bottom: 1px;
+    font-size: 43px;
+    margin-bottom: 0; /* Supprime la marge pour coller à la nav */
 }
 
 /* -------------------- NAV -------------------- */
 nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 70px; /* sous le header */
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative; /* N'est plus fixé ou décalé, suit juste le header */
+    width: 100%;
+    z-index: 10;
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); -> Déplacé sur .header-content-overlay */
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 0;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-  padding: 0 15px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 40px;
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
 }
 
 nav ul li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 60%;
-  width: 1px;
-  background: #5a3e36;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 1px;
+    background: #5a3e36;
 }
 
 nav a, nav button {
-  text-decoration: none;
-  color: #000;
-  font-size: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 nav a:hover, nav button:hover {
-  color: #333;
+    color: #333;
 }
 
 nav button#lang-toggle {
-  background-color: #e6dfd3;
-  color: #5a3e36;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.3s, color 0.3s;
+    background-color: #e6dfd3;
+    color: #5a3e36;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav button#lang-toggle:hover {
-  background-color: #645844;
-  color: #333;
+    background-color: #645844;
+    color: #333;
 }
 
-/* -------------------- PHOTO DE FOND -------------------- */
+/* -------------------- PHOTO DE FOND (Pleine hauteur) -------------------- */
 .photo-bk {
-  position: fixed;
-  inset: 0;
-  height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
 
-  background-image: url("img/Photo_Mer.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("img/Photo_Mer.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  z-index: -1;
+    z-index: 1; /* Sous le header/nav */
 }
 
+/* Ajoute un fond sur la page infos si besoin d'une autre image */
+body.infos .photo-bk {
+    background-image: url("img/Page_info_bk.jpeg");
+    height: 300px; /* Exemple de hauteur réduite pour page d'infos */
+    position: relative; /* N'est pas fixé sur la page infos pour laisser le contenu défiler */
+}
 
 .photo-bk::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4); /* overlay sombre pour texte lisible */
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); /* overlay sombre pour texte lisible */
+    z-index: 0;
 }
 
-.photo-bk img {
-  width: 100%;
-  height: 100%; /* remplissage total */
-  object-fit: cover; /* recadre correctement sans déformer */
-  display: block;
-}
-
-.photo-bk img:hover {
-  transform: scale(1.05);
-}
-
-/* -------------------- Section Clara & Adrián -------------------- */
+/* -------------------- Section Clara & Adrián (corrigé alignement) -------------------- */
 .couple-split {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* centre verticalement */
-  gap: 60px;
-  padding: 60px 6%;
-  min-height: 80vh;
-  color: #fff; /* texte en blanc pour contraster avec le background */
-  position: relative;
-  z-index: 1; /* au-dessus de la photo */
-}
-
-/* Ajuste pour mobile */
-@media (max-width: 900px) {
-  .couple-split {
-    flex-direction: column;
-    gap: 40px;
-    min-height: auto;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Centre au top pour aligner les images */
+    gap: 60px;
+    padding: 60px 6%;
+    min-height: 80vh;
+    color: #333; /* Texte clair sur fond blanc/clair */
+    position: relative;
+    z-index: 1;
+    background-color: #fafafa;
 }
 
 .person {
-  flex: 1.2;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Georgia', serif;
-  margin-top: 25px;
+    flex: 1.2;
+    text-align: center;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin-top: 0; /* Supprimé margin-top pour alignement */
 }
 
 .person h2 {
-  font-family: 'Parisienne', cursive;
-  font-size: 2.5em;
-  margin-top: 20px;
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5em;
+    margin-top: 20px;
 }
 
 .person p {
-  font-size: 1.1em;
-  margin-top: 10px;
-  line-height: 1.8;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  text-align: justify;
+    font-size: 1.1em;
+    margin-top: 10px;
+    line-height: 1.8;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: justify;
 }
 
 .portrait {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #5a3e36;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #5a3e36;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portrait:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .divider {
-  width: 2px;
-  background-color: #5a3e36;
-  align-self: stretch;
-  opacity: 0.5;
-  border-radius: 1px;
+    width: 2px;
+    background-color: #5a3e36;
+    align-self: stretch;
+    opacity: 0.5;
+    border-radius: 1px;
 }
 
-/* -------------------- Compte à rebours & RSVP -------------------- */
+/* -------------------- Compte à rebours & RSVP (corrigé couleur texte) -------------------- */
 .event-blocks {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 40px 10%;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 10%;
+    flex-wrap: wrap;
+    background-color: #f7f3eb; /* Couleur de fond pour cette section */
 }
 
 .countdown {
-  text-align: center;
-  padding: 60px 20px;
-  background: transparent;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  color: #d2e2ec;
-  margin: 20px auto;
-  flex: 1 1 55%;
+    text-align: center;
+    padding: 60px 20px;
+    background: #5a3e36; /* Exemple de couleur pour le compte à rebours */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #d2e2ec;
+    margin: 20px auto;
+    flex: 1 1 55%;
 }
 
 .countdown h2 {
-  font-size: 2em;
-  margin-bottom: 40px;
-  color: #d2e2ec;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #d2e2ec;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 .countdown-timer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .time-box {
-  background: #d2e2ec;
-  border-radius: 12px;
-  padding: 20px 25px;
-  min-width: 90px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+    background: #d2e2ec;
+    border-radius: 12px;
+    padding: 20px 25px;
+    min-width: 90px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 .time-box:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .time-box span {
-  display: block;
-  font-size: 2.8em;
-  font-weight: bold;
-  color:#012f6b;
+    display: block;
+    font-size: 2.8em;
+    font-weight: bold;
+    color:#012f6b;
 }
 
 .time-box small {
-  display: block;
-  font-size: 0.9em;
-  margin-top: 5px;
-  letter-spacing: 1px;
-  color: #000;
-  font-weight: 500;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 500;
 }
 
 .rsvp-shortcut {
-  flex: 1 1 40%;
-  text-align: center;
-  background: transparent;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    flex: 1 1 40%;
+    text-align: center;
+    background: #fdfaf6; /* Fond pour la boîte RSVP */
+    padding: 40px 20px;
+    border-radius: 12px;
+    border: 1px solid #e2d5c1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .rsvp-shortcut h2 {
-  font-size: 1.4em;
-  margin-bottom: 20px;
-  color: #d2e2ec;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #5a3e36; /* Couleur du titre (Serez-vous présent?) */
+}
+
+/* Texte sous le titre (Nous avons hâte de célébrer...) - utilise la même couleur que le titre h2 */
+#rsvp-datelim-index {
+    color: #5a3e36; /* Assure la même couleur que le h2 */
+    margin-bottom: 25px;
+    display: block;
+    font-style: italic;
 }
 
 .rsvp-shortcut .btn {
-  display: inline-block;
-  padding: 15px 40px;
-  font-size: 22px;
-  background: #d2e2ec;
-  color: #012f6b;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 22px;
+    background: #d2e2ec;
+    color: #012f6b;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .rsvp-shortcut .btn:hover {
-  background: #24287c;
-  color:#d2e2ec;
-  transform: scale(1.05);
+    background: #24287c;
+    color:#d2e2ec;
+    transform: scale(1.05);
 }
 
 /* -------------------- FORMULAIRE RSVP -------------------- */
 .rsvp-container {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 30px 25px;
-  background: transparent;
-  border: 1px solid #e2d5c1;
-  border-radius: 18px;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-  color: #4b3b2b;
-  text-align: center;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: transparent;
+    border: 1px solid #e2d5c1;
+    border-radius: 18px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    color: #4b3b2b;
+    text-align: center;
 }
 
 #rsvp-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #5a3e36;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #5a3e36;
 }
 
 .attend-options,
 .name-section {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .attend-options input[type="radio"] {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
 .attend-options label {
-  margin-right: 20px;
-  font-size: 1.1em;
-  cursor: pointer;
+    margin-right: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
 .name-section input[type="text"] {
-  padding: 10px;
-  font-size: 1em;
-  width: 80%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
 }
 
 .children-note {
-  color: #000;
-  font-style: italic;
-  margin-top: 5px;
-  font-size: 0.9em;
+    color: #000;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.9em;
 }
 
 #submit-button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  font-size: 18px;
-  border-radius: 8px;
-  background-color: #c2185b;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #submit-button:hover {
-  background-color: #a3154d;
-  transform: scale(1.05);
+    background-color: #a3154d;
+    transform: scale(1.05);
 }
 
 #thank-you-message {
-  display: none;
-  color: #76d77b;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-top: 20px;
-  background: #ecf0ea;
-  border: 0.5px solid #a5d6a7;
-  padding: 10px 20px;
-  border-radius: 8px;
+    display: none;
+    color: #76d77b;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background: #ecf0ea;
+    border: 0.5px solid #a5d6a7;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 #thank-you-message.show {
-  display: block;
+    display: block;
 }
 
 /* -------------------- INFOS PAGE -------------------- */
 .info-fixe {
-  background: linear-gradient(135deg, #fffaf4, #f4e8da);
-  border: 1px solid #e2d5c1;
-  border-radius: 18px;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 700px;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-  color: #4b3b2b;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fffaf4, #f4e8da);
+    border: 1px solid #e2d5c1;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    color: #4b3b2b;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .accordion-item {
-  background: #fdfaf6;
-  border: 1px solid #e0d6c8;
-  border-radius: 14px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fdfaf6;
+    border: 1px solid #e0d6c8;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .accordion-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .accordion-header {
-  width: 100%;
-  background: #f5f0e6;
-  color: #5a3e36;
-  font-size: 1.2em;
-  padding: 15px 20px;
-  text-align: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-family: 'Georgia', serif;
-  transition: background 0.3s;
+    width: 100%;
+    background: #f5f0e6;
+    color: #5a3e36;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    transition: background 0.3s;
 }
 
 .accordion-header:hover {
-  background: #e6dfd3;
+    background: #e6dfd3;
 }
 
 .accordion-header.active {
-  background: #d8c9b5;
-  color: #3e2a23;
+    background: #d8c9b5;
+    color: #3e2a23;
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  transition: max-height 0.4s ease;
-  background: #f7f3eb;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.4s ease;
+    background: #f7f3eb;
 }
 
 .accordion-content p, .accordion-content ul {
-  padding: 15px 0;
-  color: #4b3c32;
-  line-height: 1.6;
+    padding: 15px 0;
+    color: #4b3c32;
+    line-height: 1.6;
 }
 
 .accordion-header::after {
-  content: "▼";
-  font-size: 0.8em;
-  float: right;
-  transition: transform 0.3s;
+    content: "▼";
+    font-size: 0.8em;
+    float: right;
+    transition: transform 0.3s;
 }
 
 .accordion-header.active::after {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 #clara-text, #adrian-text {
-  white-space: pre-line;
+    white-space: pre-line;
+}
+
+/* TABLEAU (Nouveau Style) */
+
+.lodging-table {
+    width: 100%;
+    border-collapse: collapse; /* Enlève l'espace entre les bordures */
+    margin: 20px 0;
+    font-size: 0.9em;
+    border: 1px solid #d8c9b5; /* Cadre global */
+    border-radius: 8px; /* Bords arrondis pour le tableau */
+    overflow: hidden; /* Pour que les bords arrondis s'appliquent */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.lodging-table caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #5a3e36;
+}
+
+.lodging-table th, .lodging-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6dfd3; /* Ligne de séparation douce */
+}
+
+.lodging-table th {
+    background-color: #f5f0e6;
+    color: #3e2a23;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.lodging-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc; /* Alternance de couleurs pour la lisibilité */
+}
+
+.lodging-table tbody tr:hover {
+    background-color: #fff8f0; /* Effet au survol */
 }
 
 /* -------------------- RESPONSIVE -------------------- */
 @media (max-width: 900px) {
-  .couple-split {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .divider {
-    width: 60%;
-    height: 2px;
-  }
+    .couple-split {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .divider {
+        width: 60%;
+        height: 2px;
+    }
+
+    body.accueil .main-content {
+        margin-top: 100vh; /* Garde la pleine hauteur sur mobile */
+    }
 }
 
 @media (max-width: 768px) {
-  .event-blocks {
-    flex-direction: column;
-    align-items: center;
-  }
-  .countdown {
-    flex: 1 1 100%;
-  }
-  .rsvp-shortcut {
-    flex: 1 1 100%;
-    margin-top: 30px;
-  }
+    .event-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .countdown {
+        flex: 1 1 100%;
+    }
+    .rsvp-shortcut {
+        flex: 1 1 100%;
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 500px) {
-  .rsvp-container {
-    width: 90%;
-    padding: 15px;
-  }
-  .attend-options label,
-  .name-section input[type="text"] {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+    .rsvp-container {
+        width: 90%;
+        padding: 15px;
+    }
+    .attend-options label,
+    .name-section input[type="text"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
