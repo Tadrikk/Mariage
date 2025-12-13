@@ -21,7 +21,6 @@ body.accueil {
 
 /* Page Infos : ajoute le padding nécessaire pour le header/nav fixe */
 body.infos {
-    /* Taille approximative du header (43px) + nav (40px) + padding/marges */
     padding-top: 90px;
 }
 
@@ -38,10 +37,12 @@ body.infos {
 
 /* Sur la page d'accueil, on veut que le contenu (story/countdown) commence sous la partie de fond */
 .main-content {
-    margin-top: 100vh; /* Commence après la section pleine hauteur (photo-bk) */
+    /* CONSERVÉ : Pousse le contenu DÉFILABLE sous la zone de photo pleine hauteur (100vh) */
+    margin-top: 100vh;
     position: relative;
-    z-index: 5; /* Assure que le contenu se place au-dessus de la photo de fond */
-    background-color: #fafafa; /* Définit un fond pour le contenu scrollable */
+    z-index: 5;
+    /* CORRECTION : Rendu transparent pour voir l'image de fond fixe */
+    background-color: transparent;
 }
 
 /* Sur la page infos, le contenu suit juste après le header fixé */
@@ -59,7 +60,7 @@ body.infos .main-content {
 
 .header-title h1 {
     font-size: 43px;
-    margin-bottom: 0; /* Supprime la marge pour coller à la nav */
+    margin-bottom: 0;
 }
 
 /* -------------------- NAV -------------------- */
@@ -67,10 +68,9 @@ nav {
     background-color: #fff;
     display: flex;
     justify-content: center;
-    position: relative; /* N'est plus fixé ou décalé, suit juste le header */
+    position: relative;
     width: 100%;
     z-index: 10;
-    /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); -> Déplacé sur .header-content-overlay */
 }
 
 nav ul {
@@ -131,18 +131,16 @@ nav button#lang-toggle:hover {
 
 /* -------------------- PHOTO DE FOND (Pleine hauteur) -------------------- */
 .photo-bk {
-    position: fixed;
+    position: fixed; /* Reste fixe pour l'effet Parallax */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Prend toute la hauteur de l'écran */
-
+    height: 100vh;
     background-image: url("img/Photo_Mer.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    z-index: 1; /* Sous le header/nav */
+    z-index: 1; /* Sous le contenu */
 }
 
 /* Ajoute un fond sur la page infos si besoin d'une autre image */
@@ -163,32 +161,35 @@ body.infos .photo-bk {
     z-index: 0;
 }
 
-/* -------------------- Section Clara & Adrián (corrigé alignement) -------------------- */
+/* -------------------- Section Clara & Adrián (rendue transparente) -------------------- */
 .couple-split {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Centre au top pour aligner les images */
+    align-items: flex-start;
     gap: 60px;
     padding: 60px 6%;
     min-height: 80vh;
-    color: #333; /* Texte clair sur fond blanc/clair */
+    color: #fff; /* Couleur du texte claire sur la photo sombre */
     position: relative;
     z-index: 1;
-    background-color: #fafafa;
+    /* CORRECTION : Rendu transparent pour voir l'image fixe derrière */
+    background-color: transparent; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Ajout d'ombre pour le texte sur l'image */
 }
 
 .person {
     flex: 1.2;
     text-align: center;
-    color: #333;
+    color: #fff;
     font-family: 'Georgia', serif;
-    margin-top: 0; /* Supprimé margin-top pour alignement */
+    margin-top: 0;
 }
 
 .person h2 {
     font-family: 'Parisienne', cursive;
     font-size: 2.5em;
     margin-top: 20px;
+    color: #fff;
 }
 
 .person p {
@@ -207,39 +208,41 @@ body.infos .photo-bk {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #5a3e36;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    /* CORRECTION : Bordure blanche pour contraste sur l'image de fond sombre */
+    border: 4px solid #fff; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portrait:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
 .divider {
     width: 2px;
-    background-color: #5a3e36;
+    background-color: #fff; /* Ligne de séparation blanche */
     align-self: stretch;
     opacity: 0.5;
     border-radius: 1px;
 }
 
-/* -------------------- Compte à rebours & RSVP (corrigé couleur texte) -------------------- */
+/* -------------------- Compte à rebours & RSVP -------------------- */
 .event-blocks {
+    /* CONSERVE SON FOND : pour "arrêter" l'effet de transparence derrière */
+    background-color: #f7f3eb; 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
     padding: 40px 10%;
     flex-wrap: wrap;
-    background-color: #f7f3eb; /* Couleur de fond pour cette section */
 }
 
 .countdown {
     text-align: center;
     padding: 60px 20px;
-    background: #5a3e36; /* Exemple de couleur pour le compte à rebours */
+    background: #5a3e36;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     color: #d2e2ec;
@@ -294,7 +297,7 @@ body.infos .photo-bk {
 .rsvp-shortcut {
     flex: 1 1 40%;
     text-align: center;
-    background: #fdfaf6; /* Fond pour la boîte RSVP */
+    background: #fdfaf6;
     padding: 40px 20px;
     border-radius: 12px;
     border: 1px solid #e2d5c1;
@@ -304,12 +307,11 @@ body.infos .photo-bk {
 .rsvp-shortcut h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #5a3e36; /* Couleur du titre (Serez-vous présent?) */
+    color: #5a3e36;
 }
 
-/* Texte sous le titre (Nous avons hâte de célébrer...) - utilise la même couleur que le titre h2 */
 #rsvp-datelim-index {
-    color: #5a3e36; /* Assure la même couleur que le h2 */
+    color: #5a3e36;
     margin-bottom: 25px;
     display: block;
     font-style: italic;
@@ -497,16 +499,16 @@ body.infos .photo-bk {
     white-space: pre-line;
 }
 
-/* TABLEAU (Nouveau Style) */
+/* TABLEAU */
 
 .lodging-table {
     width: 100%;
-    border-collapse: collapse; /* Enlève l'espace entre les bordures */
+    border-collapse: collapse;
     margin: 20px 0;
     font-size: 0.9em;
-    border: 1px solid #d8c9b5; /* Cadre global */
-    border-radius: 8px; /* Bords arrondis pour le tableau */
-    overflow: hidden; /* Pour que les bords arrondis s'appliquent */
+    border: 1px solid #d8c9b5;
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
@@ -520,7 +522,7 @@ body.infos .photo-bk {
 .lodging-table th, .lodging-table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #e6dfd3; /* Ligne de séparation douce */
+    border-bottom: 1px solid #e6dfd3;
 }
 
 .lodging-table th {
@@ -532,11 +534,11 @@ body.infos .photo-bk {
 }
 
 .lodging-table tbody tr:nth-child(even) {
-    background-color: #fcfcfc; /* Alternance de couleurs pour la lisibilité */
+    background-color: #fcfcfc;
 }
 
 .lodging-table tbody tr:hover {
-    background-color: #fff8f0; /* Effet au survol */
+    background-color: #fff8f0;
 }
 
 /* -------------------- RESPONSIVE -------------------- */
@@ -552,7 +554,7 @@ body.infos .photo-bk {
     }
 
     body.accueil .main-content {
-        margin-top: 100vh; /* Garde la pleine hauteur sur mobile */
+        margin-top: 100vh;
     }
 }
 
