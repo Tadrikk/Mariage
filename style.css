@@ -5,12 +5,17 @@
     box-sizing: border-box;
 }
 
+/* 🚨 CORRECTION FOND 🚨: Assurez-vous que HTML et BODY prennent toute la hauteur */
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Georgia', serif;
     background-color: #fafafa;
     color: #333;
     width: 100%;
-    height: 100%;
+    height: auto; /* La hauteur doit pouvoir s'étendre */
 }
 
 /* Page d'accueil : Fond d'écran fixe et contenu superposé */
@@ -18,14 +23,14 @@ body.accueil {
     padding-top: 0;
     margin: 0;
     position: relative; 
-    min-height: 100vh;
+    min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
 /* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
     padding-top: 90px;
     position: relative; 
-    min-height: 100vh;
+    min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
 /* -------------------- HEADER & NAVIGATION FIXES -------------------- */
@@ -135,10 +140,11 @@ body.accueil .photo-bk {
     background-image: url("img/Photo_Mer.JPG");
 }
 
-/* Page Infos : Fond ABSOLU qui couvre 100% de la hauteur de la page (défile avec le contenu) */
+/* 🚨 CORRECTION FOND 🚨 Page Infos : Fond ABSOLU qui couvre la hauteur du CONTENU */
 body.infos .photo-bk {
     position: absolute; 
-    height: 100%; 
+    height: auto; /* Permet à la hauteur de s'adapter au contenu */
+    min-height: 100%; /* S'assure qu'elle couvre au moins la hauteur du body (qui est min-height: 100vh) */
     background-image: url("img/Page_info_bk.jpeg");
 }
 
@@ -309,7 +315,7 @@ body.infos .main-content {
 .rsvp-shortcut {
     flex: 1 1 40%;
     text-align: center;
-    background-color: rgba(0, 128, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -485,18 +491,34 @@ body.infos .main-content {
     color: #3e2a23;
 }
 
+/* 🚨 CORRECTION ACCORDÉON 🚨: Assure le fonctionnement de l'animation */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    padding: 0 20px;
-    transition: max-height 0.4s ease;
+    /* Ajout du 'padding' dans la transition pour un effet plus doux */
+    transition: max-height 0.4s ease, padding 0.4s ease;
     background: #f7f3eb;
+    /* Retrait du padding vertical pour ne pas bloquer la hauteur à 0 quand l'accordéon est fermé */
+    padding: 0 20px; 
+}
+
+.accordion-header.active + .accordion-content {
+    /* Ajout du padding vertical uniquement quand l'accordéon est actif */
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .accordion-content p, .accordion-content ul {
-    padding: 15px 0;
+    /* Retrait du padding des éléments internes pour éviter les sauts de hauteur */
+    padding: 0; 
+    margin: 15px 0; /* Utiliser margin au lieu de padding ici */
     color: #4b3c32;
     line-height: 1.6;
+    text-align: left; /* Meilleure lisibilité */
+}
+.accordion-content ul {
+    list-style-position: inside;
+    padding-left: 20px;
 }
 
 .accordion-header::after {
@@ -504,6 +526,7 @@ body.infos .main-content {
     font-size: 0.8em;
     float: right;
     transition: transform 0.3s;
+    margin-left: 10px; /* Pour séparer l'icône du texte */
 }
 
 .accordion-header.active::after {
