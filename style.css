@@ -14,6 +14,11 @@ body {
   height: 100%;
 }
 
+body.accueil {
+  margin: 0;
+  padding-top: 100vh;
+}
+
 /* -------------------- HEADER -------------------- */
 .header-title {
   text-align: center;
@@ -21,7 +26,7 @@ body {
   background-color: #fff;
   font-family: 'Parisienne', cursive;
   color: #000;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,11 +44,11 @@ nav {
   background-color: #fff;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: relative;
   top: 70px; /* sous le header */
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 10;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -105,18 +110,18 @@ nav button#lang-toggle:hover {
 
 /* -------------------- PHOTO DE FOND -------------------- */
 .photo-bk {
-  width: 100%;
-  height: 100vh; /* prend tout l'écran */
-  position: relative;
-  background-image: url('img/Photo_Mer.JPG'); /* ton image */
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+
+  background-image: url("img/Photo_Mer.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
+
+  z-index: -1;
 }
+
 
 .photo-bk::after {
   content: "";
