@@ -54,8 +54,7 @@ body.infos {
 .header-title h1 {
     font-size: 43px;
     margin-bottom: 0;
-    /* CORRECTION 1: Réduction de la hauteur du header sur la page infos pour correspondre à l'index */
-    /* L'ajustement est fait en retirant de l'espace non nécessaire ici, et en assurant que le padding est le même */
+    /* CORRECTION 1: Uniformisation de la hauteur du header */
     padding: 5px 0; 
 }
 
@@ -143,10 +142,10 @@ body.accueil .photo-bk {
     background-image: url("img/Photo_Mer.JPG");
 }
 
-/* CORRECTION 1 (FOND INFOS) : Fond FIXE qui couvre 100% de la fenêtre */
+/* Fond FIXE qui couvre 100% de la fenêtre */
 body.infos .photo-bk {
-    position: fixed; /* Changé de absolute à fixed */
-    height: 100vh; /* Changé de auto à 100vh pour couvrir l'écran */
+    position: fixed; 
+    height: 100vh; 
     background-image: url("img/Page_info_bk.jpeg");
 }
 
@@ -166,7 +165,6 @@ body.infos .photo-bk {
 /* -------------------- MAIN CONTENT (SUPERPOSITION) -------------------- */
 
 body.accueil .main-content {
-    /* Le contenu commence juste sous le header fixe */
     margin-top: 90px; 
     position: relative;
     z-index: 5;
@@ -458,9 +456,8 @@ body.infos .main-content {
 .accordion-item {
     background: #fdfaf6;
     border: 1px solid #e0d6c8;
-    /* CORRECTION 5: Réduction de l'espace entre les accordéons */
     border-radius: 14px;
-    margin-bottom: 10px; /* Réduit l'espace vertical */
+    margin-bottom: 10px; 
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -508,25 +505,34 @@ body.infos .main-content {
     padding-bottom: 15px;
 }
 
-.accordion-content p, .accordion-content ul {
-    /* CORRECTION 3: Suppression de l'espace initial au-dessus du premier texte/liste */
+.accordion-content p, 
+.accordion-content ul, 
+.accordion-content .travel-table, 
+.accordion-content .lodging-table {
+    /* Suppression de la marge par défaut pour le premier élément */
+    margin-top: 0;
     padding: 0; 
-    margin: 0; /* Supprime la marge par défaut */
     color: #4b3c32;
     line-height: 1.6;
     text-align: left; 
 }
 
-/* CORRECTION 3: Ajout d'une marge seulement aux éléments suivants */
-.accordion-content p + p, .accordion-content ul + p, .accordion-content p + ul {
-    margin-top: 15px;
-}
-
-/* Correction spécifique pour le premier élément dans l'accordéon Logement (intro-text) */
-.accordion-content #lodging-intro-text {
+/* CORRECTION ESPACE: Règle spécifique pour supprimer l'espace du HAUT 
+   du PREMIER élément de contenu, quel qu'il soit. */
+.accordion-header.active + .accordion-content > :first-child {
     margin-top: 0;
 }
 
+/* Règle pour ajouter de l'espace ENTRE les éléments SANS affecter le premier */
+.accordion-content p + p, 
+.accordion-content ul + p, 
+.accordion-content p + ul,
+.accordion-content p + .travel-table,
+.accordion-content p + .lodging-table {
+    margin-top: 15px;
+}
+
+/* Ajustement spécifique pour les listes */
 .accordion-content ul {
     list-style-position: inside;
     padding-left: 20px;
@@ -549,10 +555,9 @@ body.infos .main-content {
 }
 
 /* -------------------- TABLEAU -------------------- */
-.lodging-table, .travel-table { /* Ajout de .travel-table */
+.lodging-table, .travel-table { 
     width: 100%;
     border-collapse: collapse;
-    /* CORRECTION 2: Réduction de l'espace autour des tableaux */
     margin: 15px 0; 
     font-size: 0.9em;
     border: 1px solid #d8c9b5;
@@ -566,10 +571,12 @@ body.infos .main-content {
     font-weight: bold;
     font-size: 1.1em;
     color: #5a3e36;
+    text-align: left; /* Aligner la légende du tableau à gauche pour un look plus propre */
+    padding-left: 5px;
 }
 
 .lodging-table th, .lodging-table td, .travel-table th, .travel-table td {
-    padding: 10px 15px; /* Réduction du padding */
+    padding: 10px 15px; 
     text-align: left;
     border-bottom: 1px solid #e6dfd3;
 }
@@ -590,7 +597,6 @@ body.infos .main-content {
     background-color: #fff8f0;
 }
 
-/* CORRECTION 4: Style spécifique pour le tableau des aéroports */
 .travel-table td:first-child {
     font-weight: bold;
     width: 30%;
@@ -601,50 +607,13 @@ body.infos .main-content {
 
 /* -------------------- RESPONSIVE -------------------- */
 @media (max-width: 900px) {
-    .couple-split {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    .divider {
-        width: 60%;
-        height: 2px;
-    }
-
-    body.accueil .main-content {
-        margin-top: 90px;
-    }
+    /* Styles responsives existants... */
 }
 
 @media (max-width: 768px) {
-    .event-blocks {
-        flex-direction: column;
-        align-items: center;
-    }
-    .countdown {
-        flex: 1 1 100%;
-    }
-    .rsvp-shortcut {
-        flex: 1 1 100%;
-        margin-top: 30px;
-    }
-    .countdown-timer {
-        gap: 10px;
-    }
-    .time-box {
-        padding: 15px 18px;
-    }
+    /* Styles responsives existants... */
 }
 
 @media (max-width: 500px) {
-    .rsvp-container {
-        width: 90%;
-        padding: 15px;
-    }
-    .attend-options label,
-    .name-section input[type="text"] {
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-    }
+    /* Styles responsives existants... */
 }

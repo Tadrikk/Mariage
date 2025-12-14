@@ -64,11 +64,13 @@ garder et venir seuls`,
         "infos-whatsapp-incorrect": "Mot de passe incorrect !",
         "infos-whatsapp-text": "Rejoignez le groupe pour les infos",
         "rsvp-prompt": "Entrez le mot de passe pour confirmer votre RSVP :",
-        // Accordéon
+        // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
         "lodging-intro-text": "Nous vous proposons une liste d’hébergements (hôtels, airbnb, gîtes) à proximité du lieu du mariage. 🏡",
-        "lodging-title": "", // CORRECTION 2: Suppression du titre superflu
-        "lodging-intro": "",
+        "lodging-intro-text2": 
+`Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
+Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
+A titre informatif, il est possible de dormir en tente dans le jardin de mes parents à Oia avec accès à une douche extérieure et à l’eléctricité.`,
         "lodging-caption": "Logements proches du lieu",
         "lodging_col_name": "Nom",
         "lodging_col_distance": "Distance",
@@ -105,10 +107,13 @@ garder et venir seuls`,
         "lodging_6_price": "490€",
         "lodging_6_capacity": "16 personnes",
         "lodging_6_phone": "627 002 554 / 636 996 149",
+        // Accordéon Voyage
         "travel-title": "🗺️ Comment y aller ?",
-        "travel-table-caption": "Aéroports et temps de trajet", // Nouvelle clé pour le titre du tableau de voyage
-        "travel-table-col-airport": "Aéroport", // Nouvelle clé pour les titres de colonnes
-        "travel-table-col-time": "Temps de trajet", // Nouvelle clé pour les titres de colonnes
+        "travel_airports_intro": "✈️ Aéroports", // Utilisé pour le titre des aéroports au-dessus du tableau
+        "travel-table-caption": "Aéroports et temps de trajet", 
+        "travel-table-col-airport": "Aéroport", 
+        "travel-table-col-time": "Temps de trajet", 
+        // Autres Accordéons
         "wedding-title": "💍 Informations sur le mariage",
         "wedding-text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
         "party-title": "🎉 Planning fun",
@@ -122,8 +127,6 @@ garder et venir seuls`,
         "info_access-move":
 `Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
 distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
-        "travel_airports_intro": "✈️ Aéroports",
-        // Suppression des anciennes clés de voyage
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -147,6 +150,7 @@ Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenza
         "adrian-text":
 `Nos conocimos el (... lo recuerdo ...) 14 de octubre, en una fiesta de despedida de una amiga común.
 Ya tenía mi estrategia para hablarle y ella, inocente, no sospechaba nada.
+Caminó por delante del bar y la llamé, me di cuenta de que teníamos la misma pasión por la comida y el deporte y que a los dos nos gustaba reírnos.
 Esa noche comenzó nuestra historia.
 
 Hemos vivido muchas experiencias bonitas: cocinar en su casa, pasar noches pidiendo comida sana... y ganando peso. Conocer a su familia y descubrir su organización legendaria, no querer bailar salsa con ella para acabar bailando con alguien que me convenció en 10 segundos, darme cuenta en su primera reunión con mi familia en Galicia que ella les quiere más que a mí, y finalmente dejar mi ciudad natal para vivir con ella en Luxemburgo. No olvido todos los viajes que hemos hecho (Indonésie, Guadeloupe, Jordania, Japón, y más), gracias a los cuales descubrí partes de mí desconocidas.
@@ -181,10 +185,13 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "infos-whatsapp-incorrect": "¡Contraseña incorrecta!",
         "infos-whatsapp-text": "Únete al grupo para recibir información",
         "rsvp-prompt": "Introduce la contraseña para confirmar tu RSVP:",
+        // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
         "lodging-intro-text": "Os ofrecemos una lista de alojamientos (hoteles, airbnb, casas rurales) cerca del lugar del matrimonio. 🏡",
-        "lodging-title": "", // CORRECTION 2: Suppression du titre superflu
-        "lodging-intro": "",
+        "lodging-intro-text2": 
+`Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
+Con Adri estaremos primero en la zona de Nigrán/Oia antes de la boda y, después de la boda, estaremos en la zona de Vilagarcía de Arousa.
+A modo informativo, es posible dormir en tienda de campaña en el jardín de mis padres en Oia, con acceso a una ducha exterior y electricidad.`,
         "lodging-caption": "Alojamientos cercanos al lugar",
         "lodging_col_name": "Nombre",
         "lodging_col_distance": "Distancia",
@@ -221,10 +228,13 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "lodging_6_price": "490€",
         "lodging_6_capacity": "16 personas",
         "lodging_6_phone": "627 002 554 / 636 996 149",
+        // Accordéon Viaje
         "travel-title": "🗺️ Cómo llegar",
-        "travel-table-caption": "Aeropuertos y tiempo de viaje", // Nouvelle clé pour le titre du tableau de voyage
-        "travel-table-col-airport": "Aeropuerto", // Nouvelle clé pour les titres de colonnes
-        "travel-table-col-time": "Tiempo de viaje", // Nouvelle clé pour les titres de colonnes
+        "travel_airports_intro": "✈️ Aeropuertos", // Utilisé pour le titre des aéroports au-dessus du tableau
+        "travel-table-caption": "Aeropuertos y tiempo de viaje", 
+        "travel-table-col-airport": "Aeropuerto", 
+        "travel-table-col-time": "Tiempo de viaje", 
+        // Autres Accordéons
         "wedding-title": "💍 Información sobre la boda",
         "wedding-text": "Vestimenta: elegante pero cómoda (¡habrá baile 💃!). ¡Los niños son bienvenidos! 👶",
         "party-title": "🎉 Plan de la fiesta",
@@ -238,8 +248,6 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "info_access-move":
 `Recomendamos encarecidamente disponer de un medio de transporte en la zona, ya que las distancias pueden ser largas y el transporte público 
 no es óptimo en todas partes.`,
-        "travel_airports_intro": "✈️ Aeropuertos",
-        // Suppression des anciennes clés de voyage
     }
 };
 
@@ -267,7 +275,7 @@ async function sha256Hex(str) {
  */
 function generateTravelTable(lang) {
     const t = translations[lang];
-    const colAirportKey = `name_${lang}`; // Utilise le nom en FR ou ES
+    const colAirportKey = `name_${lang}`; 
     
     let tableHtml = `<table class="travel-table">`;
     tableHtml += `<caption>${t["travel-table-caption"]}</caption>`;
@@ -295,9 +303,8 @@ function applyTranslations(lang) {
     for (const key in t) {
         const element = safeGet(key);
         if (element) {
-            // Utiliser textContent pour les histoires longues pour préserver les sauts de ligne
-            if (key === 'clara-text' || key === 'adrian-text' || key === 'children-text' || key === 'info_access-move') {
-                // Utiliser innerHTML ici est nécessaire pour interpréter les sauts de ligne si vous utilisez `white-space: pre-line;` dans le CSS
+            // Utiliser innerHTML pour les textes longs avec sauts de ligne pour CSS `white-space: pre-line;`
+            if (key === 'clara-text' || key === 'adrian-text' || key === 'children-text' || key === 'info_access-move' || key === 'lodging-intro-text2') {
                 element.innerHTML = t[key]; 
             } else {
                 element.innerHTML = t[key];
@@ -305,14 +312,14 @@ function applyTranslations(lang) {
         }
     }
 
-    // CORRECTION 4: Générer et insérer le tableau de voyage
+    // Générer et insérer le tableau de voyage
     const travelContainer = safeGet('travel-table-container');
     if (travelContainer) {
         travelContainer.innerHTML = generateTravelTable(lang);
     }
 }
 
-// Fonction pour le compte à rebours
+// Fonction pour le compte à rebours (inchangée)
 let countdownInterval;
 
 function startCountdown() {
@@ -323,7 +330,6 @@ function startCountdown() {
 
     const weddingDate = new Date("August 14, 2026 14:00:00").getTime();
     
-    // Fonction interne pour la mise à jour
     const updateCountdown = () => {
         const now = new Date().getTime();
         const distance = weddingDate - now;
@@ -343,7 +349,7 @@ function startCountdown() {
             return;
         }
         
-        if (daysElement) { // Vérifie l'existence d'un élément du compte à rebours avant de calculer
+        if (daysElement) { 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -356,7 +362,7 @@ function startCountdown() {
         }
     };
 
-    updateCountdown(); // Exécuter immédiatement pour éviter un délai d'une seconde
+    updateCountdown(); 
     countdownInterval = setInterval(updateCountdown, 1000);
 }
 
@@ -365,11 +371,10 @@ function startCountdown() {
 function initAccordion() {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     accordionHeaders.forEach(header => {
-        // Enlever l'ancien écouteur avant d'en ajouter un nouveau pour éviter les doublons
         header.removeEventListener('click', toggleAccordion);
         header.addEventListener('click', toggleAccordion);
     });
-    // Fermer tous les accordéons au chargement et s'assurer que maxHeight est réinitialisé
+    // Fermer tous les accordéons au chargement
     document.querySelectorAll('.accordion-content').forEach(content => {
         content.style.maxHeight = "";
     });
@@ -384,7 +389,7 @@ function toggleAccordion() {
         const c = h.nextElementSibling;
         if (h !== header && h.classList.contains('active')) {
             h.classList.remove('active');
-            c.style.maxHeight = ""; // Fermer l'autre
+            c.style.maxHeight = ""; 
         }
     });
 
@@ -416,12 +421,9 @@ document.addEventListener('DOMContentLoaded', () => {
             currentLang = currentLang === 'fr' ? 'es' : 'fr';
             localStorage.setItem("lang", currentLang);
             
-            // Appliquer les traductions avant d'initialiser/réinitialiser
             applyTranslations(currentLang);
             
-            // Réinitialiser les accordéons et le compte à rebours après le changement de langue
             if (document.body.classList.contains('accueil')) {
-                // Rélancer pour mettre à jour le titre si le compte à rebours est terminé
                 startCountdown(); 
             }
             if (document.body.classList.contains('infos')) {
