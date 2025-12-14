@@ -33,6 +33,19 @@ body.infos {
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
+body.rsvp {
+    padding-top: 90px;
+    position: relative;
+    min-height: 100vh;
+}
+
+body.rsvp .photo-bk {
+    position: fixed;
+    height: 100vh;
+    background-image: url("img/Page_info_bk.jpeg"); /* Le même fond que la page Infos */
+    background-size: cover;
+    background-position: center;
+}
 /* -------------------- HEADER & NAVIGATION FIXES -------------------- */
 .header-content-overlay {
     position: fixed;
@@ -648,4 +661,40 @@ body.infos .main-content {
         width: 100%;
         margin-bottom: 10px;
     }
+}
+
+/* --- CONTENEUR LIEN GOOGLE --- */
+.google-form-container {
+    background: rgba(255, 250, 244, 0.95); /* Fond crème semi-transparent */
+    border: 1px solid #e2d5c1;
+    border-radius: 18px;
+    padding: 40px 30px;
+    margin: 60px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+}
+
+.google-form-container p {
+    font-size: 1.2em;
+    color: #5a3e36;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.google-link-btn {
+    display: inline-block;
+    color: #c2185b; /* Couleur du lien */
+    text-decoration: underline;
+    font-weight: bold;
+    word-break: break-all; /* Important : empêche le lien de dépasser sur mobile */
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.google-link-btn:hover {
+    color: #8e1041;
 }
