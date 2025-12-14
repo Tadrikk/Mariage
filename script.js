@@ -359,6 +359,9 @@ function applyTranslations(lang) {
     if (travelContainer) {
         travelContainer.innerHTML = generateTravelTable(lang);
     }
+    generatePlanningTable(lang);
+
+}
 
     function generatePlanningTable(lang) {
     const texts = translations[lang];
@@ -395,7 +398,6 @@ function applyTranslations(lang) {
     html += `</tbody></table>`;
     container.innerHTML = html;
     }
-}
 
 // Fonction pour le compte à rebours (inchangée)
 let countdownInterval;
