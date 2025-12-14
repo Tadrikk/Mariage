@@ -380,7 +380,7 @@ function initAccordion() {
 }
 
 function toggleAccordion() {
-    const header = this;
+    const header = this; 
     const content = header.nextElementSibling;
     
     // Fermer tous les autres accordéons
