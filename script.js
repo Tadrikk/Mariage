@@ -5,14 +5,41 @@ const CORRECT_HASH = "88546f608b8f5f0e1451b8da1177b96fec4729f998195755eaf29daba0
 
 // Définition des données structurées pour le planning
 const planningData = [
-    { day: "Lundi 10", key: "Mon-10" },
-    { day: "Mardi 11", key: "Tue-11" },
-    { day: "Mercredi 12", key: "Wed-12" },
-    { day: "Jeudi 13", key: "Thu-13" },
-    { day: "Vendredi 14", key: "Fri-14" },
-    { day: "Samedi 15", key: "Sat-15" },
-    { day: "Dimanche 16", key: "Sun-16" },
-    { day: "Lundi 17", key: "Mon-17" },
+    { day: "Lundi: 10", key: "Mon-10" },
+    { day: "Mardi: 11", key: "Tue-11" },
+    { day: "Mercredi: 12", key: "Wed-12" },
+    { day: "Jeudi: 13", key: "Thu-13" },
+    { day: "Vendredi: 14", key: "Fri-14" },
+    { day: "Samedi: 15", key: "Sat-15" },
+    { day: "Dimanche: 16", key: "Sun-16" },
+    { day: "Lundi: 17", key: "Mon-17" },
+];
+
+// Nouvelle structure de données pour les lieux en Galice avec Provinces et Restaurants
+const galiciaData = [
+    { province: "Lugo", location: "Playa de las Catedrales", attraction: "", restaurant: "" },
+    { province: "A Coruña", location: "Finisterre", attraction: "Phare du Cap Finisterre", restaurant: "" },
+    { province: "A Coruña", location: "Mirador de Coitelo", attraction: "Acantilados de Loiba", restaurant: "" },
+    { province: "A Coruña", location: "Ruínas do Muíño de Sesín", attraction: "", restaurant: "" },
+    { province: "A Coruña", location: "Mosteiro de Santa María de Monfero", attraction: "", restaurant: "" },
+    { province: "Ourense", location: "Canón do Sil", attraction: "", restaurant: "" },
+    { province: "Ourense", location: "Termas de Prexigueiro", attraction: "", restaurant: "" },
+    { province: "Ourense", location: "Miradoiro de Vilouxe", attraction: "", restaurant: "" },
+    { province: "Ourense", location: "Columpio O bambán do solpor", attraction: "A Mirada Máxica", restaurant: "" },
+    { province: "Ourense", location: "Columpio de Adega Terrabrava", attraction: "", restaurant: "" },
+    { province: "Ourense", location: "Allariz", attraction: "", restaurant: "" },
+    { province: "Pontevedra", location: "A Guarda", attraction: "Moulins de Folón, Castro de Santa Trega", restaurant: "Porto Guardés, As Brasas" },
+    { province: "Pontevedra", location: "Baiona", attraction: "Casco viejo (le centre), Parador de Baiona, Virxe da Rocha", restaurant: "" },
+    { province: "Pontevedra", location: "Islas Cíes", attraction: "Départ possible de Vigo également", restaurant: "" },
+    { province: "Pontevedra", location: "Nigrán", attraction: "Monteferro", restaurant: "Taperia O'Druída" },
+    { province: "Pontevedra", location: "Pontevedra", attraction: "Casco viejo (le centre), Praza da Leña, Pazo de Lourizán", restaurant: "Kamelia Taberna ?" },
+    { province: "Pontevedra", location: "Combarro", attraction: "Combarro", restaurant: "" },
+    { province: "Pontevedra", location: "O Grove", attraction: "", restaurant: "" },
+    { province: "Pontevedra", location: "Villagarcia de Arousa", attraction: "A Illa de Arousa, Illa San Sadurniño", restaurant: "" },
+    { province: "Pontevedra", location: "Sanxenxo", attraction: "", restaurant: "" },
+    { province: "Pontevedra", location: "Baroña", attraction: "Castro de Baroña", restaurant: "" },
+    { province: "Pontevedra", location: "Padron", attraction: "Son marché très réputé avec les pulpeiros", restaurant: "" },
+    { province: "Santiago de Compostela", location: "Santiago de Compostela", attraction: "Miradoiro da Catedral, Cathédrale de Saint-Jacques-de-Compostelle", restaurant: "" },
 ];
 
 // ----------------- TRANSLATIONS (FR / ES) -----------------
@@ -138,7 +165,7 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
     
         // NOUVEAU POUR LE PLANNING
         "planning-intro": "Voici le planning prévisionnel des festivités autour du mariage. N'hésitez pas à nous rejoindre si vous êtes dans les environs !",
-        "planning-col-date": "Date",
+        "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
         "planning-col-afternoon": "Après-midi",
         "planning-col-evening": "Soirée",
@@ -154,6 +181,14 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "data-Sun-16-M": "Survivre", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
+        // NOUVEAU POUR GALICE
+        "galice-intro": "Si vous avez l’occasion de prolonger votre séjour, voici quelques propositions de lieux à visiter. La Galice est très riche et il y en a pour tous les goûts ! (Notre région est Pontevedra)", // Légère mise à jour pour inclure la note sur Pontevedra
+        "galice-col-province": "Province",
+        "galice-col-location": "Lieu / Ville",
+        "galice-col-attraction": "Visite / Point d'intérêt",
+        "galice-col-restaurant": "Suggestions Restaurants",
+        "galice-title-caption": "Suggestions de visites en Galice"
+
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -274,7 +309,7 @@ La boda tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
   
         // NOUVEAU POUR LE PLANNING
         "planning-intro": "Aquí está la programación provisional de las festividades alrededor de la boda. ¡No duden en unirse si están cerca!",
-        "planning-col-date": "Fecha",
+        "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
         "planning-col-afternoon": "Tarde",
         "planning-col-evening": "Noche",
@@ -289,6 +324,14 @@ La boda tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Fiesta del Agua (Villagarcía)", "data-Sat-15-S": "Fiesta del Agua (Villagarcía)",
         "data-Sun-16-M": "Sobrevivir", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)",
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
+
+        // NOUVEAU POUR GALICE
+        "galice-intro": "Si tienen la oportunidad de alargar su estancia, aquí hay algunas sugerencias de lugares para visitar. ¡Galicia es muy rica y hay para todos los gustos! (Nuestra región es Pontevedra)", // Légère mise à jour
+        "galice-col-province": "Provincia",
+        "galice-col-location": "Lugar / Ciudad",
+        "galice-col-attraction": "Visita / Punto de interés",
+        "galice-col-restaurant": "Sugerencias Restaurantes",
+        "galice-title-caption": "Sugerencias de visitas en Galicia"
     }
         
 };
@@ -338,6 +381,39 @@ function generateTravelTable(lang) {
     return tableHtml;
 }
 
+function generateGaliciaTable(lang) {
+    const texts = translations[lang];
+    const container = document.getElementById('galice-table-container');
+    const intro = document.getElementById('galice-intro');
+    
+    if (!container || !intro) return;
+
+    intro.textContent = texts["galice-intro"];
+    
+    let html = `<div class="table-wrapper"> <table class="lodging-table">
+        <caption id="galice-caption">${texts["galice-title-caption"]}</caption>
+        <thead>
+            <tr>
+                <th>${texts["galice-col-province"]}</th>
+                <th>${texts["galice-col-location"]}</th>
+                <th>${texts["galice-col-attraction"]}</th>
+                <th>${texts["galice-col-restaurant"]}</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    galiciaData.forEach(item => {
+        html += `<tr>
+            <td><strong>${item.province}</strong></td>
+            <td>${item.location}</td>
+            <td>${item.attraction}</td>
+            <td>${item.restaurant}</td>
+        </tr>`;
+    });
+
+    html += `</tbody></table></div>`; // Fermeture du table et du div table-wrapper
+    container.innerHTML = html;
+}
 
 function applyTranslations(lang) {
     const t = translations[lang];
