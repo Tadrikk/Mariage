@@ -3,6 +3,18 @@
 let currentLang = localStorage.getItem("lang") || "fr";
 const CORRECT_HASH = "88546f608b8f5f0e1451b8da1177b96fec4729f998195755eaf29daba0e597126"; // Hash de mot de passe
 
+// Définition des données structurées pour le planning
+const planningData = [
+    { day: "Lundi 10", key: "Mon-10" },
+    { day: "Mardi 11", key: "Tue-11" },
+    { day: "Mercredi 12", key: "Wed-12" },
+    { day: "Jeudi 13", key: "Thu-13" },
+    { day: "Vendredi 14", key: "Fri-14" },
+    { day: "Samedi 15", key: "Sat-15" },
+    { day: "Dimanche 16", key: "Sun-16" },
+    { day: "Lundi 17", key: "Mon-17" },
+];
+
 // ----------------- TRANSLATIONS (FR / ES) -----------------
 const translations = {
     fr: {
@@ -117,12 +129,31 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "info_access-title": "✨ Informations pratiques",
         "info_access-text1": "Thème du mariage: Yellow Touch 🌟 (Tournesol et citrons exclus) ",
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
-                            Le mariage est à ?h le 14 août 2026 au Pazo de Xerlis`,
+                            Le mariage est à 18h le 14 août 2026 au Pazo de Xerlis`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
 
         Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
         "rsvp-click-text": "Cliquez ici pour accéder au formulaire RSVP 👇",
-        "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog"
+        "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
+    
+        // NOUVEAU POUR LE PLANNING
+        "planning-intro": "Voici le planning prévisionnel des festivités autour du mariage. N'hésitez pas à nous rejoindre si vous êtes dans les environs !",
+        "planning-col-date": "Date",
+        "planning-col-morning": "Matin",
+        "planning-col-afternoon": "Après-midi",
+        "planning-col-evening": "Soirée",
+        "planning-title-caption": "Programme de la semaine du 10 au 17 août",
+        
+        // DONNÉES DU TABLEAU EN FRANÇAIS
+        "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "", // Lundi 10
+        "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "60 AÑOS ARIANE", "data-Tue-11-S": "", // Mardi 11
+        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona", // Mercredi 12
+        "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "", // Jeudi 13
+        "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
+        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "Fiesta del Agua (Villagarcía)", "data-Sat-15-S": "Fiesta del Agua (Villagarcía)", // Samedi 15
+        "data-Sun-16-M": "Survivre", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
+        "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
+    
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -234,12 +265,30 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "info_access-title": "✨ Información práctica",
         "info_access-text1": "Temática de la boda: Yellow Touch 🌟 (excluyendo girasoles y lima) ",
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
-La boda tendrá lugar a las ? h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
+La boda tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
         
         Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
-        "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog"
+        "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
+  
+        // NOUVEAU POUR LE PLANNING
+        "planning-intro": "Aquí está la programación provisional de las festividades alrededor de la boda. ¡No duden en unirse si están cerca!",
+        "planning-col-date": "Fecha",
+        "planning-col-morning": "Mañana",
+        "planning-col-afternoon": "Tarde",
+        "planning-col-evening": "Noche",
+        "planning-title-caption": "Programa de la semana del 10 al 17 de agosto",
+        
+        // DONNÉES DU TABLEAU EN ESPAGNOL (les noms des lieux restent généralement les mêmes)
+        "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "",
+        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "60 AÑOS ARIANE", "data-Tue-11-S": "",
+        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Bayona",
+        "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "",
+        "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
+        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Fiesta del Agua (Villagarcía)", "data-Sat-15-S": "Fiesta del Agua (Villagarcía)",
+        "data-Sun-16-M": "Sobrevivir", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)",
+        "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
     }
         
 };
@@ -309,6 +358,42 @@ function applyTranslations(lang) {
     const travelContainer = safeGet('travel-table-container');
     if (travelContainer) {
         travelContainer.innerHTML = generateTravelTable(lang);
+    }
+
+    function generatePlanningTable(lang) {
+    const texts = translations[lang];
+    const container = document.getElementById('planning-table-container');
+    const intro = document.getElementById('planning-intro');
+    
+    if (!container || !intro) return;
+
+    // Met à jour le paragraphe d'introduction
+    intro.textContent = texts["planning-intro"];
+    
+    let html = `<table class="lodging-table">
+        <caption id="planning-caption">${texts["planning-title-caption"]}</caption>
+        <thead>
+            <tr>
+                <th>${texts["planning-col-date"]}</th>
+                <th>${texts["planning-col-morning"]}</th>
+                <th>${texts["planning-col-afternoon"]}</th>
+                <th>${texts["planning-col-evening"]}</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    planningData.forEach(item => {
+        // Construction de chaque ligne
+        html += `<tr>
+            <td><strong>${item.day}</strong></td>
+            <td>${texts[`data-${item.key}-M`]}</td>
+            <td>${texts[`data-${item.key}-A`]}</td>
+            <td>${texts[`data-${item.key}-S`]}</td>
+        </tr>`;
+    });
+
+    html += `</tbody></table>`;
+    container.innerHTML = html;
     }
 }
 
