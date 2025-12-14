@@ -66,11 +66,13 @@ garder et venir seuls`,
         "rsvp-prompt": "Entrez le mot de passe pour confirmer votre RSVP :",
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": "Nous vous proposons une liste d’hébergements (hôtels, airbnb, gîtes) à proximité du lieu du mariage. 🏡",
-        "lodging-intro-text2": 
-`Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
+        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
+
 Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
-A titre informatif, il est possible de dormir en tente dans le jardin de mes parents à Oia avec accès à une douche extérieure et à l’eléctricité.`,
+
+A titre informatif, il est possible de dormir en tente dans le jardin de mes parents à Oia avec accès à une douche extérieure et à l’eléctricité.
+
+`,
         "lodging-caption": "Logements proches du lieu",
         "lodging_col_name": "Nom",
         "lodging_col_distance": "Distance",
@@ -81,36 +83,40 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "lodging_1_distance": "300 m",
         "lodging_1_price": "180€ (maison entière)",
         "lodging_1_capacity": "9 personnes",
-        "lodging_1_phone": "606 636 699",
+        "lodging_1_phone": "+34 606 636 699",
         "lodging_2_name": "Casa rural Amarinda",
         "lodging_2_distance": "1.4 km",
         "lodging_2_price": "720€ (4 nuits minimum)",
         "lodging_2_capacity": "15 personnes",
-        "lodging_2_phone": "658 800 640",
+        "lodging_2_phone": "+34 658 800 640",
         "lodging_3_name": "A Casa do Lagoeiro",
         "lodging_3_distance": "3.2 km",
         "lodging_3_price": "80€ chambre (petit-déj inclus)",
         "lodging_3_capacity": "13 personnes",
-        "lodging_3_phone": "655 031 397",
+        "lodging_3_phone": "+34 655 031 397",
         "lodging_4_name": "Hostal A Bombilla",
         "lodging_4_distance": "4.3 km",
         "lodging_4_price": "35–48€ par nuit",
         "lodging_4_capacity": "20 chambres",
-        "lodging_4_phone": "986 570 335",
+        "lodging_4_phone": "+34 986 570 335",
         "lodging_5_name": "Hotel A Estrada Rooms",
         "lodging_5_distance": "3 km",
         "lodging_5_price": "?",
         "lodging_5_capacity": "16 chambres",
-        "lodging_5_phone": "653 057 593",
+        "lodging_5_phone": "+34 653 057 593",
         "lodging_6_name": "Casa de Brea",
         "lodging_6_distance": "3.8 km",
         "lodging_6_price": "490€",
         "lodging_6_capacity": "16 personnes",
-        "lodging_6_phone": "627 002 554 / 636 996 149",
+        "lodging_6_phone": "+34 627 002 554 /+34 636 996 149",
+        "lodging_7_name": "Appartement 3 et 4, A Estrada",
+        "lodging_7_distance": "4 km",
+        "lodging_7_price": "345€ par nuit",
+        "lodging_7_capacity": "14 personnes",
+        "lodging_7_phone": "Airbnb",
         // Accordéon Voyage
         "travel-title": "🗺️ Comment y aller ?",
         "travel_airports_intro": "✈️ Aéroports", // Utilisé pour le titre des aéroports au-dessus du tableau
-        "travel-table-caption": "Aéroports et temps de trajet", 
         "travel-table-col-airport": "Aéroport", 
         "travel-table-col-time": "Temps de trajet", 
         // Autres Accordéons
@@ -123,10 +129,11 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "party-4": "💃 21h00 – Soirée et fiesta !",
         "party-5": "🌅 02h00 – Fin de la fête",
         "info_access-title": "✨ Informations pratiques",
-        "info_access-text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
-        "info_access-move":
-`Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
-distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
+        "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
+                            Le mariage est à ?h le 14 août 2026 au Pazo de Xerlis`,
+        "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
+
+        Notre compte bancaire est le suivant: BE37 6512 2062 8728`
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -187,11 +194,13 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "rsvp-prompt": "Introduce la contraseña para confirmar tu RSVP:",
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": "Os ofrecemos una lista de alojamientos (hoteles, airbnb, casas rurales) cerca del lugar del matrimonio. 🏡",
-        "lodging-intro-text2": 
-`Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
+        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
+
 Con Adri estaremos primero en la zona de Nigrán/Oia antes de la boda y, después de la boda, estaremos en la zona de Vilagarcía de Arousa.
-A modo informativo, es posible dormir en tienda de campaña en el jardín de mis padres en Oia, con acceso a una ducha exterior y electricidad.`,
+
+A modo informativo, es posible dormir en tienda de campaña en el jardín de mis padres en Oia, con acceso a una ducha exterior y electricidad.
+
+`,
         "lodging-caption": "Alojamientos cercanos al lugar",
         "lodging_col_name": "Nombre",
         "lodging_col_distance": "Distancia",
@@ -228,10 +237,14 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "lodging_6_price": "490€",
         "lodging_6_capacity": "16 personas",
         "lodging_6_phone": "627 002 554 / 636 996 149",
+        "lodging_7_name": "Apartamento 3 et 4, A Estrada",
+        "lodging_7_distance": "4 km",
+        "lodging_7_price": "345€ por noche",
+        "lodging_7_capacity": "14 personas",
+        "lodging_7_phone": "Airbnb",
         // Accordéon Viaje
         "travel-title": "🗺️ Cómo llegar",
         "travel_airports_intro": "✈️ Aeropuertos", // Utilisé pour le titre des aéroports au-dessus du tableau
-        "travel-table-caption": "Aeropuertos y tiempo de viaje", 
         "travel-table-col-airport": "Aeropuerto", 
         "travel-table-col-time": "Tiempo de viaje", 
         // Autres Accordéons
@@ -244,11 +257,13 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "party-4": "💃 21:00 – Fiesta y baile",
         "party-5": "🌅 02:00 – Fin de la celebración",
         "info_access-title": "✨ Información práctica",
-        "info_access-text": "Vestimenta: elegante pero cómoda (¡habrá baile 💃!). ¡Los niños son bienvenidos! 👶",
-        "info_access-move":
-`Recomendamos encarecidamente disponer de un medio de transporte en la zona, ya que las distancias pueden ser largas y el transporte público 
-no es óptimo en todas partes.`,
+        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
+La boda tendrá lugar a las ? h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
+        "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
+        
+        Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`
     }
+        
 };
 
 // Données des aéroports pour la création du tableau (indépendantes de la langue)
