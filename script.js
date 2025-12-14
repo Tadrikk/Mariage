@@ -115,7 +115,7 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "travel-table-col-airport": "Aéroport", 
         "travel-table-col-time": "Temps de trajet", 
         "info_access-title": "✨ Informations pratiques",
-        "info_access-text1": "Thème du mariage: Yellow Touch 🌟 (Tournesol et ex) ",
+        "info_access-text1": "Thème du mariage: Yellow Touch 🌟 (Tournesol et citrons exclus) ",
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
                             Le mariage est à ?h le 14 août 2026 au Pazo de Xerlis`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
@@ -231,7 +231,7 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-airport": "Aeropuerto", 
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
-        "info_access-text1": "Temática de la boda: Yellow Touch 🌟 (excluyendo girasoles) ",
+        "info_access-text1": "Temática de la boda: Yellow Touch 🌟 (excluyendo girasoles y lima) ",
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
 La boda tendrá lugar a las ? h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
@@ -389,13 +389,12 @@ function toggleAccordion() {
     if (content.style.maxHeight) {
         content.style.maxHeight = ""; // Fermer
     } else {
-        // CORRECTION CRITIQUE: Utiliser setTimeout(0) pour forcer le navigateur à
-        // calculer correctement la hauteur après le rendu de tout le contenu long.
-        content.style.maxHeight = "0"; // Assurer le point de départ de la transition
+        // CORRECTION ICI :
+        content.style.maxHeight = "0"; 
         setTimeout(() => {
-            // Le calcul de scrollHeight est fiable ici
-            content.style.maxHeight = content.scrollHeight + "px"; 
-        }, 0);
+            // On ajoute + 50 pixels au calcul pour inclure les marges et le padding du bas
+            content.style.maxHeight = (content.scrollHeight + 50) + "px"; 
+        }, 10); // Petit délai de 10ms pour assurer la prise en compte du rendu
     }
 }
 

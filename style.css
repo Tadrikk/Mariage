@@ -493,6 +493,7 @@ body.infos .main-content {
 .accordion-header.active {
     background: #d8c9b5;
     color: #3e2a23;
+    
 }
 
 .accordion-content {
@@ -505,7 +506,7 @@ body.infos .main-content {
 
 .accordion-header.active + .accordion-content {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .accordion-content p, .accordion-content ul {
