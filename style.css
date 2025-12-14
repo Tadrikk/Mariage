@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* 🚨 CORRECTION FOND 🚨: Assurez-vous que HTML et BODY prennent toute la hauteur */
+/* CORRECTION FOND: Assurez-vous que HTML et BODY prennent toute la hauteur */
 html {
     height: 100%;
 }
@@ -140,11 +140,10 @@ body.accueil .photo-bk {
     background-image: url("img/Photo_Mer.JPG");
 }
 
-/* 🚨 CORRECTION FOND 🚨 Page Infos : Fond ABSOLU qui couvre la hauteur du CONTENU */
+/* CORRECTION 1 (FOND INFOS) : Fond FIXE qui couvre 100% de la fenêtre */
 body.infos .photo-bk {
-    position: absolute; 
-    height: auto; /* Permet à la hauteur de s'adapter au contenu */
-    min-height: 100%; /* S'assure qu'elle couvre au moins la hauteur du body (qui est min-height: 100vh) */
+    position: fixed; /* Changé de absolute à fixed */
+    height: 100vh; /* Changé de auto à 100vh pour couvrir l'écran */
     background-image: url("img/Page_info_bk.jpeg");
 }
 
@@ -315,7 +314,7 @@ body.infos .main-content {
 .rsvp-shortcut {
     flex: 1 1 40%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 128, 255, 0.05);
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -444,7 +443,7 @@ body.infos .main-content {
     border-radius: 18px;
     padding: 30px;
     margin: 40px auto;
-    max-width: 700px;
+    max-width: 1000px; /* CORRECTION 2 (LARGEUR CONTENEUR) : Augmentation de la largeur */
     box-shadow: 0 6px 10px rgba(0,0,0,0.1);
     color: #4b3b2b;
     text-align: center;
@@ -491,7 +490,7 @@ body.infos .main-content {
     color: #3e2a23;
 }
 
-/* 🚨 CORRECTION ACCORDÉON 🚨: Assure le fonctionnement de l'animation */
+/* CORRECTION ACCORDÉON: Assure le fonctionnement de l'animation */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
