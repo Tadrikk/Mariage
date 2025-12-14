@@ -436,6 +436,7 @@ function applyTranslations(lang) {
         travelContainer.innerHTML = generateTravelTable(lang);
     }
     generatePlanningTable(lang);
+    generateGaliciaTable(lang)
 
 }
 
