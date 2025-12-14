@@ -39,7 +39,7 @@ body.infos {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -176,6 +176,13 @@ body.infos .main-content {
     position: relative;
     z-index: 5;
     background-color: transparent;
+}
+
+.main-content {
+    /* La hauteur du header est typiquement autour de 100px.
+       Nous ajoutons un padding pour que le contenu commence en dessous. */
+    padding-top: 100px; /* Ajustez cette valeur si votre header est plus grand ou plus petit */
+    position: relative; /* Pour s'assurer que les enfants se positionnent par rapport à lui */
 }
 
 /* Assure que toutes les sections de contenu sont bien au-dessus du fond */
@@ -438,13 +445,22 @@ body.infos .main-content {
 }
 
 /* -------------------- INFOS PAGE -------------------- */
+.info-header {
+    /* Nous retirons tout positionnement flottant ou absolu ici */
+    display: flex; /* Assure que le titre et l'icône sont alignés */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px; /* Espace après le titre */
+}
+
 .info-fixe {
     background: rgba(255, 250, 244, 0.95); 
     border: 1px solid #e2d5c1;
     border-radius: 18px;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 1000px; 
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 900px; 
     box-shadow: 0 6px 10px rgba(0,0,0,0.1);
     color: #4b3b2b;
     text-align: center;
@@ -452,6 +468,7 @@ body.infos .main-content {
     position: relative;
     z-index: 10;
 }
+
 
 .accordion-item {
     background: #fdfaf6;

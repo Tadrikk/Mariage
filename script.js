@@ -79,7 +79,7 @@ const translations = {
         Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
         
         // --- NOUVELLES TRADUCTIONS INFOS COMPLÉMENTAIRES ---
-        "infos-comp-title": "Informations et idées",
+        "infos-comp-title": "Informations complémentaires",
         
         // 1. Planning de la semaine
         "planning-title": "🗓️ Planning de la semaine",
@@ -130,7 +130,7 @@ La boda tendrá lugar a las ? h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
 
         // --- NOUVELLES TRADUCTIONS INFOS COMPLÉMENTAIRES ---
-        "infos-comp-title": "Información e ideas",
+        "infos-comp-title": "Información adicional",
 
         // 1. Planning de la semana
         "planning-title": "🗓️ Planning de la semana",
