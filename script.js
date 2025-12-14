@@ -45,6 +45,20 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "label-seconds": "SECONDES",
         "rsvp-title-index": "Serez-vous présent ?",
         "rsvp-datelim-index":"Nous avons hâte de célébrer ce jour spécial avec vous !",
+        "label-oui": "Oui",
+        "label-non": "Non",
+        "label-name": "Votre nom et prénom :",
+        "guest-name": "Tapez votre nom...",
+        "children-text":
+`Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
+garder et venir seuls`,
+        "submit-button": "Confirmer",
+        "thank-you": "Merci, votre réponse a été enregistrée",
+        // Infos Page
+        "infos-title": "Où et quand ?",
+        "infos-ceremonie": "Cérémonie : 14 août 2026 – Pazo de Xerlís, A Estrada (Galice, Espagne)",
+        "infos-hour": "Heure : 18h00",
+
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
         "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
@@ -147,6 +161,19 @@ Me encantaría que todos vosotros compartierais ese momento con nosotros (promet
         "label-seconds": "SEGUNDOS",
         "rsvp-title-index": "¿Vienes a la boda?",
         "rsvp-datelim-index":"¡Estamos deseando celebrar este día tan especial con vosotros!",
+        "label-oui": "Sí",
+        "label-non": "No",
+        "label-name": "Nombre y apellido:",
+        "guest-name": "Escribe tu nombre...",
+        "children-text":
+`Sus hijos son más que bienvenidos. 
+Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la boda, les recomendamos considerar dejarlos al cuidado de alguien y venir tranquilos`,
+        "submit-button": "Confirmar",
+        "thank-you": "Gracias, tu respuesta ha sido guardada",
+        "infos-title": "¿Dónde y cuándo?",
+        "infos-ceremonie": "Ceremonia: 14 de agosto de 2026 – Pazo de Xerlís, A Estrada (Galicia, España)",
+        "infos-hour": "Hora: 1:00",
+
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
         "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
