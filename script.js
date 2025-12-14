@@ -120,7 +120,8 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
                             Le mariage est à ?h le 14 août 2026 au Pazo de Xerlis`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
 
-        Notre compte bancaire est le suivant: BE37 6512 2062 8728`
+        Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
+        "Lien_Google_sheet": "Lien: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog"
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -235,7 +236,8 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
 La boda tendrá lugar a las ? h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
         
-        Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`
+        Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
+        "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog"
     }
         
 };
