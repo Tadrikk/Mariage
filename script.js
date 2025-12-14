@@ -49,8 +49,9 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "label-non": "Non",
         "label-name": "Votre nom et prénom :",
         "guest-name": "Tapez votre nom...",
-        "children-text": `Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
-					garder et venir seuls`,
+        "children-text":
+`Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
+garder et venir seuls`,
         "submit-button": "Confirmer",
         "thank-you": "Merci, votre réponse a été enregistrée",
         // Infos Page
@@ -66,7 +67,7 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         // Accordéon
         "lodging-main-title": "🏨 Logement",
         "lodging-intro-text": "Nous vous proposons une liste d’hébergements (hôtels, airbnb, gîtes) à proximité du lieu du mariage. 🏡",
-        "lodging-title": "Logements / Alojamiento",
+        "lodging-title": "", // CORRECTION 2: Suppression du titre superflu
         "lodging-intro": "",
         "lodging-caption": "Logements proches du lieu",
         "lodging_col_name": "Nom",
@@ -105,6 +106,9 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "lodging_6_capacity": "16 personnes",
         "lodging_6_phone": "627 002 554 / 636 996 149",
         "travel-title": "🗺️ Comment y aller ?",
+        "travel-table-caption": "Aéroports et temps de trajet", // Nouvelle clé pour le titre du tableau de voyage
+        "travel-table-col-airport": "Aéroport", // Nouvelle clé pour les titres de colonnes
+        "travel-table-col-time": "Temps de trajet", // Nouvelle clé pour les titres de colonnes
         "wedding-title": "💍 Informations sur le mariage",
         "wedding-text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
         "party-title": "🎉 Planning fun",
@@ -115,12 +119,11 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "party-5": "🌅 02h00 – Fin de la fête",
         "info_access-title": "✨ Informations pratiques",
         "info_access-text": "Tenue : élégante mais confortable (on dansera 💃). Les enfants sont les bienvenus ! 👶",
-        "info_access-move": `Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
-					distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
+        "info_access-move":
+`Nous recommandons chaleureusement d’avoir un moyen de locomotion sur place, les 
+distances peuvent être longues et les transports publics ne sont pas optimales partout.`,
         "travel_airports_intro": "✈️ Aéroports",
-        "travel_airport_scq": "SCQ — Santiago de Compostela (Aéroport Lavacolla) — ~30–40 min",
-        "travel_airport_vgo": "VGO — Vigo — ~1h",
-        "travel_airport_opo": "OPO — Porto — ~2h15–2h30"
+        // Suppression des anciennes clés de voyage
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -164,7 +167,8 @@ Me encantaría que todos vosotros compartierais ese momento con nosotros (promet
         "label-non": "No",
         "label-name": "Nombre y apellido:",
         "guest-name": "Escribe tu nombre...",
-        "children-text": `Sus hijos son más que bienvenidos. 
+        "children-text":
+`Sus hijos son más que bienvenidos. 
 Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la boda, les recomendamos considerar dejarlos al cuidado de alguien y venir tranquilos`,
         "submit-button": "Confirmar",
         "thank-you": "Gracias, tu respuesta ha sido guardada",
@@ -179,7 +183,7 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "rsvp-prompt": "Introduce la contraseña para confirmar tu RSVP:",
         "lodging-main-title": "🏨 Alojamiento",
         "lodging-intro-text": "Os ofrecemos una lista de alojamientos (hoteles, airbnb, casas rurales) cerca del lugar del matrimonio. 🏡",
-        "lodging-title": "Alojamientos / Logements",
+        "lodging-title": "", // CORRECTION 2: Suppression du titre superflu
         "lodging-intro": "",
         "lodging-caption": "Alojamientos cercanos al lugar",
         "lodging_col_name": "Nombre",
@@ -218,6 +222,9 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "lodging_6_capacity": "16 personas",
         "lodging_6_phone": "627 002 554 / 636 996 149",
         "travel-title": "🗺️ Cómo llegar",
+        "travel-table-caption": "Aeropuertos y tiempo de viaje", // Nouvelle clé pour le titre du tableau de voyage
+        "travel-table-col-airport": "Aeropuerto", // Nouvelle clé pour les titres de colonnes
+        "travel-table-col-time": "Tiempo de viaje", // Nouvelle clé pour les titres de colonnes
         "wedding-title": "💍 Información sobre la boda",
         "wedding-text": "Vestimenta: elegante pero cómoda (¡habrá baile 💃!). ¡Los niños son bienvenidos! 👶",
         "party-title": "🎉 Plan de la fiesta",
@@ -228,14 +235,20 @@ Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la
         "party-5": "🌅 02:00 – Fin de la celebración",
         "info_access-title": "✨ Información práctica",
         "info_access-text": "Vestimenta: elegante pero cómoda (¡habrá baile 💃!). ¡Los niños son bienvenidos! 👶",
-        "info_access-move": `Recomendamos encarecidamente disponer de un medio de transporte en la zona, ya que las distancias pueden ser largas y el transporte público 
-					no es óptimo en todas partes.`,
+        "info_access-move":
+`Recomendamos encarecidamente disponer de un medio de transporte en la zona, ya que las distancias pueden ser largas y el transporte público 
+no es óptimo en todas partes.`,
         "travel_airports_intro": "✈️ Aeropuertos",
-        "travel_airport_scq": "SCQ — Santiago de Compostela (Lavacolla) — ~30–40 min",
-        "travel_airport_vgo": "VGO — Vigo — ~1h",
-        "travel_airport_opo": "OPO — Porto — ~2h15–2h30"
+        // Suppression des anciennes clés de voyage
     }
 };
+
+// Données des aéroports pour la création du tableau (indépendantes de la langue)
+const airportData = [
+    { code: "SCQ", name_fr: "Santiago de Compostela (Aéroport Lavacolla)", name_es: "Santiago de Compostela (Lavacolla)", time: "~30–40 min" },
+    { code: "VGO", name_fr: "Vigo", name_es: "Vigo", time: "~1h" },
+    { code: "OPO", name_fr: "Porto", name_es: "Porto", time: "~2h15–2h30" }
+];
 
 // ----------------- UTIL & CORE FUNCTIONS -----------------
 function safeGet(id) { return document.getElementById(id) || null; }
@@ -245,6 +258,34 @@ async function sha256Hex(str) {
     const data = enc.encode(str);
     const hashBuffer = await crypto.subtle.digest('SHA-256', data);
     return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+/**
+ * Génère le tableau HTML pour les informations de voyage (Aéroports).
+ * @param {string} lang 'fr' ou 'es'
+ * @returns {string} HTML du tableau.
+ */
+function generateTravelTable(lang) {
+    const t = translations[lang];
+    const colAirportKey = `name_${lang}`; // Utilise le nom en FR ou ES
+    
+    let tableHtml = `<table class="travel-table">`;
+    tableHtml += `<caption>${t["travel-table-caption"]}</caption>`;
+    tableHtml += `<thead><tr>`;
+    tableHtml += `<th>${t["travel-table-col-airport"]}</th>`;
+    tableHtml += `<th>${t["travel-table-col-time"]}</th>`;
+    tableHtml += `</tr></thead>`;
+    tableHtml += `<tbody>`;
+
+    airportData.forEach(airport => {
+        tableHtml += `<tr>`;
+        tableHtml += `<td>${airport.code} — ${airport[colAirportKey]}</td>`;
+        tableHtml += `<td>${airport.time}</td>`;
+        tableHtml += `</tr>`;
+    });
+
+    tableHtml += `</tbody></table>`;
+    return tableHtml;
 }
 
 
@@ -262,6 +303,12 @@ function applyTranslations(lang) {
                 element.innerHTML = t[key];
             }
         }
+    }
+
+    // CORRECTION 4: Générer et insérer le tableau de voyage
+    const travelContainer = safeGet('travel-table-container');
+    if (travelContainer) {
+        travelContainer.innerHTML = generateTravelTable(lang);
     }
 }
 

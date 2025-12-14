@@ -54,6 +54,9 @@ body.infos {
 .header-title h1 {
     font-size: 43px;
     margin-bottom: 0;
+    /* CORRECTION 1: Réduction de la hauteur du header sur la page infos pour correspondre à l'index */
+    /* L'ajustement est fait en retirant de l'espace non nécessaire ici, et en assurant que le padding est le même */
+    padding: 5px 0; 
 }
 
 nav {
@@ -443,7 +446,7 @@ body.infos .main-content {
     border-radius: 18px;
     padding: 30px;
     margin: 40px auto;
-    max-width: 1000px; /* CORRECTION 2 (LARGEUR CONTENEUR) : Augmentation de la largeur */
+    max-width: 1000px; 
     box-shadow: 0 6px 10px rgba(0,0,0,0.1);
     color: #4b3b2b;
     text-align: center;
@@ -455,8 +458,9 @@ body.infos .main-content {
 .accordion-item {
     background: #fdfaf6;
     border: 1px solid #e0d6c8;
+    /* CORRECTION 5: Réduction de l'espace entre les accordéons */
     border-radius: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Réduit l'espace vertical */
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -472,7 +476,8 @@ body.infos .main-content {
     background: #f5f0e6;
     color: #5a3e36;
     font-size: 1.2em;
-    padding: 15px 20px;
+    /* CORRECTION 5: Réduction de la hauteur de l'en-tête de l'accordéon */
+    padding: 12px 20px; 
     text-align: left;
     border: none;
     outline: none;
@@ -490,31 +495,38 @@ body.infos .main-content {
     color: #3e2a23;
 }
 
-/* CORRECTION ACCORDÉON: Assure le fonctionnement de l'animation */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    /* Ajout du 'padding' dans la transition pour un effet plus doux */
     transition: max-height 0.4s ease, padding 0.4s ease;
     background: #f7f3eb;
-    /* Retrait du padding vertical pour ne pas bloquer la hauteur à 0 quand l'accordéon est fermé */
     padding: 0 20px; 
 }
 
 .accordion-header.active + .accordion-content {
-    /* Ajout du padding vertical uniquement quand l'accordéon est actif */
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .accordion-content p, .accordion-content ul {
-    /* Retrait du padding des éléments internes pour éviter les sauts de hauteur */
+    /* CORRECTION 3: Suppression de l'espace initial au-dessus du premier texte/liste */
     padding: 0; 
-    margin: 15px 0; /* Utiliser margin au lieu de padding ici */
+    margin: 0; /* Supprime la marge par défaut */
     color: #4b3c32;
     line-height: 1.6;
-    text-align: left; /* Meilleure lisibilité */
+    text-align: left; 
 }
+
+/* CORRECTION 3: Ajout d'une marge seulement aux éléments suivants */
+.accordion-content p + p, .accordion-content ul + p, .accordion-content p + ul {
+    margin-top: 15px;
+}
+
+/* Correction spécifique pour le premier élément dans l'accordéon Logement (intro-text) */
+.accordion-content #lodging-intro-text {
+    margin-top: 0;
+}
+
 .accordion-content ul {
     list-style-position: inside;
     padding-left: 20px;
@@ -525,7 +537,7 @@ body.infos .main-content {
     font-size: 0.8em;
     float: right;
     transition: transform 0.3s;
-    margin-left: 10px; /* Pour séparer l'icône du texte */
+    margin-left: 10px; 
 }
 
 .accordion-header.active::after {
@@ -537,10 +549,11 @@ body.infos .main-content {
 }
 
 /* -------------------- TABLEAU -------------------- */
-.lodging-table {
+.lodging-table, .travel-table { /* Ajout de .travel-table */
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    /* CORRECTION 2: Réduction de l'espace autour des tableaux */
+    margin: 15px 0; 
     font-size: 0.9em;
     border: 1px solid #d8c9b5;
     border-radius: 8px;
@@ -548,20 +561,20 @@ body.infos .main-content {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.lodging-table caption {
+.lodging-table caption, .travel-table caption {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.1em;
     color: #5a3e36;
 }
 
-.lodging-table th, .lodging-table td {
-    padding: 12px 15px;
+.lodging-table th, .lodging-table td, .travel-table th, .travel-table td {
+    padding: 10px 15px; /* Réduction du padding */
     text-align: left;
     border-bottom: 1px solid #e6dfd3;
 }
 
-.lodging-table th {
+.lodging-table th, .travel-table th {
     background-color: #f5f0e6;
     color: #3e2a23;
     font-weight: 600;
@@ -569,12 +582,21 @@ body.infos .main-content {
     letter-spacing: 0.05em;
 }
 
-.lodging-table tbody tr:nth-child(even) {
+.lodging-table tbody tr:nth-child(even), .travel-table tbody tr:nth-child(even) {
     background-color: #fcfcfc;
 }
 
-.lodging-table tbody tr:hover {
+.lodging-table tbody tr:hover, .travel-table tbody tr:hover {
     background-color: #fff8f0;
+}
+
+/* CORRECTION 4: Style spécifique pour le tableau des aéroports */
+.travel-table td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+.travel-table td:last-child {
+    width: 70%;
 }
 
 /* -------------------- RESPONSIVE -------------------- */
