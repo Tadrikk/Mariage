@@ -45,25 +45,6 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "label-seconds": "SECONDES",
         "rsvp-title-index": "Serez-vous présent ?",
         "rsvp-datelim-index":"Nous avons hâte de célébrer ce jour spécial avec vous !",
-        "label-oui": "Oui",
-        "label-non": "Non",
-        "label-name": "Votre nom et prénom :",
-        "guest-name": "Tapez votre nom...",
-        "children-text":
-`Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
-garder et venir seuls`,
-        "submit-button": "Confirmer",
-        "thank-you": "Merci, votre réponse a été enregistrée",
-        // Infos Page
-        "infos-title": "Où et quand ?",
-        "infos-ceremonie": "Cérémonie : 14 août 2026 – Pazo de Xerlís, A Estrada (Galice, Espagne)",
-        "infos-hour": "Heure : 14h00",
-        "infos-whatsapp-button": "Rejoindre le groupe WhatsApp",
-        "infos-whatsapp-prompt": "Entrez le mot de passe pour accéder au groupe WhatsApp :",
-        "infos-whatsapp-link-label": "👉 Rejoindre",
-        "infos-whatsapp-incorrect": "Mot de passe incorrect !",
-        "infos-whatsapp-text": "Rejoignez le groupe pour les infos",
-        "rsvp-prompt": "Entrez le mot de passe pour confirmer votre RSVP :",
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
         "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
@@ -166,24 +147,6 @@ Me encantaría que todos vosotros compartierais ese momento con nosotros (promet
         "label-seconds": "SEGUNDOS",
         "rsvp-title-index": "¿Vienes a la boda?",
         "rsvp-datelim-index":"¡Estamos deseando celebrar este día tan especial con vosotros!",
-        "label-oui": "Sí",
-        "label-non": "No",
-        "label-name": "Nombre y apellido:",
-        "guest-name": "Escribe tu nombre...",
-        "children-text":
-`Sus hijos son más que bienvenidos. 
-Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la boda, les recomendamos considerar dejarlos al cuidado de alguien y venir tranquilos`,
-        "submit-button": "Confirmar",
-        "thank-you": "Gracias, tu respuesta ha sido guardada",
-        "infos-title": "¿Dónde y cuándo?",
-        "infos-ceremonie": "Ceremonia: 14 de agosto de 2026 – Pazo de Xerlís, A Estrada (Galicia, España)",
-        "infos-hour": "Hora: 14:00",
-        "infos-whatsapp-button": "Acceder al grupo de WhatsApp",
-        "infos-whatsapp-prompt": "Introduce la contraseña para acceder al grupo de WhatsApp:",
-        "infos-whatsapp-link-label": "👉 Unirse",
-        "infos-whatsapp-incorrect": "¡Contraseña incorrecta!",
-        "infos-whatsapp-text": "Únete al grupo para recibir información",
-        "rsvp-prompt": "Introduce la contraseña para confirmar tu RSVP:",
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
         "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
@@ -397,8 +360,13 @@ function toggleAccordion() {
     if (content.style.maxHeight) {
         content.style.maxHeight = ""; // Fermer
     } else {
-        // Utiliser scrollHeight pour déterminer la hauteur nécessaire
-        content.style.maxHeight = content.scrollHeight + "px"; // Ouvrir
+        // CORRECTION CRITIQUE: Utiliser setTimeout(0) pour forcer le navigateur à
+        // calculer correctement la hauteur après le rendu de tout le contenu long.
+        content.style.maxHeight = "0"; // Assurer le point de départ de la transition
+        setTimeout(() => {
+            // Le calcul de scrollHeight est fiable ici
+            content.style.maxHeight = content.scrollHeight + "px"; 
+        }, 0);
     }
 }
 
