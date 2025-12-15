@@ -127,7 +127,7 @@ nav button#lang-toggle {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    padding: 6px 12px;
+    padding: 8px 8px;
     border-radius: 4px;
     transition: background 0.3s, color 0.3s;
 }

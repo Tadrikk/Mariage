@@ -67,8 +67,7 @@ Quelques jours plus tard, dans un train en direction de Madrid, on vous annonce 
 J’avais déjà établi ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.
 C’est à partir de ce soir-là que notre belle histoire a commencé.
 
-Nous avons vécu de nombreuses belles expériences : d’abord cuisiner chez elle, puis passer des soirées à commander de la nourriture très saine… et à prendre du poids. Ensuite, rencontrer sa famille et découvrir leur organisation légendaire, prendre encore du poids,
-refuser de danser la salsa avec elle pour finalement en danser avec quelqu'un d'autres qui a su me convaincre en 10 secondes,
+Nous avons vécu de nombreuses belles expériences : d’abord cuisiner chez elle, puis passer des soirées à commander de la nourriture très saine… et à prendre du poids. Ensuite, rencontrer sa famille et découvrir leur organisation légendaire, prendre encore du poids, refuser de danser la salsa avec elle pour finalement en danser avec quelqu'un d'autres qui a su me convaincre en 10 secondes,
 me rendre compte dès sa première rencontre avec ma famille en Galice, qu'elle l’aime plus que moi, et enfin jusqu'à même quitter ma ville natale pour vivre avec elle au Luxembourg.
 Bien sûr, je n'oublie pas tous les voyages que nous avons faits (Indonésie, Guadeloupe, Jordanie, Japon, et j’en passe), grâce auxquels j’ai pu découvrir des parties de moi encore inconnues.
 
@@ -84,15 +83,7 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
         "label-seconds": "SECONDES",
         "rsvp-title-index": "Serez-vous présent ?",
         "rsvp-datelim-index":"Nous avons hâte de célébrer ce jour spécial avec vous !",
-        "label-oui": "Oui",
-        "label-non": "Non",
-        "label-name": "Votre nom et prénom :",
-        "guest-name": "Tapez votre nom...",
-        "children-text":
-`Vos enfants sont les bienvenus, néanmoins si vous pensez qu’être accompagné de votre enfant impactera votre présence au mariage nous recommandons dans ces cas là de les faire 
-garder et venir seuls`,
-        "submit-button": "Confirmer",
-        "thank-you": "Merci, votre réponse a été enregistrée",
+        "rsvp-button": "RSVP",
         // Infos Page
         "infos-title": "Où et quand ?",
         "infos-ceremonie": "Cérémonie : 14 août 2026 – Pazo de Xerlís, A Estrada (Galice, Espagne)",
@@ -100,7 +91,7 @@ garder et venir seuls`,
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver.
+        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="info_comp.html">Infos complémentaires</a>.).
 
 Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
 
@@ -209,18 +200,19 @@ Los años pasan, vivimos muchas aventuras, pero la distancia nos separa: Adri en
 El 19 de mayo de 2025, quien nos había unido por primera vez fue testigo de nuestro compromiso. Allí, en Galicia, y más concretamente en las Islas Cíes, Adri está delante de mí de rodillas y me pide que nos casemos. Digo que sí, obviamente, sí a vivir nuestra vida para siempre.
 
 Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenzamos los preparativos de nuestra boda en Galicia — ¿dónde si no? En nuestra tierra querida que queríamos mostraros desde hace años. Si queréis descubrir el paraíso o venir a acompañarnos, os esperamos el 14 de agosto de 2026 en el Pazo de Xerlís.`,
+       
         "adrian-text":
-`Nos conocimos el (... lo recuerdo ...) 14 de octubre, en una fiesta de despedida de una amiga común.
-Ya tenía mi estrategia para hablarle y ella, inocente, no sospechaba nada.
-Caminó por delante del bar y la llamé, me di cuenta de que teníamos la misma pasión por la comida y el deporte y que a los dos nos gustaba reírnos.
-Esa noche comenzó nuestra historia.
+`Nos conocimos el... (deja que piense...) 14 de octubre, en la fiesta de despedida de una amiga en común.
 
-Hemos vivido muchas experiencias bonitas: cocinar en su casa, pasar noches pidiendo comida sana... y ganando peso. Conocer a su familia y descubrir su organización legendaria, no querer bailar salsa con ella para acabar bailando con alguien que me convenció en 10 segundos, darme cuenta en su primera reunión con mi familia en Galicia que ella les quiere más que a mí, y finalmente dejar mi ciudad natal para vivir con ella en Luxemburgo. No olvido todos los viajes que hemos hecho (Indonésie, Guadeloupe, Jordania, Japón, y más), gracias a los cuales descubrí partes de mí desconocidas.
+Yo ya había establecido mi estrategia para abordarla, mientras ella, inocente, no sospechaba nada. A partir de esa noche, nuestra hermosa historia comenzó.
 
-Bref, el 19 de mayo de 2025 le pedí matrimonio y, sin sorpresa (porque siempre estoy seguro), dijo que sí.
-Nuestra primera conversación fue sobre Galicia, y ahí vamos a celebrarlo.
+Hemos vivido muchas experiencias maravillosas: primero, cocinar en su casa, luego, pasar noches pidiendo comida muy sana... y ganando peso. Después, conocer a su familia y descubrir su legendaria organización, ganar aún más peso, negarme a bailar salsa con ella para finalmente bailar con otra persona que me convenció en 10 segundos, darme cuenta, desde su primer encuentro con mi familia en Galicia, que lo quiere más que a mí, y finalmente, hasta dejar mi ciudad natal para vivir con ella en Luxemburgo. Por supuesto, no olvido todos los viajes que hicimos (Indonesia, Guadalupe, Jordania, Japón, y más), gracias a los cuales pude descubrir partes de mí mismo que aún no conocía.
 
-Me encantaría que todos vosotros compartierais ese momento con nosotros (prometo que no os decepcionará).`,
+En resumen, el 19 de mayo de 2025, le pedí matrimonio y, sin sorpresa (porque siempre estoy seguro de mí mismo), dijo que sí.
+
+Nuestro primer tema de conversación fue sobre Galicia, y es allí donde finalmente sellaremos nuestra unión.
+
+Me encantaría, de todo corazón, que estéis todos presentes para compartir este momento con nosotros (¡os prometo que no os decepcionaremos!).`,
         "titre-principal": "Clara & Adrián",
         "countdown-title": "El gran día llega en",
         "label-days": "DÍAS",
@@ -229,15 +221,7 @@ Me encantaría que todos vosotros compartierais ese momento con nosotros (promet
         "label-seconds": "SEGUNDOS",
         "rsvp-title-index": "¿Vienes a la boda?",
         "rsvp-datelim-index":"¡Estamos deseando celebrar este día tan especial con vosotros!",
-        "label-oui": "Sí",
-        "label-non": "No",
-        "label-name": "Nombre y apellido:",
-        "guest-name": "Escribe tu nombre...",
-        "children-text":
-`Sus hijos son más que bienvenidos. 
-Sin embargo, si creen que venir con ellos podría hacerles disfrutar menos de la boda, les recomendamos considerar dejarlos al cuidado de alguien y venir tranquilos`,
-        "submit-button": "Confirmar",
-        "thank-you": "Gracias, tu respuesta ha sido guardada",
+        "rsvp-button": "Confirmación",
         "infos-title": "¿Dónde y cuándo?",
         "infos-ceremonie": "Ceremonia: 14 de agosto de 2026 – Pazo de Xerlís, A Estrada (Galicia, España)",
         "infos-hour": "Hora: 1:00",
@@ -427,6 +411,15 @@ function applyTranslations(lang) {
             } else {
                 element.innerHTML = t[key];
             }
+        }
+    }
+
+    const langToggle = safeGet('lang-toggle');
+    if (langToggle) {
+        if (lang === 'fr') {
+            langToggle.textContent = 'ES'; // Si la page est en FR, le bouton propose de passer à ES
+        } else {
+            langToggle.textContent = 'FR'; // Si la page est en ES, le bouton propose de passer à FR
         }
     }
 
