@@ -92,7 +92,7 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="infos_comp.html">Infos complémentaires</a>.).
+        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="infos_comp.html">Infos complémentaires</a>).
 
 Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
 
@@ -146,7 +146,8 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "travel-table-col-time": "Temps de trajet", 
         "info_access-title": "✨ Informations pratiques",
         "info_access-text1": 
-        `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus)
+        `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus).
+        
         Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
                             Le mariage est à 18h le 14 août 2026 au Pazo de Xerlis`,
@@ -235,7 +236,7 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar (<a href="infos_comp.html">Información adicional</a>.)..
+        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar (<a href="infos_comp.html">Información adicional</a>).
 
 Con Adri estaremos primero en la zona de Nigrán/Oia antes de la boda y, después de la boda, estaremos en la zona de Vilagarcía de Arousa.
 
@@ -290,7 +291,8 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
         "info_access-text1": 
-        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y lima)
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y lima).
+        
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
