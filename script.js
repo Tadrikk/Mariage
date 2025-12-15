@@ -15,31 +15,32 @@ const planningData = [
     { day: "Lundi: 17", key: "Mon-17" },
 ];
 
-// Nouvelle structure de données pour les lieux en Galice avec Provinces et Restaurants
+// Nouvelle structure de données pour les lieux en Galice avec Provinces et Restaurants  
 const galiciaData = [
-    { province: "Lugo", location: "Playa de las Catedrales", attraction: "", restaurant: "" },
-    { province: "A Coruña", location: "Finisterre", attraction: "Phare du Cap Finisterre", restaurant: "" },
-    { province: "A Coruña", location: "Mirador de Coitelo", attraction: "Acantilados de Loiba", restaurant: "" },
-    { province: "A Coruña", location: "Ruínas do Muíño de Sesín", attraction: "", restaurant: "" },
-    { province: "A Coruña", location: "Mosteiro de Santa María de Monfero", attraction: "", restaurant: "" },
-    { province: "Ourense", location: "Canón do Sil", attraction: "", restaurant: "" },
-    { province: "Ourense", location: "Termas de Prexigueiro", attraction: "", restaurant: "" },
-    { province: "Ourense", location: "Miradoiro de Vilouxe", attraction: "", restaurant: "" },
-    { province: "Ourense", location: "Columpio O bambán do solpor", attraction: "A Mirada Máxica", restaurant: "" },
-    { province: "Ourense", location: "Columpio de Adega Terrabrava", attraction: "", restaurant: "" },
-    { province: "Ourense", location: "Allariz", attraction: "", restaurant: "" },
-    { province: "Pontevedra", location: "A Guarda", attraction: "Moulins de Folón, Castro de Santa Trega", restaurant: "Porto Guardés, As Brasas" },
-    { province: "Pontevedra", location: "Baiona", attraction: "Casco viejo (le centre), Parador de Baiona, Virxe da Rocha", restaurant: "" },
-    { province: "Pontevedra", location: "Islas Cíes", attraction: "Départ possible de Vigo également", restaurant: "" },
-    { province: "Pontevedra", location: "Nigrán", attraction: "Monteferro", restaurant: "Taperia O'Druída" },
-    { province: "Pontevedra", location: "Pontevedra", attraction: "Casco viejo (le centre), Praza da Leña, Pazo de Lourizán", restaurant: "Kamelia Taberna ?" },
-    { province: "Pontevedra", location: "Combarro", attraction: "Combarro", restaurant: "" },
-    { province: "Pontevedra", location: "O Grove", attraction: "", restaurant: "" },
-    { province: "Pontevedra", location: "Villagarcia de Arousa", attraction: "A Illa de Arousa, Illa San Sadurniño", restaurant: "" },
-    { province: "Pontevedra", location: "Sanxenxo", attraction: "", restaurant: "" },
-    { province: "Pontevedra", location: "Baroña", attraction: "Castro de Baroña", restaurant: "" },
-    { province: "Pontevedra", location: "Padron", attraction: "Son marché très réputé avec les pulpeiros", restaurant: "" },
-    { province: "Santiago de Compostela", location: "Santiago de Compostela", attraction: "Miradoiro da Catedral, Cathédrale de Saint-Jacques-de-Compostelle", restaurant: "" },
+    { province: "Lugo", location: "Playa de las Catedrales", attraction: "Là où la mer sculpte des cathédrales de pierre, un chef-d’œuvre naturel à contempler au rythme des marées.", attraction_es: "Donde el mar esculpe catedrales de piedra, una obra maestra natural a contemplar al ritmo de las mareas.", restaurant: "" },
+    { province: "Lugo", location: "La muralla de Lugo", attraction: "Une muraille romaine qui enlace la ville depuis des siècles, comme un cercle de légendes et d’histoire.", attraction_es: "Una muralla romana que abraza la ciudad desde hace siglos, como un círculo de leyendas e historia.", restaurant: "" },
+    { province: "A Coruña", location: "Finisterre", attraction: "Le bout du monde… là où le soleil se couche dans l’océan et où le phare veille sur les âmes voyageuses.", attraction_es: "El fin del mundo... donde el sol se pone en el océano y el faro vela por las almas viajeras.", restaurant: "" },
+    { province: "A Coruña", location: "Mirador de Coitelo", attraction: "Acantilados de Loiba : Des falaises vertigineuses où le vent raconte des légendes celtes.", attraction_es: "Acantilados de Loiba: Acantilados vertiginosos donde el viento cuenta leyendas celtas.", restaurant: "" },
+    { province: "A Coruña", location: "Ruínas do Muíño de Sesín", attraction: "Vestiges mystérieux, témoins d’un temps suspendu entre forêt et rivière.", attraction_es: "Vestigios misteriosos, testigos de un tiempo suspendido entre bosque y río.", restaurant: "" },
+    { province: "A Coruña", location: "Mosteiro de Santa María de Monfero", attraction: "Un monastère qui semble murmurer des prières à travers ses pierres centenaires.", attraction_es: "Un monasterio que parece susurrar oraciones a través de sus piedras centenarias.", restaurant: "" },
+    { province: "Ourense", location: "Canón do Sil", attraction: "Un canyon majestueux où la rivière dessine des arabesques au cœur des vignobles.", attraction_es: "Un cañón majestuoso donde el río dibuja arabescos en el corazón de los viñedos.", restaurant: "" },
+    { province: "Ourense", location: "Termas de Prexigueiro", attraction: "Sources chaudes en pleine nature, pour un bain sous les étoiles.", attraction_es: "Fuentes termales en plena naturaleza, para un baño bajo las estrellas.", restaurant: "" },
+    { province: "Ourense", location: "Miradoiro de Vilouxe", attraction: "Un balcon sur l’infini, où la Galice se dévoile dans toute sa splendeur.", attraction_es: "Un balcón hacia el infinito, donde Galicia se revela en todo su esplendor.", restaurant: "" },
+    { province: "Ourense", location: "Columpio O bambán do solpor", attraction: "Une balançoire suspendue entre ciel et terre, pour toucher le coucher du soleil. (A Mirada Máxica)", attraction_es: "Un columpio suspendido entre cielo y tierra, para tocar la puesta de sol. (A Mirada Máxica)", restaurant: "" },
+    { province: "Ourense", location: "Columpio de Adega Terrabrava", attraction: "Là où le vin et le vent s’unissent pour offrir une vue magique.", attraction_es: "Donde el vino y el viento se unen para ofrecer una vista mágica.", restaurant: "" },
+    { province: "Ourense", location: "Allariz", attraction: "Un village médiéval qui semble sorti d’un conte, avec ses ruelles pavées et ses jardins secrets.", attraction_es: "Un pueblo medieval que parece sacado de un cuento, con sus calles empedradas y jardines secretos.", restaurant: "" },
+    { province: "Pontevedra", location: "A Guarda", attraction: "Moulins de Folón et Castro de Santa Trega, où l’histoire danse avec le vent.", attraction_es: "Molinos de Folón y el Castro de Santa Trega, donde la historia baila con el viento.", restaurant: "Porto Guardés, As Brasas" },
+    { province: "Pontevedra", location: "Baiona", attraction: "Entre son vieux centre, le Parador et la Virxe da Rocha, une ville qui respire l’élégance maritime.", attraction_es: "Entre su casco antiguo, el Parador y la Virxe da Rocha, una ciudad que respira elegancia marítima.", restaurant: "" },
+    { province: "Pontevedra", location: "Islas Cíes", attraction: "Un paradis surnommé « les Caraïbes galiciennes », où la mer se pare de turquoise.", attraction_es: "Un paraíso apodado «el Caribe gallego», donde el mar se tiñe de turquesa.", restaurant: "" },
+    { province: "Pontevedra", location: "Nigrán", attraction: "Monteferro : Un promontoire magique pour admirer l’océan infini.", attraction_es: "Monteferro: Un promontorio mágico para admirar el océano infinito.", restaurant: "Taperia O'Druída" },
+    { province: "Pontevedra", location: "Pontevedra", attraction: "Flânez dans son centre historique, entre places animées et palais cachés. (Suggestion : Kamelia Taberna)", attraction_es: "Pasee por su centro histórico, entre plazas animadas y palacios escondidos. (Sugerencia: Kamelia Taberna)", restaurant: "" },
+    { province: "Pontevedra", location: "Combarro", attraction: "Un village de carte postale, avec ses hórreos en pierre face à la mer.", attraction_es: "Un pueblo de postal, con sus hórreos de piedra frente al mar.", restaurant: "" },
+    { province: "Pontevedra", location: "O Grove", attraction: "Terre de fruits de mer et de couchers de soleil dorés.", attraction_es: "Tierra de mariscos y puestas de sol doradas.", restaurant: "" },
+    { province: "Pontevedra", location: "Villagarcia de Arousa", attraction: "Découvrez A Illa de Arousa et Illa San Sadurniño, joyaux au cœur des rías.", attraction_es: "Descubra A Illa de Arousa e Illa San Sadurniño, joyas en el corazón de las rías.", restaurant: "" },
+    { province: "Pontevedra", location: "Sanxenxo", attraction: "Plages dorées et ambiance festive au bord de l’Atlantique.", attraction_es: "Playas doradas y ambiente festivo junto al Atlántico.", restaurant: "" },
+    { province: "Pontevedra", location: "Baroña", attraction: "Le Castro de Baroña, vestige celte face à l’océan, où le temps semble s’arrêter.", attraction_es: "El Castro de Baroña, vestigio celta frente al océano, donde el tiempo parece detenerse.", restaurant: "" },
+    { province: "Pontevedra", location: "Padron", attraction: "Son marché animé et ses pulpeiros, pour goûter à l’authenticité galicienne.", attraction_es: "Su mercado animado y sus pulpeiros, para saborear la autenticidad gallega.", restaurant: "" },
+    { province: "Santiago de Compostela", location: "Santiago de Compostela", attraction: "La cathédrale et son mirador, un lieu où chaque pierre respire la spiritualité et l’histoire.", attraction_es: "La catedral y su mirador, un lugar donde cada piedra respira espiritualidad e historia.", restaurant: "" },
 ];
 
 // ----------------- TRANSLATIONS (FR / ES) -----------------
@@ -91,7 +92,7 @@ J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce m
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="info_comp.html">Infos complémentaires</a>.).
+        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="infos_comp.html">Infos complémentaires</a>.).
 
 Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
 
@@ -141,16 +142,17 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "lodging_7_phone": "Airbnb",
         // Accordéon Voyage
         "travel-title": "🗺️ Comment y aller ?",
-        "travel_airports_intro": "✈️ Aéroports", // Utilisé pour le titre des aéroports au-dessus du tableau
         "travel-table-col-airport": "Aéroport", 
         "travel-table-col-time": "Temps de trajet", 
         "info_access-title": "✨ Informations pratiques",
-        "info_access-text1": "Thème du mariage: Yellow Touch 🌟 (Tournesol et citrons exclus) ",
+        "info_access-text1": 
+        `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus)
+        Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
                             Le mariage est à 18h le 14 août 2026 au Pazo de Xerlis`,
-        "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
+        "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau ❤️. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
 
-        Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
+        💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
         "rsvp-click-text": "Cliquez ici pour accéder au formulaire RSVP 👇",
         "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
     
@@ -168,17 +170,22 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona", // Mercredi 12
         "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "", // Jeudi 13
         "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
-        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "Fiesta del Agua (Villagarcía)", "data-Sat-15-S": "Fiesta del Agua (Villagarcía)", // Samedi 15
+        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "Ascencion: Messe Solennelle et Procession de San Roquiño", "data-Sat-15-S": "Ascension: Messe Solennelle et Procession de San Roquiño et Fiesta del Agua pendant la nuit", // Samedi 15
         "data-Sun-16-M": "Survivre", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
         // NOUVEAU POUR GALICE
-        "galice-intro": "Si vous avez l’occasion de prolonger votre séjour, voici quelques propositions de lieux à visiter. La Galice est très riche et il y en a pour tous les goûts ! (Notre région est Pontevedra)", // Légère mise à jour pour inclure la note sur Pontevedra
+        "galice-intro": 
+        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.
+        Si vous prolongez votre séjour…
+        Voici quelques lieux incontournables dans notre région`, // Légère mise à jour pour inclure la note sur Pontevedra
         "galice-col-province": "Province",
         "galice-col-location": "Lieu / Ville",
         "galice-col-attraction": "Visite / Point d'intérêt",
         "galice-col-restaurant": "Suggestions Restaurants",
-        "galice-title-caption": "Suggestions de visites en Galice"
+        "galice-title-caption": "Suggestions de visites en Galice",
+        "travel-table-col-airport": "Aéroport", 
+        "travel-table-col-time": "Information",
 
     },
     // Le bloc ES a été complété et adapté
@@ -228,7 +235,7 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar.
+        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar (<a href="infos_comp.html">Información adicional</a>.)..
 
 Con Adri estaremos primero en la zona de Nigrán/Oia antes de la boda y, después de la boda, estaremos en la zona de Vilagarcía de Arousa.
 
@@ -282,12 +289,14 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-airport": "Aeropuerto", 
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
-        "info_access-text1": "Temática de la boda: Yellow Touch 🌟 (excluyendo girasoles y lima) ",
+        "info_access-text1": 
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y lima)
+        Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
-La boda tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
-        "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
+        La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
+        "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
         
-        Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
+        💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
   
@@ -305,26 +314,49 @@ La boda tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís.`,
         "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Bayona",
         "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "",
         "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
-        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Fiesta del Agua (Villagarcía)", "data-Sat-15-S": "Fiesta del Agua (Villagarcía)",
+        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Asunción: Misa Solemne y Procesión de San Roquiño", "data-Sat-15-S": "Asunción: Misa Solemne y Procesión de San Roquiño y Fiesta del Agua durante la noche",
         "data-Sun-16-M": "Sobrevivir", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)",
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
 
         // NOUVEAU POUR GALICE
-        "galice-intro": "Si tienen la oportunidad de alargar su estancia, aquí hay algunas sugerencias de lugares para visitar. ¡Galicia es muy rica y hay para todos los gustos! (Nuestra región es Pontevedra)", // Légère mise à jour
+        "galice-intro": 
+        `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos. Entre tradiciones, gastronomía y el mítico Camino de Santiago,
+        cada rincón es una invitación al descubrimiento.
+        Si prolongan su estancia... Aquí tienen algunos lugares imprescindibles en nuestra región`,
         "galice-col-province": "Provincia",
         "galice-col-location": "Lugar / Ciudad",
         "galice-col-attraction": "Visita / Punto de interés",
         "galice-col-restaurant": "Sugerencias Restaurantes",
-        "galice-title-caption": "Sugerencias de visitas en Galicia"
+        "galice-title-caption": "Sugerencias de visitas en Galicia",
+        "travel-table-col-airport": "Aeropuerto", 
+        "travel-table-col-time": "Información",
     }
         
 };
 
 // Données des aéroports pour la création du tableau (indépendantes de la langue)
 const airportData = [
-    { code: "SCQ", name_fr: "Santiago de Compostela (Aéroport Lavacolla)", name_es: "Santiago de Compostela (Lavacolla)", time: "~30–40 min" },
-    { code: "VGO", name_fr: "Vigo", name_es: "Vigo", time: "~1h" },
-    { code: "OPO", name_fr: "Porto", name_es: "Porto", time: "~2h15–2h30" }
+    { 
+        code: "SCQ", 
+        name_fr: "Santiago de Compostela (Aéroport Lavacolla)", 
+        name_es: "Santiago de Compostela (Lavacolla)", 
+        info_fr: "Départ depuis BRU ou CRL, généralement avec escale. Proche de Villagarcia de Arousa.",
+        info_es: "Salida desde BRU o CRL, generalmente con escala. Cerca de Villagarcía de Arousa."
+    },
+    { 
+        code: "VGO", 
+        name_fr: "Vigo", 
+        name_es: "Vigo", 
+        info_fr: "Départ depuis BRU, avec escale. Proche de Nigran/Oia.", 
+        info_es: "Salida desde BRU, con escala. Cerca de Nigrán/Oia."
+    },
+    { 
+        code: "OPO", 
+        name_fr: "Porto", 
+        name_es: "Porto", 
+        info_fr: "Départ depuis CRL ou LUX, vols fréquents. Plus loin de VGO et SCQ.",
+        info_es: "Salida desde CRL o LUX, vuelos frecuentes. Más lejos de VGO y SCQ."
+    }
 ];
 
 // ----------------- UTIL & CORE FUNCTIONS -----------------
@@ -345,6 +377,7 @@ async function sha256Hex(str) {
 function generateTravelTable(lang) {
     const t = translations[lang];
     const colAirportKey = `name_${lang}`; 
+    const colInfoKey = `info_${lang}`;
     
     let tableHtml = `<table class="travel-table">`;
     tableHtml += `<caption>${t["travel-table-caption"]}</caption>`;
@@ -357,7 +390,7 @@ function generateTravelTable(lang) {
     airportData.forEach(airport => {
         tableHtml += `<tr>`;
         tableHtml += `<td>${airport.code} — ${airport[colAirportKey]}</td>`;
-        tableHtml += `<td>${airport.time}</td>`;
+        tableHtml += `<td>${airport[colInfoKey]}</td>`;
         tableHtml += `</tr>`;
     });
 
@@ -374,6 +407,9 @@ function generateGaliciaTable(lang) {
 
     intro.textContent = texts["galice-intro"];
     
+    // Définir la clé d'attraction à utiliser en fonction de la langue
+    const attractionKey = lang === 'fr' ? 'attraction' : 'attraction_es';
+
     let html = `<div class="table-wrapper"> <table class="lodging-table">
         <caption id="galice-caption">${texts["galice-title-caption"]}</caption>
         <thead>
@@ -390,7 +426,7 @@ function generateGaliciaTable(lang) {
         html += `<tr>
             <td><strong>${item.province}</strong></td>
             <td>${item.location}</td>
-            <td>${item.attraction}</td>
+            <td>${item[attractionKey]}</td> 
             <td>${item.restaurant}</td>
         </tr>`;
     });
