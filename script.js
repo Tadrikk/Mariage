@@ -173,11 +173,11 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         
         // DONNÉES DU TABLEAU EN FRANÇAIS
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "", // Lundi 10
-        "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "60 AÑOS ARIANE", "data-Tue-11-S": "", // Mardi 11
-        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona", // Mercredi 12
-        "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "", // Jeudi 13
+        "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "Evènement familial", "data-Tue-11-S": "", // Mardi 11
+        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona (boire un verre)", // Mercredi 12
+        "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero (plage)", "data-Thu-13-S": "", // Jeudi 13
         "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
-        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "Ascencion: Messe Solennelle et Procession de San Roquiño", "data-Sat-15-S": "Ascension: Messe Solennelle et Procession de San Roquiño et Fiesta del Agua pendant la nuit", // Samedi 15
+        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua pendant la nuit", // Samedi 15
         "data-Sun-16-M": "Survivre", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
@@ -240,7 +240,7 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
         "rsvp-button": "Confirmación",
         "infos-title": "¿Dónde y cuándo?",
         "infos-ceremonie": "Ceremonia: 14 de agosto de 2026 – Pazo de Xerlís, A Estrada (Galicia, España)",
-        "infos-hour": "Hora: 1:00",
+        "infos-hour": "Hora: 18:00",
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
@@ -299,7 +299,7 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
         "info_access-text1": 
-        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y lima).
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).
         
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
@@ -320,11 +320,11 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         
         // DONNÉES DU TABLEAU EN ESPAGNOL (les noms des lieux restent généralement les mêmes)
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "",
-        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "60 AÑOS ARIANE", "data-Tue-11-S": "",
-        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Bayona",
-        "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero", "data-Thu-13-S": "",
+        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "Evemento familia", "data-Tue-11-S": "",
+        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona (tomar algo)",
+        "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero (playa)", "data-Thu-13-S": "",
         "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
-        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Asunción: Misa Solemne y Procesión de San Roquiño", "data-Sat-15-S": "Asunción: Misa Solemne y Procesión de San Roquiño y Fiesta del Agua durante la noche",
+        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua durante la noche",
         "data-Sun-16-M": "Sobrevivir", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)",
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
 
