@@ -195,7 +195,7 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "travel-table-col-time": "Information",
 
         // Road trip
-        "roadtrip-intro": "Nous vous proposons deux itinéraires pour arriver/repartir de Galice : (Cliquez sur 'Plus d'options' pour ouvrir la carte sur Google Maps)"
+        "roadtrip-intro": "Les proponemos dos itinerarios para llegar a / salir de Galicia."
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -342,8 +342,7 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-time": "Información",
 
         // Road trip
-        "roadtrip-intro": "Nous vous proposons deux itinéraires pour arriver/repartir de Galice : (Cliquez sur 'Plus d'options' pour ouvrir la carte sur Google Maps)"
-    }
+        "roadtrip-intro": "Nous vous proposons deux itinéraires pour arriver/repartir de Galice"    }
         
 };
 
