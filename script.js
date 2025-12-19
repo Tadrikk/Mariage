@@ -64,19 +64,25 @@ Le 19 mai 2025, celle qui nous avait unis pour la première fois, est témoin de
 
 Quelques jours plus tard, dans un train en direction de Madrid, on vous annonce la nouvelle et on commence les préparatifs de notre mariage, en Galice, où d’autre ? Dans notre terre tant aimée que nous souhaitions vous présenter depuis tant d’années, alors si vous êtes curieux de découvrir le paradis ou si vous souhaitez assister à notre union, on vous attend le 14 août 2026 au Pazo de Xerlis.`,
         "adrian-text":
-`Nous nous sommes rencontrés le (... je réfléchis ...) 14 octobre, lors d’une soirée d’adieu d’une amie commune.
-J’avais déjà établi ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.
-C’est à partir de ce soir-là que notre belle histoire a commencé.
+`Nous nous sommes rencontrés le… (je réfléchis…) 14 octobre, lors de la soirée d’adieu d’une amie commune.
+De mon côté, j’avais déjà préparé ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.
+C’est ce soir-là que notre belle histoire a commencé.
 
-Nous avons vécu de nombreuses belles expériences : d’abord cuisiner chez elle, puis passer des soirées à commander de la nourriture très saine… et à prendre du poids. Ensuite, rencontrer sa famille et découvrir leur organisation légendaire, prendre encore du poids, refuser de danser la salsa avec elle pour finalement en danser avec quelqu'un d'autres qui a su me convaincre en 10 secondes,
-me rendre compte dès sa première rencontre avec ma famille en Galice, qu'elle l’aime plus que moi, et enfin jusqu'à même quitter ma ville natale pour vivre avec elle au Luxembourg.
-Bien sûr, je n'oublie pas tous les voyages que nous avons faits (Indonésie, Guadeloupe, Jordanie, Japon, et j’en passe), grâce auxquels j’ai pu découvrir des parties de moi encore inconnues.
+Depuis, nous avons partagé beaucoup de moments incroyables : cuisiner chez elle, passer des soirées à commander de la nourriture très saine… et prendre du poids.
+Puis rencontrer la famille de Clara et découvrir leur organisation légendaire — et reprendre du poids.
+Refuser de danser la salsa avec Clara, pour finalement en danser avec quelqu’un d’autre qui a su me convaincre en dix secondes.
+Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’elle les aimait déjà plus que moi.
+Et, finalement, aller jusqu’à quitter ma ville natale pour venir vivre avec elle au Luxembourg.
 
-Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise (car je suis toujours sûr de moi), elle a dit oui.
-Notre premier sujet de discussion fut sur la Galice, et c’est finalement là que nous concrétisons notre union.
+Bien sûr, je n’oublie pas tous les voyages que nous avons faits, grâce auxquels j’ai découvert des facettes de moi que je ne connaissais pas encore.
 
-J’aimerais, du fond du cœur, que vous soyez tous présents pour partager ce moment avec nous (vous ne serez pas déçus, promis !)`,
-        "titre-principal": "Clara & Adrián",
+Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise — parce que je suis toujours sûr de moi — elle a dit oui.
+Notre tout premier sujet de discussion a été la Galice, et c’est finalement là-bas que nous avons décidé de concrétiser notre union.
+
+Du fond du cœur, j’aimerais que vous soyez tous présents pour partager ce moment avec nous.
+Promis, vous ne serez pas déçus.`,
+
+ "titre-principal": "Clara & Adrián",
         "countdown-title": "Le grand jour arrive dans",
         "label-days": "JOURS",
         "label-hours": "HEURES",
@@ -207,16 +213,16 @@ Los meses pasan y descubrimos una pasión por viajar; yo estoy acostumbrada al c
 
 Los años pasan, vivimos muchas aventuras, pero la distancia nos separa: Adri en Bruselas, yo en Luxemburgo y tras algunas negociaciones Adri se muda a vivir conmigo y, a cambio, yo empiezo clases de salsa.
 
-El 19 de mayo de 2025, quien nos había unido por primera vez fue testigo de nuestro compromiso. Allí, en Galicia, y más concretamente en las Islas Cíes, Adri está delante de mí de rodillas y me pide que nos casemos. Digo que sí, obviamente, sí a vivir nuestra vida para siempre.
+El 19 de mayo de 2025, quien nos había unido por primera vez fue testigo de nuestro compromiso. Estamos en Galicia, y más concretamente en las Islas Cíes, Adri está delante de mí de rodillas y me pide que nos casemos. Contesto que sí, obviamente, sí a vivir nuestra vida para siempre.
 
-Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenzamos los preparativos de nuestra boda en Galicia — ¿dónde si no? En nuestra tierra querida que queríamos mostraros desde hace años. Si queréis descubrir el paraíso o venir a acompañarnos, os esperamos el 14 de agosto de 2026 en el Pazo de Xerlís.`,
+Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenzamos los preparativos de nuestra boda en Galicia — ¿dónde si no? En nuestra tierra querida, que llevabamos anos deseando mostraros. Si queréis descubrir el paraíso o venir a acompañarnos, os esperamos el 14 de agosto de 2026 en el Pazo de Xerlís.`,
        
         "adrian-text":
 `Nos conocimos el... (deja que piense...) 14 de octubre, en la fiesta de despedida de una amiga en común.
 
 Yo ya había establecido mi estrategia para abordarla, mientras ella, inocente, no sospechaba nada. A partir de esa noche, nuestra hermosa historia comenzó.
 
-Hemos vivido muchas experiencias maravillosas: primero, cocinar en su casa, luego, pasar noches pidiendo comida muy sana... y ganando peso. Después, conocer a su familia y descubrir su legendaria organización, ganar aún más peso, negarme a bailar salsa con ella para finalmente bailar con otra persona que me convenció en 10 segundos, darme cuenta, desde su primer encuentro con mi familia en Galicia, que lo quiere más que a mí, y finalmente, hasta dejar mi ciudad natal para vivir con ella en Luxemburgo. Por supuesto, no olvido todos los viajes que hicimos (Indonesia, Guadalupe, Jordania, Japón, y más), gracias a los cuales pude descubrir partes de mí mismo que aún no conocía.
+Hemos vivido muchas experiencias maravillosas: primero, cocinar en su casa, luego, pasar noches pidiendo comida muy sana... y engordando. Después, conocer a su familia y descubrir su legendaria organización, engordar aún más, negarme a bailar salsa con ella para finalmente bailar con otra persona que me convenció en 10 segundos, darme cuenta, desde su primer encuentro con mi familia en Galicia, que la quieren más que a mí, y finalmente, hasta dejar mi ciudad natal para vivir con ella en Luxemburgo. Por supuesto, no olvido todos los viajes que hicimos (Indonesia, Guadalupe, Jordania, Japón, y más), gracias a los cuales pude descubrir partes de mí mismo que aún no conocía.
 
 En resumen, el 19 de mayo de 2025, le pedí matrimonio y, sin sorpresa (porque siempre estoy seguro de mí mismo), dijo que sí.
 
