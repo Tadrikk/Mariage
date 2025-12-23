@@ -71,7 +71,7 @@ C’est ce soir-là que notre belle histoire a commencé.
 Depuis, nous avons partagé beaucoup de moments incroyables : cuisiner chez elle, passer des soirées à commander de la nourriture très saine… et prendre du poids.
 Puis rencontrer la famille de Clara et découvrir leur organisation légendaire — et reprendre du poids.
 Refuser de danser la salsa avec Clara, pour finalement en danser avec quelqu’un d’autre qui a su me convaincre en dix secondes.
-Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’elle les aimait déjà plus que moi.
+Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’elle l'aimait déjà plus que moi.
 Et, finalement, aller jusqu’à quitter ma ville natale pour venir vivre avec elle au Luxembourg.
 
 Bien sûr, je n’oublie pas tous les voyages que nous avons faits, grâce auxquels j’ai découvert des facettes de moi que je ne connaissais pas encore.
@@ -98,14 +98,13 @@ Promis, vous ne serez pas déçus.`,
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Pour les logements avant ou après le mariage cela dépend de où vous voulez vous trouver (<a href="infos_comp.html">Infos complémentaires</a>).
-
-Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
-
-A titre informatif, il est possible de dormir en tente dans le jardin de mes parents à Oia avec accès à une douche extérieure et à l’eléctricité.
+        "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. 
+        Si vous êtes en Galice avant et après le mariage, consultez la section "Que voir en Galice" --> (<a href="infos_comp.html">Infos complémentaires</a>).
+        Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
+        A titre informatif, si vous êtes dans la zone de Nigrán/Oia, il est possible de dormir en tente dans le jardin de mes parents (Clara) à Oia avec accès à une douche extérieure et à l’eléctricité (prévenir à l'avance).
 
 `,
-        "lodging-caption": "Logements proches du lieu",
+        "lodging-caption": "Logements proches du lieu de mariage",
         "lodging_col_name": "Nom",
         "lodging_col_distance": "Distance",
         "lodging_col_price": "Prix",
@@ -155,16 +154,16 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus).
         
         Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
-        "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics ne sont pas optimales partout.
+        "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.
                             Le mariage est à 18h le 14 août 2026 au Pazo de Xerlis`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau ❤️. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
-
+        "info_access-MaitreCer": "Il y aura deux maitres de cérémonies, un pour le FR et l'autre pour l'ES. Il s'agit de Yves (l'oncle de Clara) et Lorena (cousine d'Adrian). Plus d'informations à venir bientôt.",
         💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
         "rsvp-click-text": "Cliquez ici pour accéder au formulaire RSVP 👇",
         "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
     
         // NOUVEAU POUR LE PLANNING
-        "planning-intro": "Voici le planning prévisionnel des festivités autour du mariage. N'hésitez pas à nous rejoindre si vous êtes dans les environs !",
+        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités. Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités. L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
         "planning-col-afternoon": "Après-midi",
@@ -174,7 +173,7 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         // DONNÉES DU TABLEAU EN FRANÇAIS
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "", // Lundi 10
         "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "Evènement familial", "data-Tue-11-S": "", // Mardi 11
-        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona (boire un verre)", // Mercredi 12
+        "data-Wed-12-M": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-A": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-S": "Baiona (boire un verre)", // Mercredi 12
         "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero (plage)", "data-Thu-13-S": "", // Jeudi 13
         "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
         "data-Sat-15-M": "Survivre", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua pendant la nuit", // Samedi 15
@@ -195,7 +194,7 @@ A titre informatif, il est possible de dormir en tente dans le jardin de mes par
         "travel-table-col-time": "Information",
 
         // Road trip
-        "roadtrip-intro": "Les proponemos dos itinerarios para llegar a / salir de Galicia."
+        "roadtrip-intro": "Les proponemos dos itinerarios roadtrips (aquellos que hicimos en 2020) para llegar a / salir de Galicia. Haz clic en los enlaces"
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -244,14 +243,13 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": `Para el alojamiento antes o después de la boda, depende de dónde queráis estar (<a href="infos_comp.html">Información adicional</a>).
-
-Con Adri estaremos primero en la zona de Nigrán/Oia antes de la boda y, después de la boda, estaremos en la zona de Vilagarcía de Arousa.
-
-A modo informativo, es posible dormir en tienda de campaña en el jardín de mis padres en Oia, con acceso a una ducha exterior y electricidad.
+        "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda.  
+Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).  
+Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.  
+A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormir en tienda de campaña en el jardín de mis padres (Clara) en Oia, con acceso a una ducha exterior y electricidad (avisar con antelación).
 
 `,
-        "lodging-caption": "Alojamientos cercanos al lugar",
+        "lodging-caption": "Alojamientos cercanos al lugar de la boda",
         "lodging_col_name": "Nombre",
         "lodging_col_distance": "Distancia",
         "lodging_col_price": "Precio",
@@ -302,16 +300,16 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).
         
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
-        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público no es óptimo en todas las zonas.
+        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público son complicados en Galicia.
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
-        
+        "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente."
         💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
   
         // NOUVEAU POUR LE PLANNING
-        "planning-intro": "Aquí está la programación provisional de las festividades alrededor de la boda. ¡No duden en unirse si están cerca!",
+        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades. La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
         "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
         "planning-col-afternoon": "Tarde",
@@ -320,8 +318,8 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         
         // DONNÉES DU TABLEAU EN ESPAGNOL (les noms des lieux restent généralement les mêmes)
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "",
-        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "Evemento familia", "data-Tue-11-S": "",
-        "data-Wed-12-M": "Islas Cíes", "data-Wed-12-A": "Islas Cíes", "data-Wed-12-S": "Baiona (tomar algo)",
+        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "Evento familiar", "data-Tue-11-S": "",
+        "data-Wed-12-M": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-A": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-S": "Baiona (tomar algo)",
         "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero (playa)", "data-Thu-13-S": "",
         "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
         "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua durante la noche",
@@ -342,7 +340,7 @@ A modo informativo, es posible dormir en tienda de campaña en el jardín de mis
         "travel-table-col-time": "Información",
 
         // Road trip
-        "roadtrip-intro": "Nous vous proposons deux itinéraires pour arriver/repartir de Galice"    }
+        "roadtrip-intro": "Nous vous proposons deux itinéraires roadtrip (ceux que nous avons fait en 2020) pour aller à /repartir de Galice. Cliquez sur les liens suivants:"    }
         
 };
 
@@ -366,8 +364,8 @@ const airportData = [
         code: "OPO", 
         name_fr: "Porto", 
         name_es: "Porto", 
-        info_fr: "Départ depuis CRL ou LUX, vols fréquents. Plus loin de VGO et SCQ.",
-        info_es: "Salida desde CRL o LUX, vuelos frecuentes. Más lejos de VGO y SCQ."
+        info_fr: "Départ depuis CRL ou LUX, vols fréquents. A 100km de VGO.",
+        info_es: "Salida desde CRL o LUX, vuelos frecuentes. A 100km de VGO."
     }
 ];
 
