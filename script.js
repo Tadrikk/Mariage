@@ -151,10 +151,9 @@ Vous ne serez pas déçus.`,
         "travel-table-col-time": "Temps de trajet", 
         "info_access-title": "✨ Informations pratiques",
         "info_access-text1": 
-        `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus).
-        
+        `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus).<br>
         Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
-        "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.
+        "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.<br>
         La cérémonie aura lieu à 18h le 14 août 2026 au Pazo de Xerlís. Venez en avance si besoin.`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau ❤️. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
         💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
@@ -164,8 +163,10 @@ Vous ne serez pas déçus.`,
     
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Informations complémentaires",
-        "planning-title":"Planning de la semaine",
-        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités. Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités. L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
+        "planning-title":"📅 Planning de la semaine",
+        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br>
+        Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
+        L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
         "planning-col-afternoon": "Après-midi",
@@ -183,9 +184,9 @@ Vous ne serez pas déçus.`,
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
         // NOUVEAU POUR GALICE
-        "galice-title":"Que voir en Galice",
+        "galice-title":"🌄 Que voir en Galice",
         "galice-intro": 
-        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.
+        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.<br>
         Si vous prolongez votre séjour…
         Voici quelques lieux incontournables dans notre région`, // Légère mise à jour pour inclure la note sur Pontevedra
         "galice-col-province": "Province",
@@ -252,9 +253,9 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda. Si tienen dificultades para encontrar habitaciones disponibles, contáctennos y veremos qué se puede hacer.
-        Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).  
-        Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.  
+        "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda. Si tienen dificultades para encontrar habitaciones disponibles, contáctennos y veremos qué se puede hacer.<br>
+        Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).<br>
+        Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.<br>
         A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormir en tienda de campaña en el jardín de mis padres (Clara) en Oia, con acceso a una ducha exterior y electricidad (avisar con antelación).
 
 `,
@@ -306,21 +307,22 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
         "info_access-text1": 
-        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).<br>
         
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
-        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público son complicados en Galicia.
+        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público son complicados en Galicia.<br>
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
-        "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
+        "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.<br>
         💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
-         "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente.",
+        "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente.",
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
   
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Información adicional",
-        "planning-title":"Programa de la semana",
-        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades. La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
+        "planning-title":"📅 Programa de la semana",
+        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades.<br>
+        La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
         "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
         "planning-col-afternoon": "Tarde",
@@ -338,10 +340,10 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
 
         // NOUVEAU POUR GALICE
-        "galice-title":"Que ver en Galicia",
+        "galice-title":"🌄 Que ver en Galicia",
         "galice-intro": 
         `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos. Entre tradiciones, gastronomía y el mítico Camino de Santiago,
-        cada rincón es una invitación al descubrimiento.
+        cada rincón es una invitación al descubrimiento.<br>
         Si prolongan su estancia... Aquí tienen algunos lugares imprescindibles en nuestra región`,
         "galice-col-province": "Provincia",
         "galice-col-location": "Lugar / Ciudad",
