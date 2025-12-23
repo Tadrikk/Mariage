@@ -101,7 +101,7 @@ Vous ne serez pas déçus.`,
         "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. Si vous avez des difficultés à trouver des chambres disponibles, contactez-nous et nous verrons ce qu'on pourra faire.<br>
         Si vous êtes en Galice avant et après le mariage, consultez la section "Que voir en Galice" --> (<a href="infos_comp.html">Infos complémentaires</a>).<br>
         Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.<br>
-        A titre informatif, si vous êtes dans la zone de Nigrán/Oia, il est possible de dormir en tente dans le jardin de mes parents (Clara) à Oia avec accès à une douche extérieure et à l’eléctricité (prévenir à l'avance).
+        A titre informatif, si vous êtes dans la zone de Nigrán/Oia, il est possible de dormir en tente dans le jardin de mes parents (Clara) à Oia avec accès à une douche extérieure et à l’éléctricité (prévenir à l'avance).
 
 `,
         "lodging-caption": "Logements proches du lieu de mariage",
@@ -155,14 +155,16 @@ Vous ne serez pas déçus.`,
         
         Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.
-                            Le mariage est à 18h le 14 août 2026 au Pazo de Xerlis`,
+        La cérémonie aura lieu à 18h le 14 août 2026 au Pazo de Xerlís. Venez en avance si besoin.`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau ❤️. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
-        "info_access-MaitreCer": "Il y aura deux maitres de cérémonies, un pour le FR et l'autre pour l'ES. Il s'agit de Yves (l'oncle de Clara) et Lorena (cousine d'Adrian). Plus d'informations à venir bientôt.",
         💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
+        "info_access-MaitreCer": "Il y aura deux maitres de cérémonies, un pour le FR et l'autre pour l'ES. Il s'agit de Yves (l'oncle de Clara) et Lorena (cousine d'Adrian). Plus d'informations à venir bientôt.",
         "rsvp-click-text": "Cliquez ici pour accéder au formulaire RSVP 👇",
         "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
     
         // NOUVEAU POUR LE PLANNING
+        "infos-comp-title":"Informations complémentaires",
+        "planning-title":"Planning de la semaine",
         "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités. Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités. L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
@@ -181,6 +183,7 @@ Vous ne serez pas déçus.`,
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
         // NOUVEAU POUR GALICE
+        "galice-title":"Que voir en Galice",
         "galice-intro": 
         `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.
         Si vous prolongez votre séjour…
@@ -309,12 +312,14 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público son complicados en Galicia.
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.
-        "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente."
         💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
+         "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente.",
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
   
         // NOUVEAU POUR LE PLANNING
+        "infos-comp-title":"Información adicional",
+        "planning-title":"Programa de la semana",
         "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades. La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
         "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
@@ -333,6 +338,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
 
         // NOUVEAU POUR GALICE
+        "galice-title":"Que ver en Galicia",
         "galice-intro": 
         `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos. Entre tradiciones, gastronomía y el mítico Camino de Santiago,
         cada rincón es una invitación al descubrimiento.
