@@ -164,8 +164,7 @@ Vous ne serez pas déçus.`,
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Informations complémentaires",
         "planning-title":"📅 Planning de la semaine",
-        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br>
-        Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
+        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
         L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
@@ -466,7 +465,7 @@ function applyTranslations(lang) {
         const element = safeGet(key);
         if (element) {
             // Utiliser innerHTML pour les textes longs avec sauts de ligne pour CSS `white-space: pre-line;`
-            if (key === 'clara-text' || key === 'adrian-text' || key === 'children-text' || key === 'info_access-move' || key === 'lodging-intro-text2') {
+            if (key === 'clara-text' || key === 'adrian-text' || key === 'children-text' || key === 'info_access-move' || key === 'lodging-intro-text2' || key === "galice-intro" || key === "planning-intro") {
                 element.innerHTML = t[key]; 
             } else {
                 element.innerHTML = t[key];
