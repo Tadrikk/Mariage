@@ -197,7 +197,7 @@ Vous ne serez pas déçus.`,
         "travel-table-col-time": "Information",
 
         // Road trip
-        "roadtrip-intro": "Les proponemos dos itinerarios roadtrips (aquellos que hicimos en 2020) para llegar a / salir de Galicia. Haz clic en los enlaces"
+        "roadtrip-intro": "Nous vous proposons deux itinéraires roadtrip (ceux que nous avons fait en 2020) pour aller à /repartir de Galice. Cliquez sur les liens suivants:"
     },
     // Le bloc ES a été complété et adapté
     es: {
@@ -352,7 +352,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "travel-table-col-time": "Información",
 
         // Road trip
-        "roadtrip-intro": "Nous vous proposons deux itinéraires roadtrip (ceux que nous avons fait en 2020) pour aller à /repartir de Galice. Cliquez sur les liens suivants:"    }
+        "roadtrip-intro": "Les proponemos dos itinerarios roadtrips (aquellos que hicimos en 2020) para llegar a / salir de Galicia. Haz clic en los enlaces" }
         
 };
 
