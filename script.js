@@ -164,7 +164,7 @@ Vous ne serez pas déçus.`,
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Informations complémentaires",
         "planning-title":"📅 Planning de la semaine",
-        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
+        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.
         L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
@@ -185,7 +185,7 @@ Vous ne serez pas déçus.`,
         // NOUVEAU POUR GALICE
         "galice-title":"🌄 Que voir en Galice",
         "galice-intro": 
-        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.<br>
+        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.
         Si vous prolongez votre séjour…
         Voici quelques lieux incontournables dans notre région`, // Légère mise à jour pour inclure la note sur Pontevedra
         "galice-col-province": "Province",
@@ -320,7 +320,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Información adicional",
         "planning-title":"📅 Programa de la semana",
-        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades.<br>
+        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades.
         La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
         "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
@@ -342,7 +342,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "galice-title":"🌄 Que ver en Galicia",
         "galice-intro": 
         `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos. Entre tradiciones, gastronomía y el mítico Camino de Santiago,
-        cada rincón es una invitación al descubrimiento.<br>
+        cada rincón es una invitación al descubrimiento.
         Si prolongan su estancia... Aquí tienen algunos lugares imprescindibles en nuestra región`,
         "galice-col-province": "Provincia",
         "galice-col-location": "Lugar / Ciudad",
