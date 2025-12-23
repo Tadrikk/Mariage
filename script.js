@@ -52,7 +52,7 @@ const translations = {
         "nav-rsvp": "RSVP",
         "nav-galerie": "Galerie",
         "clara-text":
-`Notre histoire commence le 14 octobre 2016, dans un bar Bruxellois, le premier contact est facil, car Adri s’est déjà renseigné sur moi et sait que nous avons des origines communes, nous venons tous les deux de Galice.
+`Notre histoire commence le 14 octobre 2016, dans un bar Bruxellois, le premier contact est facile, car Adri s’est déjà renseigné sur moi et sait que nous avons des origines communes, nous venons tous les deux de Galice.
 
 Les semaines passent et nous maintenons le contact grâce à notre passion commune pour le sport et la nourriture, la semaine Adri vient cuisiner des plats de sa diète dans mon petit appartement d’étudiante et le week-end on se balade.
 
@@ -79,8 +79,8 @@ Bien sûr, je n’oublie pas tous les voyages que nous avons faits, grâce auxqu
 Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise — parce que je suis toujours sûr de moi — elle a dit oui.
 Notre tout premier sujet de discussion a été la Galice, et c’est finalement là-bas que nous avons décidé de concrétiser notre union.
 
-Du fond du cœur, j’aimerais que vous soyez tous présents pour partager ce moment avec nous.
-Promis, vous ne serez pas déçus.`,
+Nous espérons vous voir nombreux pour partager ce moment avec nous.
+Vous ne serez pas déçus.`,
 
  "titre-principal": "Clara & Adrián",
         "countdown-title": "Le grand jour arrive dans",
@@ -98,9 +98,9 @@ Promis, vous ne serez pas déçus.`,
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. Si vous avez des difficultés à trouver des chambres disponibles, contactez-nous et nous verrons ce qu'on pourra faire.
-        Si vous êtes en Galice avant et après le mariage, consultez la section "Que voir en Galice" --> (<a href="infos_comp.html">Infos complémentaires</a>).
-        Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
+        "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. Si vous avez des difficultés à trouver des chambres disponibles, contactez-nous et nous verrons ce qu'on pourra faire.<br>
+        Si vous êtes en Galice avant et après le mariage, consultez la section "Que voir en Galice" --> (<a href="infos_comp.html">Infos complémentaires</a>).<br>
+        Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.<br>
         A titre informatif, si vous êtes dans la zone de Nigrán/Oia, il est possible de dormir en tente dans le jardin de mes parents (Clara) à Oia avec accès à une douche extérieure et à l’eléctricité (prévenir à l'avance).
 
 `,
@@ -217,17 +217,23 @@ El 19 de mayo de 2025, quien nos había unido por primera vez fue testigo de nue
 Unos días después, en un tren hacia Madrid, os anunciamos la noticia y comenzamos los preparativos de nuestra boda en Galicia — ¿dónde si no? En nuestra tierra querida, que llevabamos anos deseando mostraros. Si queréis descubrir el paraíso o venir a acompañarnos, os esperamos el 14 de agosto de 2026 en el Pazo de Xerlís.`,
        
         "adrian-text":
-`Nos conocimos el... (deja que piense...) 14 de octubre, en la fiesta de despedida de una amiga en común.
+`Nos conocimos el… (estoy pensando…) 14 de octubre, durante la fiesta de despedida de una amiga en común.
+Por mi parte, ya había preparado mi estrategia para acercarme a ella, mientras que ella, inocente, no sospechaba nada.
+Esa noche empezó nuestra historia.
 
-Yo ya había establecido mi estrategia para abordarla, mientras ella, inocente, no sospechaba nada. A partir de esa noche, nuestra hermosa historia comenzó.
+Desde entonces, hemos compartido muchos momentos increíbles: cocinar en su casa, pasar las noches pidiendo comida muy sana… y engordando.
+Luego conocer a la familia de Clara y descubrir su organización legendaria — y volver a engordar.
+Negarme a bailar salsa con Clara, para finalmente bailar con alguien que me convenció en diez segundos.
+Darme cuenta, desde su primer encuentro con mi familia en Galicia, de que ya los quería más que a mí.
+Y, finalmente, dejar mi ciudad natal para vivir con ella en Luxemburgo.
 
-Hemos vivido muchas experiencias maravillosas: primero, cocinar en su casa, luego, pasar noches pidiendo comida muy sana... y engordando. Después, conocer a su familia y descubrir su legendaria organización, engordar aún más, negarme a bailar salsa con ella para finalmente bailar con otra persona que me convenció en 10 segundos, darme cuenta, desde su primer encuentro con mi familia en Galicia, que la quieren más que a mí, y finalmente, hasta dejar mi ciudad natal para vivir con ella en Luxemburgo. Por supuesto, no olvido todos los viajes que hicimos (Indonesia, Guadalupe, Jordania, Japón, y más), gracias a los cuales pude descubrir partes de mí mismo que aún no conocía.
+Por supuesto, no olvidamos todos los viajes que hemos hecho, gracias a los cuales he descubierto facetas de mí que no conocía.
 
-En resumen, el 19 de mayo de 2025, le pedí matrimonio y, sin sorpresa (porque siempre estoy seguro de mí mismo), dijo que sí.
+El 19 de mayo de 2025 le pedí matrimonio y, sin sorpresa — porque siempre estoy seguro de mí mismo — ella dijo que sí.
+Nuestro primer tema de conversación fue Galicia, y finalmente fue allí donde decidimos casarnos.
 
-Nuestro primer tema de conversación fue sobre Galicia, y es allí donde finalmente sellaremos nuestra unión.
-
-Me encantaría, de todo corazón, que estéis todos presentes para compartir este momento con nosotros (¡os prometo que no os decepcionaremos!).`,
+Esperamos verlos a muchos para compartir este momento con nosotros.
+¡No se van a arrepentir!`,
         "titre-principal": "Clara & Adrián",
         "countdown-title": "El gran día llega en",
         "label-days": "DÍAS",
@@ -244,9 +250,9 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
         "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda. Si tienen dificultades para encontrar habitaciones disponibles, contáctennos y veremos qué se puede hacer.
-Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).  
-Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.  
-A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormir en tienda de campaña en el jardín de mis padres (Clara) en Oia, con acceso a una ducha exterior y electricidad (avisar con antelación).
+        Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).  
+        Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.  
+        A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormir en tienda de campaña en el jardín de mis padres (Clara) en Oia, con acceso a una ducha exterior y electricidad (avisar con antelación).
 
 `,
         "lodging-caption": "Alojamientos cercanos al lugar de la boda",
