@@ -98,7 +98,7 @@ Promis, vous ne serez pas déçus.`,
 
         // Accordéon Logement
         "lodging-main-title": "🏨 Logement",
-        "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. 
+        "lodging-intro-text": `Ci-dessous un tableau reprenant les hotels proche du lieu du mariage. Si vous avez des difficultés à trouver des chambres disponibles, contactez-nous et nous verrons ce qu'on pourra faire.
         Si vous êtes en Galice avant et après le mariage, consultez la section "Que voir en Galice" --> (<a href="infos_comp.html">Infos complémentaires</a>).
         Avec Adri nous serons dans un premier temps dans la zone de Nigrán/Oia avant le mariage et ensuite après le mariage on se trouvera dans la zone de Villagarcia de Arousa.
         A titre informatif, si vous êtes dans la zone de Nigrán/Oia, il est possible de dormir en tente dans le jardin de mes parents (Clara) à Oia avec accès à une douche extérieure et à l’eléctricité (prévenir à l'avance).
@@ -172,7 +172,7 @@ Promis, vous ne serez pas déçus.`,
         
         // DONNÉES DU TABLEAU EN FRANÇAIS
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "", // Lundi 10
-        "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "Evènement familial", "data-Tue-11-S": "", // Mardi 11
+        "data-Tue-11-M": "Talaso Atlantico", "data-Tue-11-A": "Soirée familiale", "data-Tue-11-S": "Soirée familiale", // Mardi 11
         "data-Wed-12-M": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-A": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-S": "Baiona (boire un verre)", // Mercredi 12
         "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero (plage)", "data-Thu-13-S": "", // Jeudi 13
         "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
@@ -243,7 +243,7 @@ Me encantaría, de todo corazón, que estéis todos presentes para compartir est
 
         // Accordéon Alojamiento
         "lodging-main-title": "🏨 Alojamiento",
-        "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda.  
+        "lodging-intro-text": `A continuación, un cuadro con los hoteles cercanos al lugar de la boda. Si tienen dificultades para encontrar habitaciones disponibles, contáctennos y veremos qué se puede hacer.
 Si se encuentran en Galicia antes o después de la boda, consulten la sección "Qué ver en Galicia" --> (<a href="infos_comp.html">Información complementaria</a>).  
 Con Adri, inicialmente estaremos en la zona de Nigrán/Oia antes de la boda y, después de la boda, nos encontraremos en la zona de Villagarcía de Arousa.  
 A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormir en tienda de campaña en el jardín de mis padres (Clara) en Oia, con acceso a una ducha exterior y electricidad (avisar con antelación).
@@ -318,7 +318,7 @@ A modo informativo, si se encuentran en la zona de Nigrán/Oia, es posible dormi
         
         // DONNÉES DU TABLEAU EN ESPAGNOL (les noms des lieux restent généralement les mêmes)
         "data-Mon-10-M": "", "data-Mon-10-A": "", "data-Mon-10-S": "",
-        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "Evento familiar", "data-Tue-11-S": "",
+        "data-Tue-11-M": "Talaso Atlántico", "data-Tue-11-A": "Noche familiar", "data-Tue-11-S": "Noche familiar",
         "data-Wed-12-M": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-A": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-S": "Baiona (tomar algo)",
         "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero (playa)", "data-Thu-13-S": "",
         "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
