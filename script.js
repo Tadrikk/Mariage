@@ -5,14 +5,14 @@ const CORRECT_HASH = "88546f608b8f5f0e1451b8da1177b96fec4729f998195755eaf29daba0
 
 // Définition des données structurées pour le planning
 const planningData = [
-    { day: "Lundi: 10", key: "Mon-10" },
-    { day: "Mardi: 11", key: "Tue-11" },
-    { day: "Mercredi: 12", key: "Wed-12" },
-    { day: "Jeudi: 13", key: "Thu-13" },
-    { day: "Vendredi: 14", key: "Fri-14" },
-    { day: "Samedi: 15", key: "Sat-15" },
-    { day: "Dimanche: 16", key: "Sun-16" },
-    { day: "Lundi: 17", key: "Mon-17" },
+    { day: "Lundi: 10/08", day_es: "Lunes: 10/08", key: "Mon-10" },
+    { day: "Mardi: 11/08", day_es: "Martes: 11/08", key: "Tue-11" },
+    { day: "Mercredi: 12/08", day_es: "Miércoles: 12/08", key: "Wed-12" },
+    { day: "Jeudi: 13/08", day_es: "Jueves: 13/08", key: "Thu-13" },
+    { day: "Vendredi: 14/08", day_es: "Viernes: 14/08", key: "Fri-14" },
+    { day: "Samedi: 15/08", day_es: "Sábado: 15/08", key: "Sat-15" },
+    { day: "Dimanche: 16/08", day_es: "Domingo: 16/08", key: "Sun-16" },
+    { day: "Lundi: 17/08", day_es: "Lunes: 17/08", key: "Mon-17" },
 ];
 
 // Nouvelle structure de données pour les lieux en Galice avec Provinces et Restaurants  
@@ -164,7 +164,7 @@ Vous ne serez pas déçus.`,
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Informations complémentaires",
         "planning-title":"📅 Planning de la semaine",
-        "planning-intro": `Afin que vous puissiez vous rencontrer dès maintenant avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.
+        "planning-intro": `Afin que vous puissiez vous rencontrer avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
         L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
@@ -185,8 +185,9 @@ Vous ne serez pas déçus.`,
         // NOUVEAU POUR GALICE
         "galice-title":"🌄 Que voir en Galice",
         "galice-intro": 
-        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques. Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.
-        Si vous prolongez votre séjour…
+        `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques.<br>
+        Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.<br>
+        Si vous prolongez votre séjour…<br>
         Voici quelques lieux incontournables dans notre région`, // Légère mise à jour pour inclure la note sur Pontevedra
         "galice-col-province": "Province",
         "galice-col-location": "Lieu / Ville",
@@ -227,7 +228,7 @@ Esa noche empezó nuestra historia.
 Desde entonces, hemos compartido muchos momentos increíbles: cocinar en su casa, pasar las noches pidiendo comida muy sana… y engordando.
 Luego conocer a la familia de Clara y descubrir su organización legendaria — y volver a engordar.
 Negarme a bailar salsa con Clara, para finalmente bailar con alguien que me convenció en diez segundos.
-Darme cuenta, desde su primer encuentro con mi familia en Galicia, de que ya los quería más que a mí.
+Darme cuenta, desde su primer encuentro con mi familia en Galicia, de que mi familia ya la quería más que a mí.
 Y, finalmente, dejar mi ciudad natal para vivir con ella en Luxemburgo.
 
 Por supuesto, no olvidamos todos los viajes que hemos hecho, gracias a los cuales he descubierto facetas de mí que no conocía.
@@ -309,18 +310,18 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).<br>
         
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
-        "info_access-text": `Recomendamos encarecidamente disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público son complicados en Galicia.<br>
+        "info_access-text": `Recomendamos disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público es complicado en Galicia.<br>
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.<br>
         💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
-        "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío querido de Clara) y Lorena (prima querida de Adrian). Más información próximamente.",
+        "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío de Clara) y Lorena (prima de Adrian). Más información próximamente.",
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
   
         // NOUVEAU POUR LE PLANNING
         "infos-comp-title":"Información adicional",
         "planning-title":"📅 Programa de la semana",
-        "planning-intro": `Para que puedan conocerse desde ahora antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades.
+        "planning-intro": `Para que puedan conocerse antes de nuestra boda, les proponemos un programa provisional de las festividades. Se trata simplemente de una propuesta: no estaremos necesariamente presentes en todas estas actividades.
         La idea es sobre todo que cada uno pueda ponerse en contacto con los demás y compartir momentos juntos.`,
         "planning-col-date": "Fecha Agosto",
         "planning-col-morning": "Mañana",
@@ -428,7 +429,7 @@ function generateGaliciaTable(lang) {
     
     if (!container || !intro) return;
 
-    intro.textContent = texts["galice-intro"];
+    intro.innerHTML = texts["galice-intro"];
     
     // Définir la clé d'attraction à utiliser en fonction de la langue
     const attractionKey = lang === 'fr' ? 'attraction' : 'attraction_es';
@@ -500,7 +501,7 @@ function applyTranslations(lang) {
     if (!container || !intro) return;
 
     // Met à jour le paragraphe d'introduction
-    intro.textContent = texts["planning-intro"];
+    intro.innerHTML = texts["planning-intro"];
     
     let html = `<table class="lodging-table">
         <caption id="planning-caption">${texts["planning-title-caption"]}</caption>
@@ -517,7 +518,7 @@ function applyTranslations(lang) {
     planningData.forEach(item => {
         // Construction de chaque ligne
         html += `<tr>
-            <td><strong>${item.day}</strong></td>
+            <td><strong>${lang === 'fr' ? item.day : item.day_es}</strong></td>
             <td>${texts[`data-${item.key}-M`]}</td>
             <td>${texts[`data-${item.key}-A`]}</td>
             <td>${texts[`data-${item.key}-S`]}</td>
