@@ -71,7 +71,7 @@ C’est ce soir-là que notre belle histoire a commencé.
 Depuis, nous avons partagé beaucoup de moments incroyables : cuisiner chez elle, passer des soirées à commander de la nourriture très saine… et prendre du poids.
 Puis rencontrer la famille de Clara et découvrir leur organisation légendaire — et reprendre du poids.
 Refuser de danser la salsa avec Clara, pour finalement en danser avec quelqu’un d’autre qui a su me convaincre en dix secondes.
-Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’elle l'aimait déjà plus que moi.
+Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’ils l'aimaient déjà plus que moi.
 Et, finalement, aller jusqu’à quitter ma ville natale pour venir vivre avec elle au Luxembourg.
 
 Bien sûr, je n’oublie pas tous les voyages que nous avons faits, grâce auxquels j’ai découvert des facettes de moi que je ne connaissais pas encore.
