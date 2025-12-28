@@ -187,7 +187,7 @@ Vous ne serez pas déçus.`,
         "galice-intro": 
         `Ici, la mer murmure des légendes et les pierres racontent des siècles d’histoire. Terre celte et spirituelle, la Galice séduit par ses paysages verdoyants, ses rías mystérieuses et ses villages authentiques.<br>
         Entre traditions, gastronomie et le mythique Chemin de Saint-Jacques, chaque coin est une invitation à la découverte.<br>
-        Si vous prolongez votre séjour…<br>
+        Si vous prolongez votre séjour…
         Voici quelques lieux incontournables dans notre région`, // Légère mise à jour pour inclure la note sur Pontevedra
         "galice-col-province": "Province",
         "galice-col-location": "Lieu / Ville",
@@ -342,7 +342,8 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         // NOUVEAU POUR GALICE
         "galice-title":"🌄 Que ver en Galicia",
         "galice-intro": 
-        `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos. Entre tradiciones, gastronomía y el mítico Camino de Santiago,
+        `Aquí, el mar susurra leyendas y las piedras cuentan siglos de historia. Tierra celta y espiritual, Galicia seduce con sus paisajes verdes, sus rías misteriosas y sus pueblos auténticos.<br>
+         Entre tradiciones, gastronomía y el mítico Camino de Santiago,
         cada rincón es una invitación al descubrimiento.
         Si prolongan su estancia... Aquí tienen algunos lugares imprescindibles en nuestra región`,
         "galice-col-province": "Provincia",
