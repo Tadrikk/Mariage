@@ -64,22 +64,30 @@ Le 19 mai 2025, celle qui nous avait unis pour la première fois, est témoin de
 
 Quelques jours plus tard, dans un train en direction de Madrid, on vous annonce la nouvelle et on commence les préparatifs de notre mariage, en Galice, où d’autre ? Dans notre terre tant aimée que nous souhaitions vous présenter depuis tant d’années, alors si vous êtes curieux de découvrir le paradis ou si vous souhaitez assister à notre union, on vous attend le 14 août 2026 au Pazo de Xerlis.`,
         "adrian-text":
-`Nous nous sommes rencontrés le… (je réfléchis…) 14 octobre, lors de la soirée d’adieu d’une amie commune.
-De mon côté, j’avais déjà préparé ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.
-C’est ce soir-là que notre belle histoire a commencé.
+`Nous nous sommes rencontrés le… (je réfléchis…) 14 octobre, lors de la soirée d’adieu d’une amie commune.<br>
+De mon côté, j’avais déjà préparé ma stratégie pour l’aborder, alors qu’elle, innocente, ne se doutait de rien.<br>
+C’est ce soir-là que notre belle histoire a commencé.<br><br>
 
-Depuis, nous avons partagé beaucoup de moments incroyables : cuisiner chez elle, passer des soirées à commander de la nourriture très saine… et prendre du poids.
-Puis rencontrer la famille de Clara et découvrir leur organisation légendaire — et reprendre du poids.
-Refuser de danser la salsa avec Clara, pour finalement en danser avec quelqu’un d’autre qui a su me convaincre en dix secondes.
-Me rendre compte, dès sa première rencontre avec ma famille en Galice, qu’ils l'aimaient déjà plus que moi.
-Et, finalement, aller jusqu’à quitter ma ville natale pour venir vivre avec elle au Luxembourg.
 
-Bien sûr, je n’oublie pas tous les voyages que nous avons faits, grâce auxquels j’ai découvert des facettes de moi que je ne connaissais pas encore.
+Au début, j'allais cuisiner chez elle des plats sains. Ca n'a pas duré longtemps, on est vite passer à commander de la nourriture un peu moins saine.<br>
+Ca a été le début d'une prise de poids
 
-Bref, le 19 mai 2025, je lui ai demandé sa main et, sans surprise — parce que je suis toujours sûr de moi — elle a dit oui.
-Notre tout premier sujet de discussion a été la Galice, et c’est finalement là-bas que nous avons décidé de concrétiser notre union.
+Ensuite, j’ai rencontré sa famille et découvert, à mes dépens (dans une forêt sombre et dangereuse), leur organisation légendaire. 
+La prise de poids a continué.<br>
 
-Nous espérons vous voir nombreux pour partager ce moment avec nous.
+Puis, Clara m’a demandé de danser la salsa avec elle. J’ai refusé, et puis quoi encore? Moi, danser? <br>
+Bon, j’ai finalement accepté de prendre des cours de salsa mais avec quelqu’un d’autre après une négociation qui a duré moins de dix secondes.<br>
+C’est même devenu une passion.
+
+Dans la foulée ca a été au tour de Clara de rencontrer ma famille, et après ca je suis rapidement passé au second plan, ils l'aimaient deja plus que moi.
+
+Après quelques années de relation et de voyages, Clara est partie travailler au Luxembourg. Pendant trois ans, nous avons vécu une relation à distance qui, paradoxalement, nous a encore plus rapproché.<br>
+J’ai finalement quitté ma ville natale, Bruxelles, pour la rejoindre fin 2024. 
+
+Peu de temps après notre debut de vie commune, le 19 mai 2025, je lui ai demandé sa main et, sans surprise — parce que je suis toujours sûr de moi — elle a dit oui.
+Ce qui est ironique, c’est que notre tout premier sujet de discussion avait été la Galice, et que c’est finalement là-bas que nous avons décidé de concrétiser notre union.
+
+Nous espérons vous voir nombreux.
 Vous ne serez pas déçus.`,
 
  "titre-principal": "Clara & Adrián",
