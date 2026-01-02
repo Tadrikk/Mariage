@@ -173,7 +173,7 @@ Vous ne serez pas déçus.`,
         "infos-comp-title":"Informations complémentaires",
         "planning-title":"📅 Planning de la semaine",
         "planning-intro": `Afin que vous puissiez vous rencontrer avant notre mariage, nous vous proposons un planning prévisionnel des festivités.<br> Il s’agit simplement d’une proposition : nous ne serons pas forcément présents à toutes ces activités.<br>
-        L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensemble.`,
+        L’idée est surtout que chacun puisse prendre contact avec les autres et partager des moments ensembles.`,
         "planning-col-date": "Date Aout",
         "planning-col-morning": "Matin",
         "planning-col-afternoon": "Après-midi",
@@ -186,8 +186,8 @@ Vous ne serez pas déçus.`,
         "data-Wed-12-M": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-A": "Islas Cíes (inscription + autorisation de la commune locale)", "data-Wed-12-S": "Baiona (boire un verre)", // Mercredi 12
         "data-Thu-13-M": "Run : Patos ou Mougas", "data-Thu-13-A": "Calas de Montefero (plage)", "data-Thu-13-S": "", // Jeudi 13
         "data-Fri-14-M": "MARIAGE", "data-Fri-14-A": "MARIAGE", "data-Fri-14-S": "MARIAGE", // Vendredi 14
-        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua pendant la nuit", // Samedi 15
-        "data-Sun-16-M": "Survivre", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
+        "data-Sat-15-M": "Survivre", "data-Sat-15-A": "Survivre", "data-Sat-15-S": "Fiesta del Agua pendant la nuit", // Samedi 15
+        "data-Sun-16-M": "Fiesta del Agua (Villagarcía)", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)", // Dimanche 16
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "", // Lundi 17
     
         // NOUVEAU POUR GALICE
@@ -206,8 +206,10 @@ Vous ne serez pas déçus.`,
         "travel-table-col-time": "Information",
 
         // Road trip
-        "roadtrip-intro": "Nous vous proposons deux itinéraires roadtrip (ceux que nous avons fait en 2020) pour aller à /repartir de Galice. Cliquez sur les liens suivants:"
-    },
+        "roadtrip-intro": "Nous vous proposons deux itinéraires roadtrip (ceux que nous avons fait en 2020) pour aller à /repartir de Galice. Cliquez sur les liens suivants:",
+        "roadtrip-aller-title": "Itinéraire Aller",
+        "roadtrip-retour-title": "Itinéraire Retour",
+    },  
     // Le bloc ES a été complété et adapté
     es: {
         "nav-accueil": "Inicio",
@@ -343,7 +345,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "data-Wed-12-M": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-A": "Islas Cíes (Necesita autorización de la Xunta)", "data-Wed-12-S": "Baiona (tomar algo)",
         "data-Thu-13-M": "Carrera: Patos o Mougas", "data-Thu-13-A": "Calas de Montefero (playa)", "data-Thu-13-S": "",
         "data-Fri-14-M": "BODA", "data-Fri-14-A": "BODA", "data-Fri-14-S": "BODA",
-        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "", "data-Sat-15-S": "Fiesta del Agua durante la noche",
+        "data-Sat-15-M": "Sobrevivir", "data-Sat-15-A": "Sobrevivir", "data-Sat-15-S": "Fiesta del Agua durante la noche",
         "data-Sun-16-M": "Sobrevivir", "data-Sun-16-A": "Fiesta del Agua (Villagarcía)", "data-Sun-16-S": "Fiesta del Agua (Villagarcía)",
         "data-Mon-17-M": "Termas de Prexigueiro", "data-Mon-17-A": "", "data-Mon-17-S": "",
 
@@ -363,8 +365,11 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "travel-table-col-time": "Información",
 
         // Road trip
-        "roadtrip-intro": "Les proponemos dos itinerarios roadtrips (aquellos que hicimos en 2020) para llegar a / salir de Galicia. Haz clic en los enlaces" }
-        
+        "roadtrip-intro": "Les proponemos dos itinerarios roadtrips (aquellos que hicimos en 2020) para llegar a / salir de Galicia. Haz clic en los enlaces",
+        "roadtrip-aller-title": "Itinerario de ida",
+        "roadtrip-retour-title": "Itinerario de regreso",
+    }
+
 };
 
 // Données des aéroports pour la création du tableau (indépendantes de la langue)
