@@ -317,7 +317,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
         "info_access-text1": 
-        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limón).<br>
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limónes).<br>
         
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
         "info_access-text": `Recomendamos disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público es complicado en Galicia.<br>
