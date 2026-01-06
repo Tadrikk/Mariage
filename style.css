@@ -26,15 +26,20 @@ body.accueil {
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
+/* Pour la page d'accueil */
+body.accueil .main-content {
+    margin-top: 160px; /* Augmenté (était à 90px) */
+}
+
 /* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
-    padding-top: 90px;
+    padding-top: 160px;
     position: relative; 
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
 body.rsvp {
-    padding-top: 120px;
+    padding-top: 180px;
     position: relative;
     min-height: 100vh;
 }
@@ -80,17 +85,23 @@ body.rsvp .photo-bk {
 }
 
 .logo-titre {
-    max-width: 280px; /* Ajustez cette valeur selon la taille souhaitée */
-    width: 100%;      /* Permet au logo de rétrécir sur mobile */
-    height: auto;     /* Garde les proportions */
+    max-height: 120px; /* Force le logo à ne pas dépasser cette hauteur */
+    width: auto;       /* Laisse la largeur s'adapter proportionnellement */
     display: block;
-    margin: 0 auto;   /* Centre l'image horizontalement */
+    margin: 0 auto;
+    padding: 10px 0;   /* Espace interne léger */
 }
 
 /* Optionnel : Ajustement pour mobile */
 @media (max-width: 600px) {
     .logo-titre {
-        max-width: 200px; /* Logo plus petit sur petit écran */
+        max-height: 80px; /* Plus petit sur mobile */
+    }
+    
+    body.accueil .main-content, 
+    body.infos, 
+    body.rsvp {
+        padding-top: 130px; /* On réduit aussi l'espace vide */
     }
 }
 
