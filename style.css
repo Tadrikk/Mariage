@@ -64,6 +64,13 @@ body.rsvp .photo-bk {
     color: #000;
 }
 
+.logo-titre {
+    max-width: 300px; /* À ajuster selon la largeur de votre logo */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centre l'image */
+}
+
 .header-title h1 {
     font-size: 43px;
     margin-bottom: 0;
