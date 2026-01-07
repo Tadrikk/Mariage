@@ -20,7 +20,7 @@ body {
 
 /* Page d'accueil : Fond d'écran fixe et contenu superposé */
 body.accueil {
-    padding-top: 0;
+    padding-top: 50px;
     margin: 0;
     position: relative; 
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
@@ -28,13 +28,13 @@ body.accueil {
 
 /* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
-    padding-top: 170px;
+    padding-top: 120px;
     position: relative; 
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
 body.rsvp {
-    padding-top: 170px;
+    padding-top: 120px;
     position: relative;
     min-height: 100vh;
 }
@@ -67,7 +67,7 @@ body.rsvp .photo-bk {
 .header-title h1 {
     font-size: 43px;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ body.rsvp .photo-bk {
 
 
 .logo-titre {
-    max-width: 220px; /* C'est ici que tu gères la taille "pas trop grande" */
+    max-width: 120px; /* C'est ici que tu gères la taille "pas trop grande" */
     width: 100%;      /* Pour le responsive */
     height: auto;  
     display: block !important; /* Force l'affichage */
@@ -90,6 +90,9 @@ body.rsvp .photo-bk {
 @media (max-width: 600px) {
     .logo-titre {
         max-width: 180px; /* Encore plus petit sur mobile */
+    }
+    body.rsvp, body.infos {
+        padding-top: 150px; 
     }
 }
 
