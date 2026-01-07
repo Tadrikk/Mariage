@@ -215,7 +215,7 @@ Vous ne serez pas déçus.`,
         "nav-accueil": "Inicio",
         "nav-infos-importantes": "Información importante",
         "nav-infos-comp": "Información adicional",
-        "nav-rsvp": "Confirmación",
+        "nav-rsvp": "Confirmación", 
         "nav-galerie": "Galería",
         "clara-text":
 `Nuestra historia comienza el 14 de octubre de 2016, en un bar de Bruselas, el primer contacto fue fácil, porque Adri ya se había informado sobre mí y sabe que tenemos orígenes comunes, los dos venimos de Galicia.
