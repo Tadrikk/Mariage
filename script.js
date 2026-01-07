@@ -90,7 +90,7 @@ Ce qui est ironique, c’est que notre tout premier sujet de discussion avait é
 Nous espérons vous voir nombreux.
 Vous ne serez pas déçus.`,
 
- "titre-principal": "Clara & Adrián",
+
         "countdown-title": "Le grand jour arrive dans",
         "label-days": "JOURS",
         "label-hours": "HEURES",
@@ -248,7 +248,6 @@ Nuestro primer tema de conversación fue Galicia, y finalmente fue allí donde d
 
 Esperamos verlos a muchos para compartir este momento con nosotros.
 ¡No se van a arrepentir!`,
-        "titre-principal": "Clara & Adrián",
         "countdown-title": "El gran día llega en",
         "label-days": "DÍAS",
         "label-hours": "HORAS",
