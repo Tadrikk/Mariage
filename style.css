@@ -75,22 +75,23 @@ body.rsvp .photo-bk {
 /* On retire les styles de police inutiles sur le h1 puisqu'il contient une image */
 .header-title h1 {
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0;
     line-height: 0; /* Évite un espace vide sous l'image */
 }
 
 .logo-titre {
-    max-width: 280px; /* Ajustez cette valeur selon la taille souhaitée */
-    width: 100%;      /* Permet au logo de rétrécir sur mobile */
-    height: auto;     /* Garde les proportions */
-    display: block;
-    margin: 0 auto;   /* Centre l'image horizontalement */
+    max-width: 220px; /* C'est ici que tu gères la taille "pas trop grande" */
+    width: 100%;      /* Pour le responsive */
+    height: auto;     
+    display: block;   /* Important pour le centrage avec margin auto */
+    margin: 0 auto;   /* Centre le logo horizontalement */
+    transition: max-width 0.3s ease; /* Transition douce lors du redimensionnement */
 }
 
-/* Optionnel : Ajustement pour mobile */
+/* Ajustement pour les petits écrans (mobiles) */
 @media (max-width: 600px) {
     .logo-titre {
-        max-width: 200px; /* Logo plus petit sur petit écran */
+        max-width: 180px; /* Encore plus petit sur mobile */
     }
 }
 
