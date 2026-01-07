@@ -28,13 +28,13 @@ body.accueil {
 
 /* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
-    padding-top: 90px;
+    padding-top: 170px;
     position: relative; 
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
 
 body.rsvp {
-    padding-top: 120px;
+    padding-top: 170px;
     position: relative;
     min-height: 100vh;
 }
@@ -52,7 +52,7 @@ body.rsvp .photo-bk {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 9999;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -66,26 +66,24 @@ body.rsvp .photo-bk {
 
 .header-title h1 {
     font-size: 43px;
-    margin-bottom: 0;
-    /* CORRECTION 1: Réduction de la hauteur du header sur la page infos pour correspondre à l'index */
-    /* L'ajustement est fait en retirant de l'espace non nécessaire ici, et en assurant que le padding est le même */
-    padding: 5px 0; 
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; /* Force une hauteur minimale pour le logo */
 }
 
-/* On retire les styles de police inutiles sur le h1 puisqu'il contient une image */
-.header-title h1 {
-    margin: 0;
-    padding: 5px 0;
-    line-height: 0; /* Évite un espace vide sous l'image */
-}
 
 .logo-titre {
     max-width: 220px; /* C'est ici que tu gères la taille "pas trop grande" */
     width: 100%;      /* Pour le responsive */
-    height: auto;     
-    display: block;   /* Important pour le centrage avec margin auto */
+    height: auto;  
+    display: block !important; /* Force l'affichage */
     margin: 0 auto;   /* Centre le logo horizontalement */
     transition: max-width 0.3s ease; /* Transition douce lors du redimensionnement */
+    visibility: visible; /* Sécurité */
+    opacity: 1;         /* Sécurité */
 }
 
 /* Ajustement pour les petits écrans (mobiles) */
