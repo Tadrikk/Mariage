@@ -28,7 +28,7 @@ body.accueil {
 
 /* Page Infos : Header fixe et padding pour le contenu */
 body.infos {
-    padding-top: 120px;
+    padding-top: 140px;
     position: relative; 
     min-height: 100vh; /* IMPORTANT: Au moins la hauteur de l'écran */
 }
