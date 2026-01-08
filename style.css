@@ -67,7 +67,7 @@ body.rsvp .photo-bk {
 .header-title h1 {
     font-size: 43px;
     margin: 0;
-    padding: 5px 0;
+    padding: 0px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ body.rsvp .photo-bk {
 
 
 .logo-titre {
-    max-width: 120px; /* C'est ici que tu gères la taille "pas trop grande" */
+    max-width: 100px; /* C'est ici que tu gères la taille "pas trop grande" */
     width: 100%;      /* Pour le responsive */
     height: auto;  
     display: block !important; /* Force l'affichage */
