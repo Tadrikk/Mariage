@@ -160,6 +160,8 @@ Vous ne serez pas déçus.`,
         "info_access-title": "✨ Informations pratiques",
         "info_access-text1": 
         `Thème du mariage: <strong> Yellow Touch 🌟 </strong> (Tournesol et citrons exclus).<br>
+        <strong> Note importante :</strong> l’idée est simplement d’ajouter une touche de jaune à votre tenue, et non de s’habiller entièrement en jaune.
+        Un accessoire ou un petit détail suffit largement. Bien sûr, si vous avez envie de porter davantage de jaune, c’est tout à fait possible !
         Sous le doux éclat du soleil d’août, nous rêvons d’une journée lumineuse, parsemée de touches de jaune, symbole de joie et d’énergie.`,
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.<br>
         La cérémonie aura lieu à 18h le 14 août 2026 au Pazo de Xerlís. Venez en avance si besoin.`,
@@ -316,8 +318,9 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "travel-table-col-time": "Tiempo de viaje", 
         "info_access-title": "✨ Información práctica",
         "info_access-text1": 
-        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles y limónes).<br>
-        
+        `Temática de la boda: <strong> Yellow Touch 🌟 </strong> (excluyendo girasoles).<br>
+        <strong>Nota importante:</strong> la idea es simplemente añadir un toque de amarillo a tu look, no vestirse completamente de amarillo.
+        Un accesorio o un pequeño detalle es más que suficiente. Por supuesto, si quieres llevar más amarillo, puedes.
         Bajo el suave resplandor del sol de agosto, soñamos con un día luminoso, salpicado de toques de amarillo, símbolo de alegría y energía.`,
         "info_access-text": `Recomendamos disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público es complicado en Galicia.<br>
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
