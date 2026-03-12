@@ -166,7 +166,7 @@ Vous ne serez pas déçus.`,
         "info_access-text": `Nous recommandons d’avoir un moyen de locomotion sur place, les distances peuvent être longues et les transports publics sont compliqués en Galice.<br>
         La cérémonie aura lieu à 18h le 14 août 2026 au Pazo de Xerlís. Venez en avance si besoin.`,
         "info_access-IBAN": `Votre présence est déjà un merveilleux cadeau ❤️. Si toutefois vous souhaitez nous gâter davantage, une participation financière pour notre lune de miel nous ferait très plaisir.
-        💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728`,
+        💳 Notre compte bancaire est le suivant: BE37 6512 2062 8728 (BIC: KEYTBEBB)`,
         "info_access-MaitreCer": "Il y aura deux maitres de cérémonies, un pour le FR et l'autre pour l'ES. Il s'agit de Yves (l'oncle de Clara) et Lorena (cousine d'Adrian). Plus d'informations à venir bientôt.",
         "rsvp-click-text": "Cliquez ici pour accéder au formulaire RSVP 👇",
         "Lien_Google_sheet": "Lien : https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
@@ -325,7 +325,7 @@ Esperamos verlos a muchos para compartir este momento con nosotros.
         "info_access-text": `Recomendamos disponer de un medio de transporte propio, ya que las distancias pueden ser largas y el transporte público es complicado en Galicia.<br>
         La ceremonia tendrá lugar a las 18h el 14 de agosto de 2026 en el Pazo de Xerlís. Vengan con antelación si es necesario.`,
         "info_access-IBAN": `Vuestra presencia ya es un regalo maravilloso ❤️. Si aun así deseáis obsequiarnos con algo más, una aportación económica para nuestra luna de miel nos haría mucha ilusión.<br>
-        💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728`,
+        💳 Nuestra cuenta bancaria es la siguiente: BE37 6512 2062 8728 (BIC: KEYTBEBB)`,
         "info_access-MaitreCer": "Habrá dos maestros de ceremonias, uno para el francés y otro para el español. Se trata de Yves (el tío de Clara) y Lorena (prima de Adrian). Más información próximamente.",
         "rsvp-click-text": "Haz clic aquí para acceder al formulario RSVP 👇",
         "Lien_Google_sheet": "Enlace: https://docs.google.com/forms/d/e/1FAIpQLSclZyDY5n2FXKByn372KZeAedKKUAS-Dg5bEZPgU0p_56_tUA/viewform?usp=dialog",
